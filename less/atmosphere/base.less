@@ -1,0 +1,299 @@
+// Global Styles ===========================================================================
+// 1. ROOT         			==============================
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+	font-size: 62.5%;	
+}
+body {
+    background-color: @body-bg;
+    font-size:@font-size-base;
+	line-height: @line-height-base;
+	color: @gray-dark;
+	padding: 0;
+	margin: 0;
+	font-family: @font-family-sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	position: relative;
+	cursor: default;
+}
+
+// 2. TYPOGRAPHY			==============================
+p{
+	font-size: @font-size-base;	
+}
+.lead{
+	font-size: @font-size-base * 1.3;
+}
+.secondary {
+	font-size: @font-size-base - 1px;
+}
+.tertiary {
+  font-size: @font-size-base - 3px;
+}
+a{
+	color: @link-color;
+	text-decoration: none;
+	&:hover{
+		color: @link-hover-color;
+		text-decoration: none;
+		cursor: pointer; 
+	}
+}
+.caption{
+	font-size: @font-size-small;
+	color: @gray-light;	
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	
+}
+sup {
+	bottom: 2ex;
+}
+sub {
+	top: .5ex;
+}
+small{
+	font-size: 85%;	
+}
+strong, 
+.strong, 
+bold{
+	font-weight: 500;
+}
+em{
+	font-style:italic;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: @font-family-monospace;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+
+
+// 3. COLOUR 				==============================
+
+
+// 4. TEXTURE 				==============================
+
+
+// 5. ELEMENTS 				==============================
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+    position: fixed;
+    opacity: .7;
+} // ::-webkit-scrollbar
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+	background-color: #F4F4F4;
+	position: fixed;
+} // 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background-color: gray;
+} // end ::-webkit-scrollbar-thumb
+
+// 6. LAYOUT                ==============================
+
+.margin-center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.relative {position: relative !important; }
+.absolute {position: absolute !important; }
+.fixed {position: fixed !important; }
+
+
+/* Spacing ---------------------- */
+/* Credit: Derived from Nicole Sullivan's oocss project - http://oocss.org */
+/* Padding */
+.pan { padding: 0 !important; }
+.ptn { padding-top: 0 !important; }
+.pln { padding-left: 0 !important; }
+.prn { padding-right: 0 !important; }
+.pbn { padding-bottom: 0 !important; }
+.phn { padding-left: 0 !important; padding-right: 0 !important; }
+.pvn { padding-top:0 !important; padding-bottom: 0 !important; }
+.pat { padding: 5px !important; }
+.ptt { padding-top: 5px !important; }
+.prt { padding-right: 5px !important; }
+.pbt { padding-bottom: 5px !important; }
+.plt { padding-left: 5px !important; }
+.pht { padding-left: 5px !important; padding-right: 5px !important; }
+.pvt { padding-top: 5px !important; padding-bottom: 5px !important; }
+.pas { padding: 10px !important; }
+.pts { padding-top: 10px !important; }
+.prs { padding-right: 10px !important; }
+.pbs { padding-bottom: 10px !important; }
+.pls { padding-left: 10px !important; }
+.phs { padding-left: 10px !important; padding-right: 10px !important; }
+.pvs { padding-top: 10px !important; padding-bottom: 10px !important; }
+.pam { padding: 18px !important; }
+.ptm { padding-top: 18px !important; }
+.prm { padding-right: 18px !important; }
+.pbm { padding-bottom: 18px !important; }
+.plm { padding-left: 18px !important; }
+.phm { padding-left: 18px !important; padding-right: 18px !important; }
+.pvm { padding-top:18px !important; padding-bottom: 18px !important; }
+.pal { padding: 30px !important; }
+.ptl { padding-top: 30px !important; }
+.prl { padding-right: 30px !important; }
+.pbl { padding-bottom: 30px !important; }
+.pll { padding-left: 30px !important; }
+.phl { padding-left: 30px !important; padding-right: 30px !important; }
+.pvl { padding-top: 30px !important; padding-bottom: 30px !important; }
+
+/* margin */
+.man { margin: 0 !important; }
+.mtn { margin-top: 0 !important; }
+.mln { margin-left: 0 !important; }
+.mrn { margin-right: 0 !important; }
+.mbn { margin-bottom: 0 !important; }
+.mhn { margin-left: 0 !important; margin-right: 0 !important; }
+.mvn { margin-top:0 !important; margin-bottom: 0 !important; }
+.mat { margin: 5px !important; }
+.mtt { margin-top: 5px !important; }
+.mrt { margin-right: 5px !important; }
+.mbt { margin-bottom: 5px !important; }
+.mlt { margin-left: 5px !important; }
+.mht { margin-left: 5px !important; margin-right: 5px !important; }
+.mvt { margin-top: 5px !important; margin-bottom: 5px !important; }
+.mas { margin: 10px !important; }
+.mts { margin-top: 10px !important; }
+.mrs { margin-right: 10px !important; }
+.mbs { margin-bottom: 10px !important; }
+.mls { margin-left: 10px !important; }
+.mhs { margin-left: 10px !important; margin-right: 10px !important; }
+.mvs { margin-top: 10px !important; margin-bottom: 10px !important; }
+.mam { margin: 18px !important; }
+.mtm { margin-top: 18px !important; }
+.mrm { margin-right: 18px !important; }
+.mbm { margin-bottom: 18px !important; }
+.mlm { margin-left: 18px !important; }
+.mhm { margin-left: 18px !important; margin-right: 18px !important; }
+.mvm { margin-top:18px !important; margin-bottom: 18px !important; }
+.mal { margin: 30px !important; }
+.mtl { margin-top: 30px !important; }
+.mrl { margin-right: 30px !important; }
+.mbl { margin-bottom: 30px !important; }
+.mll { margin-left: 30px !important; }
+.mhl { margin-left: 30px !important; margin-right: 30px !important; }
+.mvl { margin-top: 30px !important; margin-bottom: 30px !important; }
+ 
+
+ul, ol{
+    margin: 0;
+    .font-size(14);
+    list-style-position: outside;
+    li{
+        margin-bottom: 0;
+        ul, ol{
+            margin-left: 20px;
+            padding: 0;
+            .font-size(14);
+            li{
+                padding: 0;
+                margin-bottom: 0; 
+            }
+        }
+        
+    }
+}
+
+
+// 7. VENDORS               ==============================
+// Foundation
+.row {
+	max-width: none !important;
+	margin: 0;
+}
+
+// Bootstrap
+
+.reveal-modal-bg{
+	.background-alpha( #FFF, .7 );
+}
+.reveal-modal-bg.reveal-modal-bg-white{
+	background: white !important;
+}
+.reveal-modal{
+	z-index: 99999;	
+}
+.reveal-modal.reveal-modal-full{
+	width: 100% !important;
+	margin-left: 0 !important;
+	left: 0 !important;
+	top: 0;
+}
+.reveal-modal.reveal-modal-noshadow{
+	.box-shadow( 0 0 0 rgba(0,0,0,0)) !important;
+}
+// Fix issue: broken labels ( inline )
+// @Since 0.2 - 08/29/13 WM
+form.custom label{
+	display: block
+}
+.f-dropdown {
+    margin-top: 10px !important;
+    li{
+        .font-size(12);
+        padding: 4px;
+        color: #333;
+        a{
+            color: #333;
+            &:hover{
+                text-decoration: none;
+            }
+		}
+    }
+}

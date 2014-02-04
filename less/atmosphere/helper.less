@@ -1,0 +1,174 @@
+// Docs Section
+.docs-section{
+	margin-bottom: 60px;	
+}
+
+.page-header{
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.highlight{
+	padding: 7px 10px;
+	margin-bottom: 14px;
+	background-color: #000;
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+	pre{
+		border: none;
+		background-color: transparent;	
+	}
+}
+
+.example+.highlight {
+	margin: -15px -15px 15px;
+	border-radius: 0;
+	border-width: 0 0 1px;
+	@media( min-width: 768px ){
+		margin-top: -16px;
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 1px;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+}
+
+// Ellipsis
+.ellipsis {
+    width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    -ms-text-overflow: ellipsis; // Required for IE8
+    -o-text-overflow: ellipsis; // Required for Opera
+    text-overflow: ellipsis; 
+}
+
+// Divider
+.divider, .divider-bottom{
+	border-bottom: 1px solid #d5d5d5;	
+}
+
+.divider-left{
+	border-left: 1px solid #d5d5d5;
+}
+
+.divider-right{
+	border-right: 1px solid #d5d5d5;
+}
+
+.divider-top{
+	border-top: 1px solid #d5d5d5;
+}
+
+.divider-horizontal{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.divider-vertical{
+	height: 100%;
+	width: 1px;
+	border-left: 1px solid #d5d5d5;
+}
+
+
+
+// Pull
+.pull-right-sm{
+	@media( min-width: 768px ){
+		float: right !important;	
+	}
+}
+
+.pull-left-xs{
+	@media( min-width: 768px ){
+		float: left !important;	
+	}
+}
+
+// Paragraph End
+.paragraph-end {
+	background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)));
+	background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+	background-image: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+	background-image: -ms-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+	background-image: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+	background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ffffff',EndColorStr='#ffffff');
+	bottom: 0;
+	height: 25px;
+	max-height: 100%;
+	position: absolute;
+	right: 0;
+	width: 60px;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-justify {
+  text-align: justify !important; }
+  
+ 
+
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+
+.panel{
+	background-color: #FFF;
+	padding: 10px;
+	margin-bottom: 10px;	
+}
+
+.click{
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index: 5;
+}
+
+form .prefix{
+	-webkit-border-radius: 4px 0 0 4px;
+border-radius: 4px 0 0 4px;
+}
+
+form .postfix{
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+
+form .has-btn{
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}

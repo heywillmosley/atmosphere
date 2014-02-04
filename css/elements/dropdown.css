@@ -1,0 +1,53 @@
+.has-dropdown {
+  list-style: none;
+}
+.has-dropdown a {
+  display: block;
+  height: 50px;
+}
+.has-dropdown .fa.fa-caret-up {
+  position: absolute;
+  color: #DDD;
+  font-size: 20px;
+  top: 17px;
+  padding: 0 10px;
+}
+.has-dropdown .dropdown {
+  width: 200px;
+  position: absolute;
+  z-index: 1000000;
+  top: 30px;
+  background-color: #FFF;
+  padding: 10px;
+  border: 1px #DDD solid;
+  list-style: none;
+  left: 0;
+}
+.has-dropdown .dropdown ul {
+  padding: 0;
+  margin: 0;
+}
+.has-dropdown .dropdown ul li {
+  float: none;
+  width: 100%;
+  margin-left: 0;
+}
+.has-dropdown .dropdown.dropdown-full {
+  width: 100%;
+}
+.has-dropdown .dropdown,
+.has-dropdown i {
+  display: none;
+}
+.has-dropdown:hover .dropdown,
+.has-dropdown a:hover ~ .dropdown,
+.has-dropdown i:hover ~ .dropdown,
+.has-dropdown .dropdown:hover {
+  display: block !important;
+}
+.has-dropdown:hover i,
+.has-dropdown a:hover ~ i,
+.has-dropdown .dropdown:hover + i,
+.has-dropdown i:hover {
+  display: block !important;
+}
