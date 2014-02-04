@@ -1,6 +1,7 @@
 .journey{
 	top: 0;
 	position: relative;
+	height: 100%;
 	ul{
 		margin: 0;	
 	}
@@ -14,20 +15,25 @@
 	li{
 		display: inline-block;
 		height: 50px;
-		color: #FFF;
+		color: #333;
 		float: left;
 		&:hover{
-			background-color: rgba(0, 0, 0, .1);	
+			background-color: @gray-lighter;
+			color: @brand-primary;
 		}
 		a{
-			
+			&:hover{
+				background-color: @gray-lighter;
+				color: @brand-primary !important;
+			}
 		}
 		i{
-			color: #FFF;
-			opacity: .8;
+			color: #000;
+			opacity: .6;
 			padding: 10px;
 			&:hover{
 				opacity: 1;
+				color: @brand-primary;
 			}
 		}
 	}
@@ -68,7 +74,7 @@
 		display: block;
 		height: 50px;
 		width: 100%;
-		background-color: #384047;
+		background-color: #FFF;
 		z-index: 9999;
 		position: relative;
 		padding: 0;
@@ -189,18 +195,23 @@
 	}
 	.journey-app{
 		padding: 5px;
+		&:hover{
+			background-color: transparent;	
+		}
 		.journey-app-icon{
 			height: 40px;	
 			float: left;
 			display: inline-block;
 			margin-right: 5px;
+			border: @brand-secondary 5px solid;
+			
 		}
 		.journey-app-icon.journey-app-icon-text{
 			height: 40px;
 			width: 40px;
 			background-color: blue;
 			color: #FFF;
-			padding: 5px;
+			padding: 2px;
 			text-align: center;
 			font-size: 20px;
 			border-radius: 20px;	
@@ -316,6 +327,7 @@
 				}
 			}
 		}
+		
 	}
 }
 
@@ -328,12 +340,12 @@
 	display: none;
 	> ul{
 		overflow:hidden; 
-		background-color: #333;
+		background-color: rgba( 256, 256, 256, .95);
 		margin: 0;
 		padding: 0;
 		position: absolute;
-		-webkit-box-shadow: 0 0 1px 1px #242424;
-box-shadow: 0 0 1px 1px #242424;
+		-webkit-box-shadow: 0 0 1px 1px @gray-light;
+box-shadow: 0 0 1px 1px @gray-light;
 		> li{ 
 			width: 100%;
 			display: block;
@@ -352,9 +364,9 @@ box-shadow: 0 0 1px 1px #242424;
 	> ul{
 		> li{
 			a{
-				padding: 10px; 
+				padding: 6px 10px; 
 				width: 100%;
-				color: #FFF;
+				color: #333;
 				text-decoration: none;
 				display:block;
 			}	
@@ -428,7 +440,7 @@ box-shadow: 0 0 1px 1px #242424;
 .journey-expand.journey-expand-left{
 	@media (min-width: 768px) {
 		display: none;
-		background-color: #333;
+		background-color: transparent;
 		z-index:99999;
 		width:0;
 	}
@@ -453,6 +465,24 @@ box-shadow: 0 0 1px 1px #242424;
 				width: auto;
 			}
 		}
+	}
+	.journey-expand-sub-nav{
+		&:hover{
+			background-color: transparent;
+		}
+		ul{
+			li{
+				height: auto;
+				font-size: 12px;
+				float: none;
+				width: 100%;
+				display: block;
+				a{
+					padding: 5px 10px 5px 20px;
+				}
+			}
+		}
+		
 	}
 }
 .journey.journey-expand-visible-sm{
@@ -540,7 +570,7 @@ box-shadow: 0 0 1px 1px #242424;
 .journey-expand.journey-expand-cart, .journey-expand.journey-expand-wishlist, .journey-expand.journey-expand-compare{
 	> ul{
 		right: 0;
-		background-color: lighten( #CCC, 10%);
+		background-color: rgba( 256, 256, 256, .1);
 		padding:10px;
 		li{
 			color: #333;
@@ -632,12 +662,19 @@ box-shadow: 0 0 1px 1px #242424;
 	}
 }
 
-
-.journey-expand-darken{
-	background-color: rgba(0, 0, 0, .6);
+#expand-left{
+	//display: none !important;	
+}
+#expand-left:target{
+	display: block;	
+	background-color: fade( @gray-dark, 10%);
 	@media (min-width: 768px) {
 		display: none;
 	}
+}
+
+#expand-left:target #expand-close{
+	display: block;	
 }
 
 .journey-expand-lighten{

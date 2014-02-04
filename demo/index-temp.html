@@ -1,0 +1,927 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> in HTACCESS FILE to Avoid Validation Error -->
+    <title>Atmosphere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <meta name="keywords" content=""/>  
+    <meta name="author" content="William Mosley, III <will@livesuperamazing.com>">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/favicon-72.png">
+    <link rel="shortcut icon" href="img/favicons/favicon-16.png">
+    <!--[if IE]><link rel="shortcut icon" href="img/favicons/favicon-16.icon"><![endif]-->
+    <!-- or, set /favicon-16.ico for IE10 win -->
+    
+    <link rel="stylesheet" type="text/css" href="css/site.min.css">
+    <script src="js/site-header.min.js"></script>
+    
+</head>        
+
+<body>
+
+<div class="journey journey-light journey-action-bar-sm-visible  journey-search-bar-visible-sm journey-deal-bar-visible-xs journey-top-bar-skinny">
+	<div id="expand-left" class="journey-expand journey-expand-left journey-expand-darken">
+        <ul class="journey-expand-main">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li> 
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li> 
+        </ul>
+    </div><!-- end journey-expand -->
+    <div id="expand-cart" class="journey-expand journey-expand-cart">
+        <ul>
+            <li>
+            	<h5>Your Shopping Cart is empty.</h5>
+				<p class="secondary">Fill it up with CDs, movies, name brand clothing, electronics, and more.</p>
+				<p class="secondary">If you already have an account, <a href="#">sign in</a>.</p>
+                <a href="#" class="btn btn-default btn-block btn-sm ">View Cart</a>
+          	</li>
+        </ul>
+    </div><!-- end journey-expand -->
+    <div id="expand-wishlist" class="journey-expand journey-expand-wishlist">
+        <ul>
+            <li>
+            	<h5>Your Wishlist is empty.</h5>
+				<p class="secondary">Fill it up with CDs, movies, name brand clothing, electronics, and more.</p>
+				<p class="secondary">If you already have an account, <a href="#">sign in</a>.</p>
+                <a href="#" class="btn btn-default btn-block btn-sm ">View Wishlist</a>
+          	</li>
+        </ul>
+    </div><!-- end journey-expand -->
+    <div id="expand-compare" class="journey-expand journey-expand-compare">
+        <ul>
+            <li>
+            	<h5>You have no items to compare.</h5>
+          	</li>
+        </ul>
+    </div><!-- end journey-expand -->
+    <div id="expand-overflow" class="journey-expand journey-expand-overflow">
+        <ul>
+            <li class="journey-action pull-right-sm visible-xs">
+                <a href="#" onclick="toggleVisibilityOne('expand-wishlist', 'journey-expand');">Wishlist<span class="badge">24</span></a>
+            </li><!-- end journey-action -->
+            <li class="journey-action pull-right-sm visible-xs">
+                <a href="#" onclick="toggleVisibilityOne('expand-compare', 'journey-expand');">Compare Products</span><span class="badge">3</span></a>
+            </li><!-- end journey-action -->  
+        </ul>
+    </div><!-- end journey-expand -->
+    <div id="expand-global" class="journey-expand journey-expand-global">
+        <ul>
+            <li><a href="#">Store</a></li>
+        </ul>
+    </div><!-- end journey-expand -->
+    <div id="expand-top" class="journey-expand journey-expand-top">
+        <ul class="journey-search-bar">
+            <li class="has-form">
+            	<form role="form">
+                  <div class="row postfix">
+                  	<div class="col-xs-10 pan">
+                    	<input type="text" class="form-control has-btn" placeholder="Search...">
+                    </div><!-- end col-xs-10 -->
+                    <div class="col-xs-2 pan">
+                    	<button type="submit" class="btn btn-default btn-block postfix"><i class="fa fa-search fa-lg"></i></button>
+                    </div><!-- end col-xs-2 -->
+                  </div><!-- end row --> 
+                </form>
+            </li>
+        </ul>
+    </div><!-- end journey-expand -->
+    <div id="expand-bottom" class="journey-expand journey-expand-bottom">
+        <ul>
+            <li><a href="#" onclick="toggleVisibilityOne('expand-wishlist', 'journey-expand');"><i class="fa fa-gift"><span class="hidden-xs"> Wishlist</span></i><span class="badge">24</span></a></li>
+            <li><a href="#" onclick="toggleVisibilityOne('expand-compare', 'journey-expand');"><i class="fa fa-gift"><span class="hidden-xs"> Compare Products</span></i><span class="badge">3</span></a></li> 
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li> 
+        </ul>
+    </div><!-- end journey-expand -->
+    <div class="journey-deal-bar">
+    	Everyday Free Shipping Over $50*
+    </div><!-- end journey-deal-bar -->
+    <ul class="journey-bar">
+    	<li class="journey-action journey-menu-trigger">
+            <a href="#" onclick="toggleVisibilityOne('expand-left', 'journey-expand');"><i class="fa fa-bars fa-2x"></i></a>
+        </li><!-- end journey-action -->
+        <li class="journey-app">
+            <div class="journey-app-icon journey-app-icon-text">
+                M
+            </div>
+            <div class="journey-wordcrumb">
+                <div class="journey-app-wordmark">		
+                    Mega Store Co.
+                </div><!-- end journey-app-wordmark -->
+                <a href="#" class="journey-action journey-caret" onclick="toggleVisibilityOne('expand-global', 'journey-expand');"><i class="fa fa-caret-down"></i></a>
+                <div class="journey-breadcrumb">
+                    Home
+                </div><!-- end journey-breadcrumb -->
+            </div><!-- end journey-breadcrumb -->
+        </li>
+        <li class="visible-lg visible-xl pull-right">
+        	<a href="#"><img src="http://1.bp.blogspot.com/_OTzcGzYjAz0/S-uMx45IsgI/AAAAAAAAAPY/TmoxYorlcDc/s400/jordan.jpg" /></a>
+        </li>
+        <li class="journey-actions journey-actions-sm pull-right">
+            <ul>
+                <li class="journey-action journey-action-search visible-xs">
+                    <a href="#" onclick="toggleVisibilityOne('expand-top', 'journey-expand');" ><i class="fa fa-search"></i></a>
+                </li><!-- end journey-action -->
+                <li class="journey-action pull-right-sm">
+                    <a href="#" onclick="toggleVisibilityOne('expand-cart', 'journey-expand');"><i class="fa fa-shopping-cart"><span class="hidden-xs"> Cart</span></i><span class="badge">5</span></a>
+                </li><!-- end journey-action -->
+                <li class="journey-action pull-right-sm hidden-xs">
+                    <a href="#" onclick="toggleVisibilityOne('expand-wishlist', 'journey-expand');"><i class="fa fa-gift"><span class="hidden-xs"> Wishlist</span></i><span class="badge">24</span></a>
+                </li><!-- end journey-action -->
+                <li class="journey-action pull-right-sm hidden-xs">
+                    <a href="#" onclick="toggleVisibilityOne('expand-compare', 'journey-expand');"><i class="fa fa-gift"><span class="hidden-xs"> Compare Products</span></i><span class="badge">3</span></a>
+                </li><!-- end journey-action -->
+                <li class="journey-action visible-xs">
+                    <a href="#" onclick="toggleVisibilityOne('expand-overflow', 'journey-expand');"><i class="fa fa-ellipsis-h"></i></a>
+                </li><!-- end journey-action -->
+            </ul>
+        </li>
+    </ul><!-- end journey-bar -->
+    <ul class="journey-top-bar journey-link-nav">
+    	<li><a href="#">What's New</a></li>
+        <li class="divider-vertical"></li>
+        <li class="has-dropdown">
+        	<a href="#">Category</a>
+            <span></span>
+            <div class="dropdown">
+                <ul>
+                    <li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="divider-vertical">
+        <li class="has-dropdown">
+        	<a href="#">Category</a>
+            <span></span>
+            <div class="dropdown dropdown-full">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 divider-right">
+                        <ul class="divider">
+                        	<li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div><!-- end col-sm-3 -->
+                    <div class="col-xs-6 col-sm-2">
+                        <ul class="divider">
+                        	<li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div><!-- end col-sm-3 -->
+                    <div class="col-sm-3 divider-left hidden-xs">
+                        <ul class="divider">
+                        	<li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                        <ul>
+                        	<li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div><!-- end col-sm-3 -->
+                    <div class="col-xs-12 col-sm-4 divider-left phs">
+                        <a href="#" class="mbs" style="max-height: 300px; overflow: hidden"><img style="width:100%; margin-top:-50px;" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Renoir%2C_Pierre-Auguste_-_The_Two_Sisters%2C_On_the_Terrace.jpg/390px-Renoir%2C_Pierre-Auguste_-_The_Two_Sisters%2C_On_the_Terrace.jpg" /></a>
+                        <a href="#">Shop all Category</a>
+                    </div><!-- end col-sm-6 -->
+                </div><!-- end row -->
+            </div>
+      	</li>
+        <li class="divider-vertical hidden-xs">
+        <li class="hidden-xs"><a href="#">Category</a></li>
+        <li class="divider-vertical hidden-xs">
+        <li class="hidden-xs"><a href="#">Category</a></li>
+        <li class="divider-vertical hidden-xs">
+        <li class="hidden-xs"><a href="#">Category</a></li>
+        <li class="divider-vertical hidden-xs">
+        <li class="has-dropdown relative hidden-xs">
+        	<a href="#">Clearance</a>
+            <span></span>
+            <div class="dropdown dropdown-right">
+                <ul>
+                    <li class="dropdown-heading"><a href="#">Sub Category</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <div class="journey-content-container">
+    	<div class="journey-content-fluffy">
+        	<div class="row">
+            	<div class="col-xs-12 col-sm-8 pan">
+                	<div class="item-wrapper">
+                <div class="item-header">
+                    <div class="item-container-title">Fresh Produce</div>
+                    <a href="#" class="btn btn-info">See More</a>
+                </div><!-- end item-container-header -->
+                <div class="item-container-one-up">
+                    <div class="item-container">
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image item-cover-image-landscape" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Cucurbita_2011_G1.jpg/320px-Cucurbita_2011_G1.jpg" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details relative">
+                                <div class="item-title"><a href="#">Pumpkins<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image item-cover-image-landscape" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Avocado_with_cross_section_edit.jpg/640px-Avocado_with_cross_section_edit.jpg" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">Egg Plants<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image item-cover-image-landscape" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Citrus_paradisi_%28Grapefruit%2C_pink%29_white_bg.jpg/320px-Citrus_paradisi_%28Grapefruit%2C_pink%29_white_bg.jpg" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">Oranges<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Oranges<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image item-cover-image-landscape" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Raspberries05.jpg/320px-Raspberries05.jpg" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">Raspberries<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                    </div><!-- item-container -->
+                </div><!-- end item-container-up -->
+            </div><!-- end item-wrapper --> 
+            
+            <div class="item-wrapper">
+                <div class="item-header">
+                    <div class="item-container-title">Our Best Products</div>
+                    <a href="#" class="btn btn-info">See More</a>
+                </div><!-- end item-container-header -->
+                <div class="item-container-one-up">
+                    <div class="item-container">
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/PwJWFNLKla4C?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                            	<a href="#" class="item-click-target"></a>
+                                <div class="item-title"><a href="#">The Time Machine<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/jOf_oenKLrcC?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">Walden<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/fUXWVdWaumgC?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">The Pocket Idiot's Guide to blah blah blah<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/dvuK7isszLIC?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">The Small Business Guide<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                    </div><!-- item-container -->
+                </div><!-- end item-container-up -->
+            </div><!-- end item-wrapper --> 
+            
+            <div class="item-wrapper">
+                <div class="item-header">
+                    <div class="item-container-title">Our Best Products</div>
+                    <a href="#" class="btn btn-info">See More</a>
+                </div><!-- end item-container-header -->
+                <div class="item-container-one-up">
+                    <div class="item-container">
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/PwJWFNLKla4C?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                            	<a href="#" class="item-click-target"></a>
+                                <div class="item-title"><a href="#">The Time Machine<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/jOf_oenKLrcC?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">Walden<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/fUXWVdWaumgC?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">The Pocket Idiot's Guide to blah blah blah<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                        <div class="item">
+                            <a href="#" class="item-click"></a>
+                            <div class="item-cover">
+                                <div class="item-cover-darken-on-hover"><a href="#"></a></div>
+                                <img class="item-cover-image" src="https://encrypted.google.com/books/images/frontcover/dvuK7isszLIC?fife=w300-rw" alt="" />
+                            </div><!-- end item-cover -->
+                            <div class="item-details">
+                                <div class="item-title"><a href="#">The Small Business Guide<span class="paragraph-end"></span></a></div>
+                                <div class="item-subtitle primary">Subtitle<span class="paragraph-end"></span></div>
+                                <div class="item-rating-price-container">
+                                    <div class="item-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                  	</div><!-- end item-rating -->
+                                    <div class="item-price">
+                                        <a href="#" class="btn btn-default btn-sm">$19.99</a>
+                                    </div><!-- end item-price -->
+                             	</div><!-- end item-price-rating-container -->
+                            </div><!-- end item-details -->
+                        </div><!-- end item -->
+                    </div><!-- item-container -->
+                </div><!-- end item-container-up -->
+            </div><!-- end item-wrapper --> 
+                
+                
+             <div class="hide">   
+                    <div class="alert alert-default pas mbn" style="border: none">
+                        A fine mix of <a href="#" class="alert-link">Super Amazing</a>, <a class="alert-link" href="http://getbootstrap.com">Bootstrap</a>, and <a class="alert-link" href="http://foundation.zurb.com">Foundation</a>.
+                    </div><!-- end alert alert-default -->
+                    <div class="exhibit-container hero1">
+                        <ul class="exhibit">
+                            <li>
+                                <div class="exhibit-img" >
+                                    <img src=" http://upload.wikimedia.org/wikipedia/commons/a/a3/%27Umbrellas_in_the_Rain%27_by_Maurice_Prendergast%2C_1899.jpg" alt="" />
+                                </div><!-- end exhibit-img -->
+                                <div class="exhibit-content" style="color: #FFF; width:100%;">
+                                    <div class="exhibit-title">Atmosphere</div>
+                                    <div class="exhibit-subtitle">Responsive elements to make designing your apps dead simple.</div>
+                                    <a href="#" class="btn btn-default" style="border-color: #FFF; color: #FFF;">Explore</a>
+                                </div><!-- end content -->
+                            </li>
+                        </ul>
+                    </div><!-- end exhibit container -->   
+                        <article class="story">
+                          <header class="story-header">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <a href="#"><img class="author-thumbnail" src="https://lh4.googleusercontent.com/-6HsO7s9fXCU/AAAAAAAAAAI/AAAAAAAAAo8/NEZToCc7ZI8/s46-c-k-no/photo.jpg" alt="Author" /></a>
+                                    </div><!-- end pull-left -->
+                                    <div class="media-body">
+                                        <a href="#" class="story-options" data-dropdown="story-options-1" data-options="is_hover:true"><span class="caret"></span></a>
+                                            <ul id="story-options-1" class="f-dropdown" data-dropdown-content>
+                                              <li><a href="#">Mute Post</a></li>
+                                              <li><a href="#">Report Abuse</a></li>
+                                            </ul>
+                                        </a>
+                                        <div><span class="story-author-name"><a href="#">Jane Smith</a></span> <span class="story-author-title">Web Developer</span></div>
+                                        <div class="story-publish-meta">
+                                            <a href="#" data-dropdown="Sub Category-1" data-options="is_hover:true"><div class="label ilb">
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <img src="img/tags.png" alt="Tags and Categories" />
+                                                    </div><!-- end pull-left -->
+                                                    <div class="media-body">
+                                                        Development
+                                                    </div>
+                                                </div><!-- end media -->
+                                            </span></div></a>
+                                                    <ul id="Sub Category-1" class="f-dropdown" data-dropdown-content>
+                                                      <li><a href="#">CSS</a></li>
+                                                      <li><a href="#">Modern</a></li>
+                                                      <li><a href="#">HTML5</a></li>
+                                                      <li><a href="#">Responsive Design</a></li>
+                                                    </ul>
+                                                </a>
+                                            <span class="story-publish-date">8:10am Dec 17, 2013</span>
+                                        </div><!-- end story-publish-meta -->
+                                    </div><!-- end media-body -->
+                                </div><!-- end media -->        
+                            </header><!-- end story-header -->
+                            <div class="story-body">
+                                <p>Responsive design is now a requirement. It's not just optional.</p>
+                                <div class="story-feature-image">
+                                    <a href="#"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Content-is-like-water-1980.jpg/640px-Content-is-like-water-1980.jpg" alt="" /></a>
+                                </div><!-- end story-feature-image -->
+                            </div><!-- end story-body -->
+                            <footer class="story-footer">
+                                <div class="story-actions">
+                                    <a class="btn btn-default btn-sm btn-default ">View</a>
+                                    <a class="btn btn-default btn-sm">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img src="img/heart.png" alt="Comment" />
+                                            </div><!-- end pull-left -->
+                                            <div class="media-body">
+                                                | <strong>50</strong>
+                                            </div>
+                                        </div><!-- end media -->
+                                    </a>
+                                    <a class="btn btn-default btn-sm">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img src="img/comment.png" alt="Comment" />
+                                            </div>
+                                            
+                                            <div class="media-body">
+                                                Comment | <strong>24</strong>
+                                            </div>
+                                        </div><!-- end media -->
+                                    </a>
+                                    <a class="btn btn-default btn-sm">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img src="img/voices.png" alt="Voices" />
+                                            </div><!-- end pull-left -->
+                                            <div class="media-body">
+                                                Voices | <strong>3	</strong>
+                                            </div>
+                                        </div><!-- end media -->
+                                    </a>
+                                </div><!-- end story-actions -->
+                                <div class="story-dialogue">
+                                    <div class="story-dialogue-count">
+                                        <a href="#">View all 24 comments</a>
+                                    </div><!-- end story-dialogue-count -->
+                                    <article class="story">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#"><img class="author-thumbnail" src="https://lh4.googleusercontent.com/-6HsO7s9fXCU/AAAAAAAAAAI/AAAAAAAAAo8/NEZToCc7ZI8/s46-c-k-no/photo.jpg" alt="Author" /></a>
+                                            </div><!-- end pull-left -->
+                                            <div class="media-body">
+                                                <header class="story-header">
+                                                    <div><span class="story-author-name"><a href="#">Jonny Jack</a></span> <span class="story-author-title">Graphic Designer</span></div>
+                                                    <div class="story-publish-meta">
+                                                        <span class="story-publish-date">2:17pm Today</span>
+                                                    </div><!-- end story-publish-meta -->
+                                                </header><!-- end story-header -->
+                                                <div class="story-body">
+                                                    <p class="secondary">Responsive design is now a requirement. It's not just optional.</p>
+                                                    <div class="story-feature-image">
+                                                        <a href="#"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Young_cats.jpg/320px-Young_cats.jpg" alt="" /></a>
+                                                    </div><!-- end story-feature-image -->
+                                                </div><!-- end story-body -->
+                                                <footer class="story-footer">
+                                                    
+                                                </footer><!-- end story-footer -->
+                                            </div><!-- end media-body -->
+                                        </div><!-- end media -->        
+                                    </article><!-- end story story-summary -->
+                                    <form class="story-add-dialogue">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#"><img class="author-thumbnail" src="https://lh4.googleusercontent.com/-6HsO7s9fXCU/AAAAAAAAAAI/AAAAAAAAAo8/NEZToCc7ZI8/s46-c-k-no/photo.jpg" alt="Author" /></a>
+                                            </div><!-- end pull-left -->
+                                            <div class="media-body">
+                                                <textarea placeholder="Add a comment"></textarea>
+                                                <button class="btn btn-default btn-sm">Post</button>
+                                            </div><!-- end media-body -->
+                                        </div><!-- end media -->
+                                    </form>
+                                </div><!-- end story-dialogue -->
+                            </footer><!-- end story-footer -->
+                        </article><!-- end story -->
+                        
+                        
+                        <article class="story">
+                          <header class="story-header">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <a href="#"><img class="author-thumbnail" src="https://lh4.googleusercontent.com/-6HsO7s9fXCU/AAAAAAAAAAI/AAAAAAAAAo8/NEZToCc7ZI8/s46-c-k-no/photo.jpg" alt="Author" /></a>
+                                    </div><!-- end pull-left -->
+                                    <div class="media-body">
+                                        <a href="#" class="story-options" data-dropdown="story-options-1" data-options="is_hover:true"><span class="caret"></span></a>
+                                            <ul id="story-options-1" class="f-dropdown" data-dropdown-content>
+                                              <li><a href="#">Mute Post</a></li>
+                                              <li><a href="#">Report Abuse</a></li>
+                                            </ul>
+                                        </a>
+                                        <div><span class="story-author-name"><a href="#">Jane Smith</a></span> <span class="story-author-title">Web Developer</span></div>
+                                        <div class="story-publish-meta">
+                                            <a href="#" data-dropdown="Sub Category-1" data-options="is_hover:true"><div class="label">Development</span></div></a>
+                                                    <ul id="Sub Category-1" class="f-dropdown" data-dropdown-content>
+                                                      <li><a href="#">CSS</a></li>
+                                                      <li><a href="#">Modern</a></li>
+                                                      <li><a href="#">HTML5</a></li>
+                                                      <li><a href="#">Responsive Design</a></li>
+                                                    </ul>
+                                                </a>
+                                            <span class="story-publish-date">8:10am Dec 17, 2013</span>
+                                        </div><!-- end story-publish-meta -->
+                                    </div><!-- end media-body -->
+                                </div><!-- end media -->        
+                            </header><!-- end story-header -->
+                            <div class="story-body">
+                                <h1>Why Responsive Design is the Future</h1>
+                                <img class="pbm" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Responsive_design_-_Commons_Android_app.jpg/640px-Responsive_design_-_Commons_Android_app.jpg" alt="" />
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie turpis nisi, vitae ultricies lectus dignissim elementum. Sed eu elit quis mauris accumsan vestibulum. Phasellus rutrum volutpat elit, vel porttitor enim ornare a. Ut posuere vel justo eu lacinia. Nullam porta eleifend magna vestibulum aliquam. Ut vel euismod erat. Praesent ullamcorper turpis orci. Curabitur porttitor, nisl a eleifend euismod, sapien metus auctor ipsum, vel auctor est magna id mauris. Sed eleifend leo egestas magna mollis, a porttitor dui scelerisque. Sed mollis pharetra risus, et suscipit metus aliquet sed. Pellentesque pretium dignissim massa, at auctor nisl adipiscing nec. Etiam in est eget quam imperdiet tristique sit amet non felis. Duis at lacus lectus.</p>
+                                <h2>Get to Know HTML5</h2>
+                                <p>Integer sit amet quam tincidunt, consequat erat ac, volutpat est. Phasellus posuere enim eget ornare ornare. Vivamus suscipit auctor lorem euismod blandit. Nulla auctor cursus varius. Suspendisse potenti. Ut facilisis diam dolor, quis cursus diam vulputate eget. Duis accumsan tellus quis ligula convallis, eget gravida velit consequat. Nullam euismod ante lectus. Vivamus tempus sit amet ipsum quis tristique. Suspendisse nunc nisl, vulputate varius tincidunt et, bibendum quis leo. Morbi ultrices eros sed dolor viverra, in dictum dui varius.</p>
+                                
+                                <h2>Using Atmosphere</h2>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris semper et arcu sed dignissim. Donec augue velit, venenatis sit amet nunc in, sollicitudin consequat augue. Vestibulum ultricies arcu sit amet tellus congue, ut vestibulum elit pharetra. Proin gravida massa in enim venenatis sollicitudin. Ut porttitor est id purus tempor egestas. Duis hendrerit est quis mi porta, sit amet congue justo suscipit. Nam mollis aliquet dolor a pellentesque.</p>
+            
+                                <p>Pellentesque viverra fringilla purus nec ornare. Sed vehicula massa quis ipsum rutrum, at tempus lacus bibendum. Integer tempus varius nisl id pulvinar. Aliquam ultrices venenatis nisl in auctor. Sed dapibus purus nec velit porttitor, in pulvinar sem porta. Quisque ornare dui id laoreet pellentesque. Quisque rhoncus orci leo, non fringilla purus varius vel. Mauris et libero dui. Proin non nulla sapien. Sed ligula sapien, tristique sollicitudin consectetur et, tincidunt quis arcu. Pellentesque commodo enim eget viverra rutrum.</p>
+                            </div><!-- end story-body -->
+                            <footer class="story-footer">
+                                <div class="story-dialogue">
+                                    <div class="story-dialogue-count">
+                                        24 comments
+                                    </div><!-- end story-dialogue-count -->
+                                    <article class="story">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#"><img class="author-thumbnail" src="https://lh4.googleusercontent.com/-6HsO7s9fXCU/AAAAAAAAAAI/AAAAAAAAAo8/NEZToCc7ZI8/s46-c-k-no/photo.jpg" alt="Author" /></a>
+                                            </div><!-- end pull-left -->
+                                            <div class="media-body">
+                                                <header class="story-header">
+                                                    <div><span class="story-author-name"><a href="#">Jonny Jack</a></span> <span class="story-author-title">Graphic Designer</span></div>
+                                                    <div class="story-publish-meta">
+                                                        <span class="story-publish-date">2:17pm Today</span>
+                                                    </div><!-- end story-publish-meta -->
+                                                </header><!-- end story-header -->
+                                                <div class="story-body">
+                                                    <p class="secondary">Responsive design is now a requirement. It's not just optional.</p>
+                                                    <div class="story-feature-image">
+                                                        <a href="#"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Responsive_design_-_Commons_Android_app.jpg/640px-Responsive_design_-_Commons_Android_app.jpg" alt="" /></a>
+                                                    </div><!-- end story-feature-image -->
+                                                </div><!-- end story-body -->
+                                                <footer class="story-footer">
+            
+                                                </footer><!-- end story-footer -->
+                                            </div><!-- end media-body -->
+                                        </div><!-- end media -->        
+                                    </article><!-- end story story-summary -->
+                                    <article class="story">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#"><img class="author-thumbnail" src="https://lh4.googleusercontent.com/-6HsO7s9fXCU/AAAAAAAAAAI/AAAAAAAAAo8/NEZToCc7ZI8/s46-c-k-no/photo.jpg" alt="Author" /></a>
+                                            </div><!-- end pull-left -->
+                                            <div class="media-body">
+                                                <header class="story-header">
+                                                    <div><span class="story-author-name"><a href="#">Jonny Jack</a></span> <span class="story-author-title">Graphic Designer</span></div>
+                                                    <div class="story-publish-meta">
+                                                        <span class="story-publish-date">2:17pm Today</span>
+                                                    </div><!-- end story-publish-meta -->
+                                                </header><!-- end story-header -->
+                                                <div class="story-body">
+                                                    <p class="secondary">This article is true representation of responsive design.</p>
+                                                </div><!-- end story-body -->
+                                                <footer class="story-footer">
+                                                    
+                                                </footer><!-- end story-footer -->
+                                            </div><!-- end media-body -->
+                                        </div><!-- end media -->        
+                                    </article><!-- end story story-summary -->
+                                    <form class="story-add-dialogue">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#"><img class="author-thumbnail" src="https://lh4.googleusercontent.com/-6HsO7s9fXCU/AAAAAAAAAAI/AAAAAAAAAo8/NEZToCc7ZI8/s46-c-k-no/photo.jpg" alt="Author" /></a>
+                                            </div><!-- end pull-left -->
+                                            <div class="media-body">
+                                                <textarea placeholder="Add a comment"></textarea>
+                                                <button class="btn btn-default btn-sm">Post</button>
+                                            </div><!-- end media-body -->
+                                        </div><!-- end media -->
+                                    </form>
+                                </div><!-- end story-dialogue -->
+                            </footer><!-- end story-footer -->
+                        </article><!-- end story -->
+            		</div><!-- end hide -->
+                    <div class="panel pas">
+                        <div class="docs-section">
+                            <h1 class="page-header">Typography</h1>
+                            <h2>Headings</h2>
+                            <p>Styles for <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</p>
+                            <div class="example">
+                                <h1>h1. Super Amazing Heading</h1>
+                                <h2>h2. Super Amazing Heading</h2>
+                                <h3>h3. Super Amazing Heading</h3>
+                                <h4>h4. Super Amazing Heading</h4>
+                                <h5>h5. Super Amazing Heading</h5>
+                                <h6>h6. Super Amazing Heading</h6>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                                   	<h1>h1. Super Amazing Heading</h1>
+									<h2>h2. Super Amazing Heading</h2>
+									<h3>h3. Super Amazing Heading</h3>
+									<h4>h4. Super Amazing Heading</h4>
+									<h5>h5. Super Amazing Heading</h5>
+									<h6>h6. Super Amazing Heading</h6>
+
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h2>Body Copy/Paragraphs</h2>
+                            <p>All body and paragraph copy is set to a base font size of <code>14px</code>s.
+                            <div class="example">
+                                <p>'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
+								<p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+									<p>...</p>
+
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h3>Do even more with paragraphs</h3>
+                            <p>Atmosphere gives writers better control over their copy. Show a lead or deemphasize a paragraph.</p>
+                            <div class="example">
+                                <p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
+								<p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
+                                <p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
+                                <p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+									<p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
+									<p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
+									<p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
+									<p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
+
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h2>Links</h2>
+                            <p>Make links with the <code>&lt;a&gt;</code> tag.</p>
+                            <div class="example">
+                                <div>Read more about <a href="#">Alice &amp; Wonderland</a>. The default color is Atmosphere's primary color. This is easily changeable by overriding the <code>a</code> tag</div>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                                   <a href="#">...</a>
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h2>Captions</h2>
+                            <p>This is the description of what this element is and does.</p>
+                            <div class="example">
+                                <div class="caption">This is a caption</div>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                                   <div class="caption">This is a caption</div>
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h2>Sup &amp; Sub</h2>
+                            <p><code>Sup</code> and <code>Sub</code> tags are used for superscripted and subscripted text like exponents and footnotes.</p>
+                            <div class="example">
+                                <p>Sample copy<sup>Superscript</sup></p>
+                                <p>H<sub>2</sub>0</p>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                                   <sup>Superscript</sup>
+								   <sub>Subscript</sub>
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h2>Emphasis</h2>
+                            <h3>Small Text</h3>
+                            <p>De-emphasize text.</p>
+                            <div class="example">
+                                <small>'They all can,' said the Duchess; 'and most of 'em do.'</small>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                                   <small>...</small>
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h3>Bold Text</h3>
+                            <p>Make text bold.</p>
+                            <div class="example">
+                                <strong>'I don't know of any that do,' Alice said very politely, feeling quite pleased to have got into a conversation.</strong>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                                   <strong>...</strong>
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <h3>Italic Text</h3>
+                            <p>Make text italic.</p>
+                            <div class="example">
+                                <em>'You don't know much,' said the Duchess; 'and that's a fact.'</em>
+                            </div><!-- end example -->
+                            <div class="highlight">
+                                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                                   <em>...</em>
+                                ]]></script>
+                            </div><!-- end highlight -->
+                            <div class="docs-section">
+                                <h1 class="page-header">Grid</h1>
+                                <p>Atmosphere uses Bootstrap's popular grid system. Get the documentation for it <a href="http://getbootstrap.com/css/#grid">here</a>.</p>
+                                
+                          	</div><!-- end doc-section -->
+                        </div><!-- end docs-section -->
+                  	</div><!-- end panel -->
+                </div><!-- end col-xs-12 -->
+                <div class="col-xs-12 col-sm-4">
+                	<img src="http://centurylink.net/cmsimages/RdioGamesAd.png" />
+                    
+                </div><!-- end col-xs col-sm -->
+            </div><!-- end row -->
+		</div><!-- end journey-content-fluffy -->
+    </div><!-- end journey-content-container -->
+</div><!-- end journey -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/site-footer.min.js"></script>
+
+<script>
+  $(".exhibit").exhibit({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 7000,          // Integer: Time between slide transitions, in milliseconds
+  pager: true,           // Boolean: Show pager, true or false
+  nav: true,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "exhibit",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+</script>
+
+<script>
+  $(document).foundation();
+</script>
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+
+</body>
