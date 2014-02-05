@@ -1,0 +1,77 @@
+// Atmosphere  ================================================================================
+// Define Vendor Path
+@site-less-url: "/";
+@atmosphere-url: "/";
+@vendor-url: "../vendor/";
+
+// Core variables and mixins
+@import "@{site-less-url}variables.less";
+@import "@{site-less-url}mixins.less";
+
+
+// Import Vendor Frameworks =============================================================
+// Normalize
+@import "@{vendor-url}normalize-3.0.0.custom/normalize-3.0.0.less";
+
+// Icon Fonts
+@import "@{vendor-url}font-awesome-4.0.3.custom/css/font-awesome.min.less";
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Exo+2:300italic,300,700,100);
+
+// Responsive Elements
+@import "@{vendor-url}foundation-5.0.2.custom/less/foundation.less";
+@import "@{vendor-url}bootstrap-3.0.3.custom/less/bootstrap.less";
+
+// Syntax Highlighter
+@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shCore.less";
+@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shThemeEmacs.less";
+
+// =======================================================================================
+
+
+// Core CSS
+@import "@{atmosphere-url}base.less";
+@import "@{atmosphere-url}type.less";
+@import "@{atmosphere-url}code.less";
+@import "@{atmosphere-url}grid.less";
+@import "@{atmosphere-url}tables.less";
+@import "@{atmosphere-url}forms.less";
+@import "@{atmosphere-url}buttons.less";
+
+// Components
+@import "@{atmosphere-url}base.less";
+@import "@{atmosphere-url}journey.less";
+@import "@{atmosphere-url}dropdown.less";
+@import "@{atmosphere-url}example.less";
+@import "@{atmosphere-url}item.less";
+@import "@{atmosphere-url}feature.less";
+@import "@{atmosphere-url}author.less";
+@import "@{atmosphere-url}story.less";
+@import "@{atmosphere-url}dialogue.less";
+// @import "@{atmosphere-url}pilot.less";
+@import "@{atmosphere-url}sidebar.less";
+@import "@{atmosphere-url}specs.less";
+@import "@{atmosphere-url}cart.less";
+@import "@{atmosphere-url}callout.less";
+
+// Components w/ Javascript
+@import "@{atmosphere-url}exhibit.less";
+
+// Helper classes
+@import "@{atmosphere-url}helper.less";
+
+// Start Styling below ==================================================================
+.exhibit-container.hero1 .exhibit-content{ background-color: transparent !important; background: -moz-linear-gradient(top, rgba(153,0,153,0.65) 66%, rgba(153,0,153,0.52) 73%, rgba(153,0,153,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(66%,rgba(153,0,153,0.65)), color-stop(73%,rgba(153,0,153,0.52)), color-stop(100%,rgba(153,0,153,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6990099', endColorstr='#00990099',GradientType=0 ); /* IE6-9 */}
+
+.journey {
+	.journey-bar{ 
+		//background-color: purple; 
+	}
+}

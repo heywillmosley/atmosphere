@@ -1,8 +1,4 @@
 // Variables ===============================================================================
-
-// Define Vendor Path
-@vendor-url: "../vendor/";
-
 // Colors
 @gray-darker: lighten( #000, 13.5%);
 @gray-dark: lighten( #000, 20%);
@@ -23,7 +19,7 @@
 @link-hover-color: darken(@link-color, 15%);
 
 // Typography
-@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: 'Exo 2', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif: Georgia, "Times New Roman", Times, serif;
 @font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace; // Default monospace fonts for <code>, <kbd>, and <pre>.
 @font-family-base: @font-family-sans-serif;
@@ -263,150 +259,3 @@
 @grid-float-breakpoint:     @screen-sm-min;
 // Point at which the navbar begins collapsing.
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
-
-
-// Mixins =============================================================================
-
-.font-size(@font-size: 16){
-@rem: (@font-size / 10);
-font-size : @font-size * 1px;
-font-size : ~"@{rem}rem"; }
-
-// .box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
-.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
--webkit-box-shadow : @shadow;
--moz-box-shadow : @shadow;
-box-shadow : @shadow; }
-
-// .background-alpha(VALUE VALUE);
-.background-alpha(@color: #FFF, @alpha: 1) {
-background-color : hsla(hue(@color), saturation(@color), lightness(@color), @alpha); }
-
-// Button sizes
-// -------------------------
-.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
-  padding: @padding-vertical @padding-horizontal;
-  font-size: @font-size;
-  line-height: @line-height;
-  border-radius: @border-radius;
-}
-
-// User select
-// For selecting text on the page
-.user-select(@select) {
-  -webkit-user-select: @select;
-     -moz-user-select: @select;
-      -ms-user-select: @select; // IE10+
-       -o-user-select: @select;
-          user-select: @select;
-}
-
-// WebKit-style focus
-.tab-focus() {
-  // Default
-  outline: thin dotted;
-  // WebKit
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-// Opacity
-.opacity(@opacity) {
-  opacity: @opacity;
-  // IE8 filter
-  @opacity-ie: (@opacity * 100);
-  filter: ~"alpha(opacity=@{opacity-ie})";
-}
-
-// Button variants
-// -------------------------
-// Easily pump out default styles, as well as :hover, :focus, :active,
-// and disabled options for all buttons
-.button-variant(@color; @background; @border) {
-  color: @color;
-  background-color: @background;
-  border-color: @border;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &.active,
-  .open .dropdown-toggle& {
-    color: @color;
-    background-color: darken(@background, 8%);
-        border-color: darken(@border, 12%);
-  }
-  &:active,
-  &.active,
-  .open .dropdown-toggle& {
-    background-image: none;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      background-color: @background;
-          border-color: @border;
-    }
-  }
-
-  .badge {
-    color: @background;
-    background-color: @color;
-  }
-}
-
-
-// Import Vendor Frameworks =============================================================
-// Normalize
-@import "@{vendor-url}normalize-3.0.0.custom/normalize-3.0.0.less";
-
-// Icon Fonts
-@import "@{vendor-url}font-awesome-4.0.3.custom/css/font-awesome.min.less";
-
-// Responsive Elements
-@import "@{vendor-url}foundation-5.0.2.custom/less/foundation.less";
-@import "@{vendor-url}bootstrap-3.0.3.custom/less/bootstrap.less";
-
-// Syntax Highlighter
-@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shCore.less";
-@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shThemeEmacs.less";
-
-
-// Atmosphere Elements ================================================================================
-@import url("atmosphere/base.less");
-@import url("atmosphere/exhibit.less");
-@import url("atmosphere/journey.less");
-@import url("atmosphere/dropdown.less");
-@import url("atmosphere/helper.less");
-@import url("atmosphere/example.less");
-@import url("atmosphere/item.less");
-@import url("atmosphere/feature.less");
-@import url("atmosphere/author.less");
-@import url("atmosphere/story.less");
-@import url("atmosphere/dialogue.less");
-// @import url("atmosphere/pilot.less");
-@import url("atmosphere/sidebar.less");
-@import url("atmosphere/specs.less");
-@import url("atmosphere/cart.less");
-@import url("atmosphere/callout.less");
-
-// Start Styling below ==================================================================
-
-.exhibit-container.hero1 .exhibit-content{ background-color: transparent !important; background: -moz-linear-gradient(top, rgba(153,0,153,0.65) 66%, rgba(153,0,153,0.52) 73%, rgba(153,0,153,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(66%,rgba(153,0,153,0.65)), color-stop(73%,rgba(153,0,153,0.52)), color-stop(100%,rgba(153,0,153,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6990099', endColorstr='#00990099',GradientType=0 ); /* IE6-9 */}
-
-.journey {
-	.journey-bar{ 
-		//background-color: purple; 
-	}
-}

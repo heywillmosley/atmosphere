@@ -1,7 +1,3 @@
-// Super Amazing Atmosphere Javascript
-
-
-
 // Exhibit
 /* Based off of exhibit.js v1.54 - http://exhibit.com
  */
@@ -389,38 +385,3 @@
 
   };
 })(jQuery, this, 0);
-
-
-
-/* Sticky */
-$(function()
-{ // document ready
-
-	// make sure ".sticky" element exists
-	if (!!$('.sticky').offset())
-	{
-      // returns number 
-      var stickyTop = $('.sticky').offset().top;
-
-      // scroll event
-      $(window).scroll(function()
-		{
-			// returns number
-			var windowTop = $(window).scrollTop();
-
-			if (stickyTop < windowTop)
-			{
-              $('.sticky').css({ position: 'fixed', top: 0 });
-			} // end if (stickyTop < windowTop)
-			
-			else
-			{
-              $('.sticky').css('position','static');
-				
-			} // end else 
-
-          }); // end $(window).scroll(function()
-
-	} // end if (!!$('.sticky').offset()) 
-
-  }); // $(function()
