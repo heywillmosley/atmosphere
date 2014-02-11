@@ -4,6 +4,7 @@
 	height: 100%;
 	ul{
 		margin: 0;	
+		padding: 0;
 	}
 	i{
 		font-size: 22px;
@@ -14,9 +15,7 @@
 	}
 	li{
 		display: inline-block;
-		height: 50px;
 		color: #333;
-		float: left;
 		&:hover{
 			background-color: @gray-lighter;
 			color: @brand-primary;
@@ -78,6 +77,12 @@
 		z-index: 9999;
 		position: relative;
 		padding: 0;
+		i{
+			@media( min-width: 768px ){
+				font-size: 14px;
+				padding-top: 10px;	
+			}
+		}
 	} // end journey-bar
 	.journey-bar.journey-bar-fixed{
 		position: fixed;
@@ -86,9 +91,9 @@
 	}
 	.journey-top-bar{
 		display: block;
-		height: 50px;
+		height: 40px;
 		width: 100%;
-		background-color: #000;
+		background-color: #FFF;
 		z-index: 99999;
 		position: relative;
 		padding: 0 10px;
@@ -278,58 +283,21 @@
 	} */
 	.journey-content-container{
 		max-width: 1100px;	
+		li{
+			display: block;
+			&:hover{
+				background-color: transparent;
+				color: inherit;
+			}
+			a{
+				&:hover{
+					background-color: transparent;
+				}
+			}	
+		}
 	}
 } // end journey
-.journey.journey-light{
-	li{
-		color: #333;
-		i{
-			color: #333;
-			opacity: .8;
-		}
-		a{
-			color: #333;
-		}
-	}
-	.journey-bar{
-		background-color:#FFF;	
-	}
-	.journey-expand-main, .journey-top-bar, .journey-bottom-bar, .journey-expand-compare ul, .journey-expand-cart ul, .journey-expand-wishlist ul, .journey-expand-overflow ul, .journey-expand-global ul, .journey-expand-search ul{
-		background-color: #FFF;
-		color: #333;
-		li{
-			color: #333;
-			a{
-				color: #333;
-			}
-		}
-	}
-	.journey-actions.journey-actions-sm{
-		color: #333;
-		@media( min-width: 768px ){
-			background-color: #FFF;
-			border-bottom: 1px solid #DDD;
-		}
-	}
-	.journey-expand.journey-expand-left{
-		@media( min-width: 768px ){
-			background-color: transparent;
-		}
-		.journey-expand-main{
-			background-color: #FFF;
-			@media( min-width:768px ){
-				background-color: transparent;
-			}
-			padding-right: 10px;
-			li{
-				a{
-					color: #333;	
-				}
-			}
-		}
-		
-	}
-}
+
 
 .journey-expand{
 	position: absolute;
@@ -341,36 +309,65 @@
 	> ul{
 		overflow:hidden; 
 		background-color: rgba( 256, 256, 256, .95);
-		margin: 0;
-		padding: 0;
-		position: absolute;
 		-webkit-box-shadow: 0 0 1px 1px @gray-light;
 box-shadow: 0 0 1px 1px @gray-light;
-		> li{ 
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		li{ 
 			width: 100%;
 			display: block;
 			height: auto;
-		}
-	}
-}
-
-.journey-expand.journey-expand-top{
-	@media( min-width: 768px ){
-		height: auto;	
-	}
-}
-
-.journey-expand.journey-expand-right, .journey-expand.journey-expand-left, .journey-expand.journey-expand-top, .journey-expand.journey-expand-bottom, .journey-expand.journey-expand-overflow{
-	> ul{
-		> li{
+			display: block;
+			float: none;
+			font-size: 14px;
 			a{
-				padding: 6px 10px; 
+				padding: 3px 10px 3px 20px ;
 				width: 100%;
 				color: #333;
 				text-decoration: none;
 				display:block;
-			}	
+			}
 		}
+		li.parent{
+			&:hover{
+				background-color: transparent;	
+			}
+			ul{
+				&:hover{
+					background-color: transparent;
+				}
+				li{
+					height: auto;
+					font-size: 12px;
+					float: none;
+					width: 100%;
+					display: block;
+					a{
+						padding: 5px 10px 5px 20px;
+					}
+				}
+			}
+		}	
+	}
+	.journey-main-nav{
+		margin-top: 10px;
+		li{
+			font-size: 17px;
+			a{
+				color: @brand-primary;
+				padding: 6px 10px 6px 20px;	
+			}
+		}
+	}
+}
+
+
+
+.journey-expand.journey-expand-top{
+	@media( min-width: 768px ){
+		height: auto;	
 	}
 }
 
@@ -417,12 +414,23 @@ box-shadow: 0 0 1px 1px @gray-light;
 	}
 }
 
+.journey.journey-dark{
+	li{
+		i{
+			color: #FFF;
+			opacity: .8;
+		}
+	}
+	.journey-bar{
+		background-color: @brand-primary;
+		color: #FFF;	
+	}
+}
+
 
 .journey-expand.journey-expand-right, .journey-expand.journey-expand-left, .journey-expand.journey-expand-overflow, .journey-expand.journey-expand-cart, .journey-expand.journey-expand-wishlist, .journey-expand.journey-expand-compare{
-	> ul{
-		width: 200px;
-		top: 50px;
-	}
+	width: 200px;
+	top: 50px;
 }
 
 .journey-expand.journey-expand-top, .journey-expand.journey-expand-bottom, .journey-expand-global{
@@ -443,27 +451,14 @@ box-shadow: 0 0 1px 1px @gray-light;
 		background-color: transparent;
 		z-index:99999;
 		width:0;
+		min-height: 100%;
+		height: auto;
 	}
 	> ul{
 		left: 0;
 		@media( min-width: 768px ){
 			background-color: transparent;
 			box-shadow: 0 0 0px 0px transparent;
-		}
-		
-	}
-	.journey-expand-main{
-		@media (min-width: 768px) {
-			position: absolute;
-			top: 5px;
-			left: 200px;
-			width: auto;
-			display: inline-block;
-			> li{
-				display: inline-block;
-				float: left;
-				width: auto;
-			}
 		}
 	}
 	.journey-expand-sub-nav{
@@ -490,17 +485,14 @@ box-shadow: 0 0 1px 1px @gray-light;
 		@media( min-width: 768px ) {
 			display: block !important;
 			width: 200px;
-			margin-top: 50px;
-			.journey-expand-main{
-				position: relative;
-				width: 200px;
-				top: 0;
-				left: 0;
-				li{
-					display: block;
-					width: 100%;	
-				}
-			}
+		}
+	}
+	.journey-top-bar{
+		padding-left: 0;
+		overflow: hidden;
+		@media( min-width: 768px ){
+			padding-left: 200px;
+			z-index:99998;	
 		}
 	}
 	.journey-content-container{
@@ -662,9 +654,7 @@ box-shadow: 0 0 1px 1px @gray-light;
 	}
 }
 
-#expand-left{
-	//display: none !important;	
-}
+
 #expand-left:target{
 	display: block;	
 	background-color: fade( @gray-dark, 10%);

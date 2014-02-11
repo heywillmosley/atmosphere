@@ -9,22 +9,36 @@
 			border-bottom: 2px solid #CCC;
 			margin-bottom: 5px;
 			background-color: #FFF;
+			min-height: 101px;
+			overflow: hidden;
 			.cart-item-image-container{
-				width: 15%;
-				float: left;
+				width: 44px;
+				@media( min-width: 400px ){
+					width: 80px;	
+				}
 				height: 96px;
 				padding: 10px 4px;
+				position: absolute;
 				.cart-item-image{
 					max-height: 100%;
 					max-width: 100%;
 				}
 			}
 			.cart-item-details{
-				width: 65%;
+				width: 100%;
 				float: left;
-				padding: 10px 4px;
+				padding: 7px 86px 10px 44px;
+				@media( min-width: 400px ){
+					padding: 7px 86px 10px 84px;	
+				}
+				@media( min-width: 475px ){
+					padding: 7px 139px 10px 84px;	
+				}
 				.cart-item-title{
-					.font-size(16);
+					.font-size(15);
+					@media( min-width: 768px ){
+						.font-size(16);	
+					}
 				}
 				.cart-item-edit-customizations{
 					.font-size(12);
@@ -35,24 +49,46 @@
 				}
 			}
 			.cart-item-quantity-selector{
-				padding: 0;
-				max-width: 58px;
+				margin-top: 5px;
+				right: 10px;
+				top: 32px;
+				position: absolute;
+				font-size: 12px;
+				@media( min-width: 475px ){
+					right: 60px;	
+				}
+				input{
+					width: 36px;
+					display: inline;
+					padding: 5px;
+					height: 19px;	
+				}
 			}
 			.cart-item-price{
-				width: 15%;
-				float: left;
 				.font-size(15);
-				padding: 30px 0;
 				text-align: right;
 				font-weight: bold;
+				position: absolute;
+				right: 42px;
+				right:10px;
+				top: 14px;
+				@media( min-width: 475px ){
+					right: 60px;	
+				}
 			}
 			.cart-item-trash-it{
-				width: 5%;
-				float: left;
 				.font-size(15);
-				padding: 25px 0px;
-				.cart-item-delete{
-				
+				position: absolute;
+				right: 10px;
+				bottom: 5px;
+				color: @gray;
+				@media( min-width: 475px ){
+					right: 16px;	
+					top: 14px;
+					bottom: auto;
+				}
+				&:hover{
+					color: darken( @gray, 15% );	
 				}
 			}
 		}
@@ -61,18 +97,29 @@
 		margin-bottom: 20px;
 		overflow: auto;
 		.cart-summary{
+			padding: 10px;
 			max-width: 440px;
 			background-color: #FFF;
 			float: right;
 			text-align: right;
-			.cart-subtotal-content{
-				margin: 20px auto;
+			.cart-total-content{
+				margin: 18px auto 20px;
 				.cart-subtotal-label{
-					.font-size(18);
+					.font-size(12);
 					color: #aaa;
 					font-weight: bold;
 				}
 				.cart-subtotal-price{
+					color: #333;
+					.font-size(16);
+					line-height:30px;
+				}
+				.cart-total-label{
+					.font-size(18);
+					color: #aaa;
+					font-weight: bold;
+				}
+				.cart-total-price{
 					color: #333;
 					.font-size(28);
 					line-height:30px;
@@ -98,6 +145,38 @@
 			}
 		}
 	}
+	.cart-update{
+		margin-bottom: 10px;
+		@media( min-width: 680px ){
+			position: absolute;		
+		}
+		@media( min-width: 768px ){
+			position: relative;		
+		}
+		@media( min-width: 940px ){
+			position: absolute;		
+		}
+		.btn.btn-sm{
+			padding: 6px 8px;
+		}
+	}
+	i{
+		font-size: inherit;
+		margin-right: 2px;	
+	}
+	.btn{
+		margin-bottom: 5px;	
+	}
+	.cart-discount{
+		margin-bottom: 10px;
+		text-align: left;
+		border-bottom: #DDD 1px solid;
+		.cart-discount-heading{
+			font-size: 12px;
+			margin-bottom: 5px;
+				
+		}
+	}
 	.cart-checkout-actions{
 			text-align: right;
 			.btn-lg{
@@ -105,7 +184,7 @@
 				padding: 7px 10px;
 				width: 100%;
 				margin-bottom: 5px;
-				@media only screen and (min-width: 480px) {
+				@media only screen and (min-width: 475px) {
 					width: auto;
 				}
 				@media only screen and (min-width: 600px) {
