@@ -27,7 +27,7 @@
 <body>
 
 <div class="journey journey-expand-visible-sm">
-	<div id="expand-left" class="journey-expand journey-expand-left journey-expand-darken">
+	<div class="journey-expand journey-expand-left">
         <ul class="journey-main-nav">
         	<li class="section-heading">CSS</li>
             <li><a href="#typography">Typography</a></li>
@@ -56,8 +56,8 @@
     </div><!-- end journey-expand -->
     <ul class="journey-bar">
     	<li class="journey-action journey-menu-trigger">
-            <a id="trigger-open" href="#expand-left" onclick=""><i class="fa fa-bars fa-2x"></i></a>
-            
+            <a class="journey-left-trigger-open" href="#"></a>
+            <a class="journey-left-trigger-close" href="#"></a>
         </li><!-- end journey-action -->
         <li class="journey-app">
         	<a href="index.html">
@@ -266,7 +266,7 @@
                         <div class="highlight">
                             <script type="syntaxhighlighter" class="brush: html"><![CDATA[
                                <div class="journey journey-expand-visible-sm">
-									<div id="expand-left" class="journey-expand journey-expand-left journey-expand-darken">
+									<div id="expand-left" class="journey-expand journey-expand-left">
 										<ul class="journey-main-nav">
 											<li class="section-heading">Section</li>
 											<li><a>Link</a></li>
@@ -285,8 +285,8 @@
 									</div><!-- end journey-expand -->
 									<ul class="journey-bar">
 										<li class="journey-action journey-menu-trigger">
-											<a id="trigger-open" href="#expand-left" onclick=""><i class="fa fa-bars fa-2x"></i></a>
-											
+											<a class="journey-left-trigger-open" href="#"></a>
+            								<a class="journey-left-trigger-close" href="#"></a>	
 										</li><!-- end journey-action -->
 										<li class="journey-app">
 											<a href="index.html">
@@ -784,13 +784,9 @@
 });
 </script>
 
-<script>
-  $(document).foundation();
-</script>
 <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
 <script type="text/javascript">
      SyntaxHighlighter.all()
 </script>
-
 </body>
 </html>
