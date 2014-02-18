@@ -1,8 +1,9 @@
 // Atmosphere  ================================================================================
 // Define Vendor Path
-@site-less-url: "atmosphere/";
-@atmosphere-url: "atmosphere/";
-@vendor-url: "../vendor/";
+@site-less-url: "/";
+@atmosphere-url: "../atmosphere/";
+@atmosphere-less-url: "@{atmosphere-url}less/";
+@vendor-url: "@{atmosphere-url}vendor/";
 
 // Core variables and mixins
 @import "@{site-less-url}variables.less";
@@ -19,47 +20,49 @@
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Exo+2:300italic,300,700,100);
 
-// Responsive Elements
+// Custom Foundation
 @import "@{vendor-url}foundation-5.0.2.custom/less/foundation.less";
+
+// Custom Bootstrap
 @import "@{vendor-url}bootstrap-3.0.3.custom/less/bootstrap.less";
 
 // Syntax Highlighter
-@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shCore.less";
-@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shThemeEmacs.less";
+//@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shCore.less";
+//@import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shThemeEmacs.less";
 
 // =======================================================================================
 
 
 // Core CSS
-@import "@{atmosphere-url}base.less";
-@import "@{atmosphere-url}type.less";
-@import "@{atmosphere-url}code.less";
-@import "@{atmosphere-url}grid.less";
-@import "@{atmosphere-url}tables.less";
-@import "@{atmosphere-url}forms.less";
-@import "@{atmosphere-url}buttons.less";
+@import "@{atmosphere-less-url}base.less";
+@import "@{atmosphere-less-url}type.less";
+@import "@{atmosphere-less-url}code.less";
+@import "@{atmosphere-less-url}grid.less";
+@import "@{atmosphere-less-url}tables.less";
+@import "@{atmosphere-less-url}forms.less";
+@import "@{atmosphere-less-url}buttons.less";
 
 // Components
-@import "@{atmosphere-url}base.less";
-@import "@{atmosphere-url}journey.less";
-@import "@{atmosphere-url}dropdown.less";
-@import "@{atmosphere-url}example.less";
-@import "@{atmosphere-url}item.less";
-@import "@{atmosphere-url}feature.less";
-@import "@{atmosphere-url}author.less";
-@import "@{atmosphere-url}story.less";
-@import "@{atmosphere-url}dialogue.less";
-// @import "@{atmosphere-url}pilot.less";
-@import "@{atmosphere-url}sidebar.less";
-@import "@{atmosphere-url}specs.less";
-@import "@{atmosphere-url}cart.less";
-@import "@{atmosphere-url}callout.less";
+@import "@{atmosphere-less-url}base.less";
+@import "@{atmosphere-less-url}journey.less";
+@import "@{atmosphere-less-url}dropdown.less";
+@import "@{atmosphere-less-url}example.less";
+@import "@{atmosphere-less-url}item.less";
+@import "@{atmosphere-less-url}feature.less";
+@import "@{atmosphere-less-url}author.less";
+@import "@{atmosphere-less-url}story.less";
+@import "@{atmosphere-less-url}dialogue.less";
+// @import "@{atmosphere-less-url}pilot.less";
+@import "@{atmosphere-less-url}sidebar.less";
+@import "@{atmosphere-less-url}specs.less";
+@import "@{atmosphere-less-url}cart.less";
+@import "@{atmosphere-less-url}callout.less";
 
 // Components w/ Javascript
-@import "@{atmosphere-url}exhibit.less";
+//@import "@{atmosphere-less-url}exhibit.less";
 
 // Helper classes
-@import "@{atmosphere-url}helper.less";
+@import "@{atmosphere-less-url}helper.less";
 
 // Start Styling below ==================================================================
-@import "@{atmosphere-url}atmosphere-site.less"; // Comment out this line before starting a new project
+
