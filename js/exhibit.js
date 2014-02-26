@@ -304,8 +304,8 @@
         // Navigation
         if (settings.nav) {
           var navMarkup =
-            "<div class='exhibit_nav_container'><a href='#' class='" + navClass + " prev'><img src='system/assets/img/arrow_left.png' /></a>" +
-            "<a href='#' class='" + navClass + " next'><img src='system/assets/img/arrow_right.png' /></a></div>";
+            "<div class='exhibit_nav_container'><a href='#' class='" + navClass + " prev'><i class='fa fa-angle-left exhibit_nav previous'></i></a>" +
+            "<a href='#' class='" + navClass + " next'><i class='fa fa-angle-right next'></i></a></div>";
 
           // Inject navigation
           if (options.navContainer) {
