@@ -1,0 +1,145 @@
+.has-dropdown {
+  list-style: none;
+}
+.has-dropdown a {
+  display: block;
+}
+.has-dropdown > span {
+  position: absolute;
+  font-size: 20px;
+  top: 16px;
+  margin: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #DDD;
+}
+.has-dropdown .dropdown {
+  min-width: 150px;
+  max-width: 250px;
+  position: absolute;
+  z-index: 1000000;
+  top: 30px;
+  background-color: #FFF;
+  padding: 10px 0;
+  border: 1px #DDD solid;
+  font-weight: normal;
+}
+.has-dropdown .dropdown a {
+  text-decoration: underline;
+}
+.has-dropdown .dropdown a:hover {
+  text-decoration: underline;
+}
+.has-dropdown .dropdown ul {
+  padding: 0;
+}
+.has-dropdown .dropdown ul li {
+  float: none;
+  display: block;
+  margin-left: 0;
+}
+.has-dropdown .dropdown ul li a {
+  padding: 2px 10px !important;
+  display: block;
+  font-weight: normal;
+  text-decoration: none;
+}
+.has-dropdown .dropdown ul li a:hover {
+  background-color: #F5F5F6 !important;
+  color: inherit !important;
+}
+.has-dropdown .dropdown ul li:first-child {
+  margin-top: 5px;
+}
+.has-dropdown .dropdown ul li:last-child {
+  margin-bottom: 10px;
+}
+.has-dropdown .dropdown ul .dropdown-heading,
+.has-dropdown .dropdown ul .dropdown-heading a {
+  font-weight: bold;
+}
+.has-dropdown .dropdown .col-xs-1,
+.has-dropdown .dropdown .col-sm-1,
+.has-dropdown .dropdown .col-md-1,
+.has-dropdown .dropdown .col-lg-1,
+.has-dropdown .dropdown .col-xs-2,
+.has-dropdown .dropdown .col-sm-2,
+.has-dropdown .dropdown .col-md-2,
+.has-dropdown .dropdown .col-lg-2,
+.has-dropdown .dropdown .col-xs-3,
+.has-dropdown .dropdown .col-sm-3,
+.has-dropdown .dropdown .col-md-3,
+.has-dropdown .dropdown .col-lg-3,
+.has-dropdown .dropdown .col-xs-4,
+.has-dropdown .dropdown .col-sm-4,
+.has-dropdown .dropdown .col-md-4,
+.has-dropdown .dropdown .col-lg-4,
+.has-dropdown .dropdown .col-xs-5,
+.has-dropdown .dropdown .col-sm-5,
+.has-dropdown .dropdown .col-md-5,
+.has-dropdown .dropdown .col-lg-5,
+.has-dropdown .dropdown .col-xs-6,
+.has-dropdown .dropdown .col-sm-6,
+.has-dropdown .dropdown .col-md-6,
+.has-dropdown .dropdown .col-lg-6,
+.has-dropdown .dropdown .col-xs-7,
+.has-dropdown .dropdown .col-sm-7,
+.has-dropdown .dropdown .col-md-7,
+.has-dropdown .dropdown .col-lg-7,
+.has-dropdown .dropdown .col-xs-8,
+.has-dropdown .dropdown .col-sm-8,
+.has-dropdown .dropdown .col-md-8,
+.has-dropdown .dropdown .col-lg-8,
+.has-dropdown .dropdown .col-xs-9,
+.has-dropdown .dropdown .col-sm-9,
+.has-dropdown .dropdown .col-md-9,
+.has-dropdown .dropdown .col-lg-9,
+.has-dropdown .dropdown .col-xs-10,
+.has-dropdown .dropdown .col-sm-10,
+.has-dropdown .dropdown .col-md-10,
+.has-dropdown .dropdown .col-lg-10,
+.has-dropdown .dropdown .col-xs-11,
+.has-dropdown .dropdown .col-sm-11,
+.has-dropdown .dropdown .col-md-11,
+.has-dropdown .dropdown .col-lg-11,
+.has-dropdown .dropdown .col-xs-12,
+.has-dropdown .dropdown .col-sm-12,
+.has-dropdown .dropdown .col-md-12,
+.has-dropdown .dropdown .col-lg-12 {
+  padding: 0;
+}
+.has-dropdown .dropdown.dropdown-full {
+  width: 100%;
+  max-width: none;
+  left: 0;
+}
+.has-dropdown .dropdown.dropdown-right {
+  right: 0;
+  left: auto;
+}
+.has-dropdown .dropdown,
+.has-dropdown span {
+  visibility: hidden;
+  display: block;
+}
+@media (min-width: 768px) {
+  .has-dropdown:hover .dropdown,
+  .has-dropdown a:hover ~ .dropdown,
+  .has-dropdown span:hover ~ .dropdown,
+  .has-dropdown .dropdown:hover {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) {
+  .has-dropdown:hover span,
+  .has-dropdown a:hover ~ span,
+  .has-dropdown .dropdown:hover + span,
+  .has-dropdown span:hover {
+    display: block !important;
+  }
+}
+.has-dropdown.active .dropdown {
+  display: block !important;
+}

@@ -74,13 +74,23 @@
 }
 
 .has-dropdown .dropdown, .has-dropdown span{
-	display: none;	
+	visibility: hidden;
+	display: block;
 }
 
 .has-dropdown:hover .dropdown, .has-dropdown a:hover ~ .dropdown, .has-dropdown span:hover ~ .dropdown, .has-dropdown .dropdown:hover{
-	display: block !important;	
+	@media( min-width: 768px ){	
+		display: block !important;
+	}
 }
 
 .has-dropdown:hover span, .has-dropdown a:hover ~ span, .has-dropdown .dropdown:hover + span, .has-dropdown span:hover{
-	display: block !important;	
+	@media( min-width: 768px ){	
+		display: block !important;
+	}
+}
+.has-dropdown.active{
+	.dropdown{
+		display: block !important;	
+	}
 }

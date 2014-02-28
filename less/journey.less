@@ -16,7 +16,7 @@
 	li{
 		display: inline-block;
 		color: #333;
-		&:hover{
+		/*&:hover{
 			background-color: @gray-lighter;
 			color: @brand-primary;
 		}
@@ -25,7 +25,7 @@
 				background-color: @gray-lighter;
 				color: @brand-primary !important;
 			}
-		}
+		} */
 		i{
 			color: #000;
 			opacity: .6;
@@ -100,6 +100,9 @@
 		z-index: 99999;
 		position: relative;
 		padding: 0 10px;
+		li{
+			float: left;	
+		}
 	} // end journey-top-bar
 	.journey-top-bar.journey-link-nav{
 		li:first-child{
@@ -110,6 +113,7 @@
 			color: #666;
 			font-weight: bold;
 			font-size: 12px;
+			margin: 4px 2px;
 			@media( min-width: 768px ){
 				font-size: 13px;	
 			}

@@ -8,3 +8,5 @@
 /* Components */
 //@prepros-append journey.js
 //@prepros-append exhibit.js
+//@prepros-append dropdown.js
+//@prepros-append footstep.js
