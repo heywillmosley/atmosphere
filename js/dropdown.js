@@ -1,33 +1,68 @@
-$(".dropdown-full").css('left', function(){ 
-		var offset = $(this).offset(); 
-		console.log( offset ); 
-		return -offset.left;
-	}).width($(window).width());
-$(window).resize(function(){
-    $(".dropdown-full").css('left', function(){ 
-		var offset = $(this).offset(); 
-		console.log( offset ); 
-		return -offset.left;
-	}).width($(window).width());
-});
+/*var position;
 
+function resize_dropdown(){
+	$(document).ready(function() { 
+		$(".dropdown-full").css('left', function(){ 
+		return -$(this).offset().left - $(window).scrollLeft();
+			}).width($(window).width());
+		
+	});
+}
+
+resize_dropdown();
+$(window).resize(function(){
+	resize_dropdown();
+});*/
+
+
+
+$(".dropdown").hide();
 enquire.register("screen and (max-width: 767px)", {
 	match : function() {
-        $(".has-dropdown").click( function(){
-			$(".has-dropdown.active").not(this).removeClass("active");
+        $(".dropdown").hide();
+$(".has-dropdown > a").click(function(e){
+			e.preventDefault();
 			
-			if( !$(this).hasClass("active")){
-				$(this).addClass("active");
+			var currentHref = $(this).attr('href');
+			$(".has-dropdown a.active").not(this).removeClass("active");
+					
+			if( $(this).hasClass("active")){
+				$(this).removeClass("active");
+				$(currentHref).hide();
 			}
 			else{
-				$(this).removeClass("active");
+				$(this).addClass("active");
+				$(".dropdown").hide();
+				$(currentHref).show();
+				$(this).children('>span').show();
 			}
 		});
     },  
-    unmatch : function() {
-       	$(".has-dropdown").click( function(){
-			$(".has-dropdown.active").removeClass("active");
-			$(this).removeClass("active");
+});
+
+
+enquire.register("screen and (min-width: 768px)", { 
+    match : function() {
+       $(".dropdown").hide();
+		$(".has-dropdown > a").click(false).hover(function(){
+			
+			var currentHref = $(this).attr('href');
+			$(".has-dropdown a.active").not(this).removeClass("active");
+					
+			if( $(this).hasClass("active")){
+				$(this).removeClass("active");
+				$(currentHref).hide();
+			}
+			else{
+				$(this).addClass("active");
+				$(".dropdown").hide();
+				$(currentHref).show().css("display", "block");
+				$(this).children('>span').show();
+			}
+			//$(this).removeClass("active");
+			
 		});
     }
 });
+
+
