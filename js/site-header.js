@@ -1,5 +1,4 @@
 // Modernizr
-//@prepros-append ../vendor/modernizr-2.71.custom/custom.modernizr.min.js
 //@codekit-append ../vendor/modernizr-2.71.custom/custom.modernizr.min.js
 
 // Windows Phone Resolution Fix

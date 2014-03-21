@@ -27,6 +27,10 @@ body {
 	cursor: default;
 }
 
+img{
+	max-width: 100%;
+}
+
 // Fix Windows Phone Resolution
 @-ms-viewport{
     width: device-width;
@@ -153,57 +157,4 @@ ul, ol{
         }
         
     }
-}
-
-
-// 7. VENDORS               ==============================
-// Foundation
-.row {
-	max-width: none !important;
-	margin: 0;
-}
-
-// Bootstrap
-
-.reveal-modal-bg{
-	.background-alpha( #FFF, .7 );
-}
-.reveal-modal-bg.reveal-modal-bg-white{
-	background: white !important;
-}
-.reveal-modal{
-	z-index: 99999;	
-}
-.reveal-modal.reveal-modal-full{
-	width: 100% !important;
-	margin-left: 0 !important;
-	left: 0 !important;
-	top: 0;
-}
-.reveal-modal.reveal-modal-noshadow{
-	.box-shadow( 0 0 0 rgba(0,0,0,0)) !important;
-}
-// Fix issue: broken labels ( inline )
-// @Since 0.2 - 08/29/13 WM
-form.custom label{
-	display: block
-}
-.f-dropdown {
-    margin-top: 10px !important;
-    li{
-        .font-size(12);
-        padding: 4px;
-        color: #333;
-        a{
-            color: #333;
-            &:hover{
-                text-decoration: none;
-            }
-		}
-    }
-}
-
-// Vendor
-.syntaxhighlighter{
-    overflow: hidden !important;
 }
