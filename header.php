@@ -25,12 +25,16 @@
 </head>        
 
 <body>
-	<header class="max-width-960">
-  	<ul class="main-nav">
-    	<li class="main-nav-logo"><a href="#">Company Logo</a></li>
-      <li><a href="#">New</a></li>
-      <li><a href="#">Funiture</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Bed &amp; Bath</a></li>
-    </ul><!-- end main-nav -->
-  </header>
+	<div class="max-width-960">
+      <header>
+      	<div class="global-logo">
+          <a class="superamazing-logo" href="http://superamazingstore.com">
+            <div class="superamazing-figurehead">S</div>
+            <div class="superamazing-wordmark">Super Amazing</div>
+            <div class="superamazing-tagline">Creative Intellegence</div>
+          </a><!-- end superamazing-logo -->
+          <a class="superamazing-sub-logo" href="/">
+            Atmosphere
+          </a><!-- end superamazing sub-logo -->
+     		</div><!-- end global logo -->
+      </header>

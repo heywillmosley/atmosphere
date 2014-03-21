@@ -1,4 +1,4 @@
-<?php function root_uri(){ return''; } function root_url(){ echo ''; } require_once(root_uri().'elements.php'); // Define root path ?>
+	<?php function root_uri(){ return''; } function root_url(){ echo ''; } require_once(root_uri().'elements.php'); // Define root path ?>
 <?php require_once (root_url() . 'header.php'); ?>
 
 <h1>Atmosphere makes designing responsive online stores and websites dead simple</h1>
@@ -440,13 +440,27 @@
           	</div><!-- end example -->
             <div class="highlight">
                 <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <div class="docs-section">
-										<h2 class="docs-section-heading">Shop</h2>
-										<div class="docs-section-actions">
-											<a href="#" class="btn btn-default btn-sm">Action</a>
-											<a href="#" class="btn btn-info btn-sm">Action</a>
-										</div><!-- end docs-section-actions -->
-									</div><!-- end docs-section -->
+<?php docs_section(); ?>
+                ]]></script>
+            </div><!-- end highlight -->
+            <h2>Pretty Page</h2>
+            <p>Pretty makes long pages of text prettier and more readable.</p>
+            <div class="example">
+                <?php pretty_page(); ?>
+          	</div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php pretty_page(); ?>
+                ]]></script>
+            </div><!-- end highlight -->
+            <h3>With <code>Docs Section</code></h3>
+            <p>Combine with <code>Docs Section</code> for an even prettier page.</p>
+            <div class="example">
+                <?php pretty_page('with-docs-section'); ?>
+          	</div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php pretty_page('with-docs-section'); ?>
                 ]]></script>
             </div><!-- end highlight -->
         </div><!-- end docs-section -->

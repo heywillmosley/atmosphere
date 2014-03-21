@@ -30,6 +30,14 @@
 @import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shCore.less";
 @import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shThemeEmacs.less";
 
+// Wordpress, Magento, Drupal Customizations
+@import "@{atmosphere-less-url}wordpress.less";
+@import "@{atmosphere-less-url}magento.less";
+@import "@{atmosphere-less-url}drupal.less";
+
+// Vendor
+@import "@{atmosphere-less-url}vendor.less";
+
 // =======================================================================================
 
 
@@ -52,7 +60,6 @@
 @import "@{atmosphere-less-url}author.less";
 @import "@{atmosphere-less-url}story.less";
 @import "@{atmosphere-less-url}dialogue.less";
-// @import "@{atmosphere-less-url}pilot.less";
 @import "@{atmosphere-less-url}sidebar.less";
 @import "@{atmosphere-less-url}specs.less";
 @import "@{atmosphere-less-url}cart.less";
@@ -66,16 +73,4 @@
 @import "@{atmosphere-less-url}helper.less";
 
 // Start Styling below ==================================================================
-.exhibit-container.hero1 .exhibit-content{ background-color: transparent !important; background: -moz-linear-gradient(top, rgba(153,0,153,0.65) 66%, rgba(153,0,153,0.52) 73%, rgba(153,0,153,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(66%,rgba(153,0,153,0.65)), color-stop(73%,rgba(153,0,153,0.52)), color-stop(100%,rgba(153,0,153,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(153,0,153,0.65) 66%,rgba(153,0,153,0.52) 73%,rgba(153,0,153,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6990099', endColorstr='#00990099',GradientType=0 ); /* IE6-9 */}
 
-.journey {
-	.journey-bar{ 
-		//background-color: purple; 
-	}
-}

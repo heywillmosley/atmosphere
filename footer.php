@@ -1,4 +1,4 @@
-
+</div><!-- end max-width-960 -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="<?php root_url(); ?>dist/js/site-footer.min.js"></script>
@@ -26,6 +26,10 @@
 
 <script>
   $(document).foundation();
+</script>
+
+<script type="text/javascript">
+     SyntaxHighlighter.all()
 </script>
 </body>
 </html>

@@ -479,13 +479,13 @@ function feature()
  */
  function docs_section()
  { ?>
-    <div class="docs-section">
-        <h2 class="docs-section-heading">Shop</h2>
-        <div class="docs-section-actions">
-            <a href="#" class="btn btn-default btn-sm">Action</a>
-            <a href="#" class="btn btn-info btn-sm">Action</a>
-        </div><!-- end docs-section-actions -->
-    </div><!-- end docs-section -->
+<div class="docs-section">
+    <h2 class="docs-section-heading">Shop</h2>
+    <div class="docs-section-actions">
+        <a href="#" class="btn btn-default btn-sm">Action</a>
+        <a href="#" class="btn btn-info btn-sm">Action</a>
+    </div><!-- end docs-section-actions -->
+</div><!-- end docs-section -->
  
  <?php } // end docs_section()
  
@@ -547,3 +547,32 @@ function feature()
   </div><!-- end exhibit container -->
  
  <?php } // end journey()
+ 
+ 
+ /**
+  * Pretty Page
+	*/
+	function pretty_page($type = 'default')
+	{ ?>
+  	<?php if( $type == 'default') : ?>
+<div class="pretty-page">
+  <h1>Headline</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus porttitor mauris, laoreet ultricies nunc fermentum at. Vestibulum fringilla mi sed ligula pharetra, sed tincidunt mauris imperdiet. Aenean nec nulla ut mi pulvinar tempus. Proin sagittis tortor tortor, sed blandit quam egestas ac. Aliquam ultricies eu felis quis mollis. Duis sodales sit amet leo at volutpat. Nam feugiat leo ac sem consectetur rhoncus. Phasellus venenatis ante non odio pellentesque hendrerit. Duis vehicula velit urna, at congue eros elementum fermentum. Vestibulum at enim convallis, fermentum lectus volutpat, feugiat sapien.<p>
+
+  <p>Phasellus scelerisque quam eget velit iaculis gravida. Mauris ac tortor enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus nec adipiscing justo. Suspendisse nec lorem tortor. Morbi id diam tortor. Sed venenatis porttitor ipsum eget elementum. Proin nec ligula condimentum, ultrices nulla vitae, tempus ligula. Mauris metus lorem, iaculis at dictum vitae, egestas sed purus. Vestibulum id aliquam purus. Phasellus sit amet leo consequat, auctor felis quis, faucibus mi.</p>
+</div><!-- end pretty-page -->
+		<?php elseif( $type == 'with-docs-section') : ?>
+<div class="pretty-page">
+  <div class="docs-section">
+    <h2 class="docs-section-heading">Shop</h2>
+    <div class="docs-section-actions">
+        <a href="#" class="btn btn-default btn-sm">Action</a>
+        <a href="#" class="btn btn-info btn-sm">Action</a>
+    </div><!-- end docs-section-actions -->
+</div><!-- end docs-section -->
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus porttitor mauris, laoreet ultricies nunc fermentum at. Vestibulum fringilla mi sed ligula pharetra, sed tincidunt mauris imperdiet. Aenean nec nulla ut mi pulvinar tempus. Proin sagittis tortor tortor, sed blandit quam egestas ac. Aliquam ultricies eu felis quis mollis. Duis sodales sit amet leo at volutpat. Nam feugiat leo ac sem consectetur rhoncus. Phasellus venenatis ante non odio pellentesque hendrerit. Duis vehicula velit urna, at congue eros elementum fermentum. Vestibulum at enim convallis, fermentum lectus volutpat, feugiat sapien.<p>
+
+  <p>Phasellus scelerisque quam eget velit iaculis gravida. Mauris ac tortor enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus nec adipiscing justo. Suspendisse nec lorem tortor. Morbi id diam tortor. Sed venenatis porttitor ipsum eget elementum. Proin nec ligula condimentum, ultrices nulla vitae, tempus ligula. Mauris metus lorem, iaculis at dictum vitae, egestas sed purus. Vestibulum id aliquam purus. Phasellus sit amet leo consequat, auctor felis quis, faucibus mi.</p>
+</div><!-- end pretty-page -->    
+    <?php endif; ?>   
+	<?php } // end pretty_page()
