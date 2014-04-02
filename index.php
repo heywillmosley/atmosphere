@@ -2,10 +2,10 @@
 <?php require_once (root_url() . 'header.php'); ?>
 
 <h1>Atmosphere makes designing responsive online stores and websites dead simple</h1>
-<p class="lead">A fine mix of Super Amazing, <a href="http://getbootstrap.com">Bootstrap</a> &amp; <a href="http://foundation.zurb.com">Foundation</a>.</p>
+<p class="lead">A fine mix of <a href="http://superamazingstore.com">Super Amazing</a>, <a href="http://getbootstrap.com">Bootstrap</a> &amp; <a href="http://foundation.zurb.com">Foundation</a>.</p>
 <div class="mbl">
-    <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-primary">Download Atmosphere</a>
-    <a href="#docs" class="btn btn-info">Docs</a>
+    <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
+    <a href="#docs" class="btn btn-info"><i class="fa fa-book"></i> Docs</a>
 </div><!-- end mbl -->
 <div id="docs" class="docs-section">
     <h1 class="docs-section-heading">Docs</h1>
@@ -58,7 +58,7 @@
             </div><!-- end highlight -->
         </div><!-- end docs-section -->
     </div><!-- end panel -->
-    <div class="section-heading">CSS</div>
+    <div id="css" class="section-heading">CSS</div>
     <div class="panel">
         <div id="typography" class="docs-section">
             <h1 class="docs-section-heading">Typography</h1>
@@ -466,8 +466,29 @@
         </div><!-- end docs-section -->
     </div><!-- end panel -->
     
-    <div class="section-heading">Javascript</div>
+    <div id="javascript" class="section-heading">Javascript</div>
     <div class="panel">
+    		</div><!-- end doc-section -->
+        <div id="jaunt" class="docs-section">
+            <h1 class="docs-section-heading">Jaunt</h1>
+            <p>Jaunt is a simple responsive global navigation element that's easy to customize and implement.</p>
+            <div class="example">
+                <h3>Atmosphere's navigation is using <code>Jaunt</code>.</h3>
+            </div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php jaunt(); ?>
+                ]]></script>
+            </div><!-- end highlight -->
+            <h2>Keep Jaunt visible as you scroll</h2>
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<ul class="jaunt jaunt-fixed">
+	...
+</ul>
+                ]]></script>
+            </div><!-- end highlight -->
+        </div><!-- end doc-section -->
         <div id="journey" class="docs-section">
           <h1 class="docs-section-heading">Journey</h1>
             <p>Journey is a completely customizable responsive navigation system.</p>

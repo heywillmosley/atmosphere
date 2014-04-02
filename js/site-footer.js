@@ -7,6 +7,7 @@
 
 /* Components */
 //@codekit-append journey.js
+//@codekit-append jaunt.js
 //@codekit-append exhibit.js
 //@codekit-append dropdown.js
 //@codekit-append footstep.js

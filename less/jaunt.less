@@ -1,0 +1,158 @@
+.jaunt{
+	width: 100%;
+	height: 50px;
+	.variable-opacity( darken( @brand-primary, 40%), .8);
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 500;
+	margin: 0 0 10px;
+	padding: 5px 10px;
+	i{
+		font-size: inherit;
+	}
+	>li{
+		display: inline-block;
+		float: left;
+		padding: 10px 10px 0;
+	}
+	>li:first-child{
+		padding: 10px 0 0;
+	}
+	>li:last-child{
+		padding: 10px 0 0;
+	}
+	.jaunt-logo{
+		padding-top: 0 !important;
+		font-size: 20px;
+		a{
+			color: #FFF;
+			&:hover{
+				color: #FFF;
+			}
+		}
+		img{
+			max-height: 100%;
+			max-width: none;
+			float: left;
+		}
+		.wordmark{
+			font-size: 12px;
+			margin-left: 8px;
+			margin-top: 0;
+			float: left;
+		}
+		.sub-logo{
+			font-weight: 200;
+			display: block;
+			margin-left: 5px;
+			float: left;
+			position: absolute;
+			top: 18px;
+			left: 52px;
+		}
+	}
+	.jaunt-cta{
+		float: right;
+		padding: 10px 0;
+		.btn{
+			height: 29px;
+			border-radius: 0;
+			background-color: transparent;
+			border-color: #FFF;
+			color: #FFF;
+		}
+	}
+	.jaunt-trigger{
+		float: right;
+		padding-right: 0;
+		@media( min-width: 768px ){
+			display: none !important;
+		}
+		a{
+			color: #FFF;
+			i{
+				padding: 0;
+				font-size: 25px;
+				margin-top: 2px;
+			}
+		}
+	}
+	.jaunt-trigger.active{
+		-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+		@media( min-width: 768px ){
+			display: none !important;
+		}
+		a{
+			i{
+				top: 0-8px;
+				position: relative;
+			}
+		}
+	}
+	.jaunt-links{
+		display: none;
+		position: absolute;
+		width: 190px;
+		background-color: darken( @brand-primary, 30% );
+		padding: 60px 20px 20px !important;
+		right: 0;
+		top: 0;
+		opacity: .8;
+		z-index: -1;
+		@media( min-width: 768px ){
+			position: relative !important;
+			width: auto;
+			display: inline-block;
+			background-color: transparent;
+			right: initial;
+			left: initial;
+			z-index: 0;
+			top: initial;
+			padding: 10px 12px 0 !important;
+			height: initial !important;
+			float: right;
+		}
+		.small{
+			font-size: 75%;
+			margin-top: 8px;
+			@media( min-width: 768px ){
+				margin-top: 3px;
+			}
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				font-size: 18px;
+				padding: 0 0 10px;
+				color: #FFF;
+				display: block;
+				@media( min-width: 768px ){
+					display: inline-block;
+					float: left;
+					font-size: 14px;
+					padding: 7px 6px;
+				}
+				a{
+					color: #FFF;
+				}
+			}
+		}
+	}
+	.jaunt-links.active{
+		display: block !important;
+	}
+}
+.jaunt.jaunt-fixed{
+	position: fixed;
+	.jaunt-links{
+		position: fixed;
+		height: 100%;
+	}
+}
+.jaunt-clearfix{
+	margin-bottom: 60px;
+}
