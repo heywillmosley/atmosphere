@@ -11,7 +11,7 @@
     <title>Atmosphere</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content=""/>  
-    <meta name="author" content="William Mosley, III <wmosley@kingbio.com>">
+    <meta name="author" content="William Mosley, III <will@superamazingstore.com>">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php root_url(); ?>img/favicons/favicon-114.png">
@@ -27,14 +27,27 @@
 <body>
 	<div class="max-width-960">
       <header>
-      	<div class="global-logo">
-          <a class="superamazing-logo" href="http://superamazingstore.com">
-            <div class="superamazing-figurehead">S</div>
-            <div class="superamazing-wordmark">Super Amazing</div>
-            <div class="superamazing-tagline">Creative Intellegence</div>
-          </a><!-- end superamazing-logo -->
-          <a class="superamazing-sub-logo" href="/">
-            Atmosphere
-          </a><!-- end superamazing sub-logo -->
-     		</div><!-- end global logo -->
+      	<ul  class="jaunt jaunt-fixed">
+        	<li class="jaunt-logo">
+          	<a href="/">
+            	<img src="img/superamazing-logo.jpg" /> 
+              <span class="wordmark">Super Amazing</span> 
+              <span class="sub-logo">Atmosphere</span>
+            </a>
+        	</li><!-- end jaunt-logo -->
+        	<li class="jaunt-trigger"><a href="#"><i class="fa fa-bars"></i></a></li>
+          <li class="jaunt-cta">
+          	<a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-default btn-sm"><i class="fa fa-download"></i> Download</a>
+          </li><!-- end jaunt-cta -->
+          <li class="jaunt-links">
+          	<ul>
+              <li><a href="#getting-started">Getting Started</a></li>
+              <li><a href="#css">CSS</a></li>
+              <li><a href="#javascript">Javascript</a></li>
+              <li><a href="https://github.com/superamazing/atmosphere" class="small"><i class="fa fa-github"></i> View on Github</a></li>
+              <li><a href="https://github.com/superamazing/atmosphere/issues" class="small"><i class="fa fa-bug"></i> Report Issues</a></li>
+            </ul>
+          </li><!-- end jaunt-links -->
+        </ul><!-- end jaunt -->
+        <div class="jaunt-clearfix"></div>
       </header>

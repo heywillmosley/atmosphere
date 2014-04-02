@@ -92,3 +92,7 @@ background-color : hsla(hue(@color), saturation(@color), lightness(@color), @alp
     background-color: @color;
   }
 }
+
+.variable-opacity(@color, @alpha: 1) {
+  background: rgba( red(@color), green(@color), blue(@color), @alpha);
+}

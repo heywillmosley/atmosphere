@@ -4987,6 +4987,9 @@ body {
 img {
   max-width: 100%;
 }
+i {
+  font-size: inherit;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -6024,6 +6027,172 @@ pre code {
   .journey-content-fluffy {
     padding: 20px;
   }
+}
+.jaunt {
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 51, 0.8);
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 500;
+  margin: 0 0 10px;
+  padding: 5px 10px;
+}
+.jaunt i {
+  font-size: inherit;
+}
+.jaunt > li {
+  display: inline-block;
+  float: left;
+  padding: 10px 10px 0;
+}
+.jaunt > li:first-child {
+  padding: 10px 0 0;
+}
+.jaunt > li:last-child {
+  padding: 10px 0 0;
+}
+.jaunt .jaunt-logo {
+  padding-top: 0 !important;
+  font-size: 20px;
+}
+.jaunt .jaunt-logo a {
+  color: #FFF;
+}
+.jaunt .jaunt-logo a:hover {
+  color: #FFF;
+}
+.jaunt .jaunt-logo img {
+  max-height: 100%;
+  max-width: none;
+  float: left;
+}
+.jaunt .jaunt-logo .wordmark {
+  font-size: 12px;
+  margin-left: 8px;
+  margin-top: 0;
+  float: left;
+}
+.jaunt .jaunt-logo .sub-logo {
+  font-weight: 200;
+  display: block;
+  margin-left: 5px;
+  float: left;
+  position: absolute;
+  top: 18px;
+  left: 52px;
+}
+.jaunt .jaunt-cta {
+  float: right;
+  padding: 10px 0;
+}
+.jaunt .jaunt-cta .btn {
+  height: 29px;
+  border-radius: 0;
+  background-color: transparent;
+  border-color: #FFF;
+  color: #FFF;
+}
+.jaunt .jaunt-trigger {
+  float: right;
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  .jaunt .jaunt-trigger {
+    display: none !important;
+  }
+}
+.jaunt .jaunt-trigger a {
+  color: #FFF;
+}
+.jaunt .jaunt-trigger a i {
+  padding: 0;
+  font-size: 25px;
+  margin-top: 2px;
+}
+.jaunt .jaunt-trigger.active {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+@media (min-width: 768px) {
+  .jaunt .jaunt-trigger.active {
+    display: none !important;
+  }
+}
+.jaunt .jaunt-trigger.active a i {
+  top: -8px;
+  position: relative;
+}
+.jaunt .jaunt-links {
+  display: none;
+  position: absolute;
+  width: 190px;
+  background-color: #000066;
+  padding: 60px 20px 20px !important;
+  right: 0;
+  top: 0;
+  opacity: .8;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .jaunt .jaunt-links {
+    position: relative !important;
+    width: auto;
+    display: inline-block;
+    background-color: transparent;
+    right: initial;
+    left: initial;
+    z-index: 0;
+    top: initial;
+    padding: 10px 12px 0 !important;
+    height: initial !important;
+    float: right;
+  }
+}
+.jaunt .jaunt-links .small {
+  font-size: 75%;
+  margin-top: 8px;
+}
+@media (min-width: 768px) {
+  .jaunt .jaunt-links .small {
+    margin-top: 3px;
+  }
+}
+.jaunt .jaunt-links ul {
+  margin: 0;
+  padding: 0;
+}
+.jaunt .jaunt-links ul li {
+  font-size: 18px;
+  padding: 0 0 10px;
+  color: #FFF;
+  display: block;
+}
+@media (min-width: 768px) {
+  .jaunt .jaunt-links ul li {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    padding: 7px 6px;
+  }
+}
+.jaunt .jaunt-links ul li a {
+  color: #FFF;
+}
+.jaunt .jaunt-links.active {
+  display: block !important;
+}
+.jaunt.jaunt-fixed {
+  position: fixed;
+}
+.jaunt.jaunt-fixed .jaunt-links {
+  position: fixed;
+  height: 100%;
+}
+.jaunt-clearfix {
+  margin-bottom: 60px;
 }
 .has-dropdown {
   list-style: none;

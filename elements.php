@@ -576,3 +576,38 @@ function feature()
 </div><!-- end pretty-page -->    
     <?php endif; ?>   
 	<?php } // end pretty_page()
+	
+	
+/**
+* Jaunt
+*/
+function jaunt($type = 'default')
+{ ?>
+	<ul class="jaunt">
+      <li class="jaunt-logo">
+        <a href="#">
+          <img src="http://placehold.it/190x50" /> 
+        </a>
+      </li><!-- end jaunt-logo -->
+      <li class="jaunt-trigger"><a href="#"><i class="fa fa-bars"></i></a></li>
+      <li class="jaunt-cta">
+        <a href="#" class="btn btn-default btn-sm">Main Action</a>
+      </li><!-- end jaunt-cta -->
+      <li class="jaunt-links">
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="divider-mobile"></li><!-- /.divider-mobile -->
+          <li class="mail-mobile small"><a href="#">Small Link</a></li><!-- /.divider-mobile -->
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </li><!-- end jaunt-links -->
+    </ul><!-- end jaunt -->
+    <div class="jaunt-clearfix"></div>
+
+<?php } // end pretty_page()
+	
+	
