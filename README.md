@@ -1,5 +1,9 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.3.1
+- Fixed Itinerary font size without image
+- Added additional Itinerary docs
+
 ## 1.0.3.0
 - Added Itinerary Element
 - Fixed Atmosphere Jaunt Navigation
