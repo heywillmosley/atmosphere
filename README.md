@@ -1,5 +1,10 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.2.0
+- Updated Atmosphere Navigation
+- Added Jaunt Navigation Element
+- Added Github Issues Link
+
 ## 1.0.1.1
 - Fixed readme version numbers
 
