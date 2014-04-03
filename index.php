@@ -1,7 +1,7 @@
 	<?php function root_uri(){ return''; } function root_url(){ echo ''; } require_once(root_uri().'elements.php'); // Define root path ?>
 <?php require_once (root_url() . 'header.php'); ?>
 
-<h1>Atmosphere makes designing responsive online stores and websites dead simple</h1>
+<h1>Atmosphere makes designing responsive online stores and websites dead simple.</h1>
 <p class="lead">A fine mix of <a href="http://superamazingstore.com">Super Amazing</a>, <a href="http://getbootstrap.com">Bootstrap</a> &amp; <a href="http://foundation.zurb.com">Foundation</a>.</p>
 <div class="mbl">
     <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
@@ -426,7 +426,7 @@
             </div><!-- end example -->
             <div class="highlight">
                 <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   git@github.com:superamazing/atmosphere.git
+<?php cart(); ?>
                 ]]></script>
             </div><!-- end highlight -->
         </div><!-- end docs-section -->
@@ -464,11 +464,22 @@
                 ]]></script>
             </div><!-- end highlight -->
         </div><!-- end docs-section -->
+        <div id="jaunt" class="docs-section">
+            <h1 class="docs-section-heading">Itinerary</h1>
+            <p>Itinerary showcases your schedule in style.</p>
+            <div class="example">
+							<?php itinerary(); ?>
+            </div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php itinerary(); ?>
+                ]]></script>
+            </div><!-- end highlight -->
+        </div><!-- end doc-section -->
     </div><!-- end panel -->
     
     <div id="javascript" class="section-heading">Javascript</div>
     <div class="panel">
-    		</div><!-- end doc-section -->
         <div id="jaunt" class="docs-section">
             <h1 class="docs-section-heading">Jaunt</h1>
             <p>Jaunt is a simple responsive global navigation element that's easy to customize and implement.</p>
@@ -667,7 +678,7 @@
             </div><!-- end example -->
             <div class="highlight">
                 <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-      
+<?php exhibit(); ?>
                 ]]></script>
             </div><!-- end highlight -->
         </div><!-- end doc-section -->

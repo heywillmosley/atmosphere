@@ -1,0 +1,83 @@
+// Itinerary
+.itinerary{
+	.itinerary-calendar{
+		position: relative;
+		border-top: 5px solid #362f2d;
+		padding: 15px 0;
+		font-size: 20px;
+		line-height: 1.2;
+		text-align: center;
+		@media( min-width: 600px ){
+			font-size: 25px;
+			padding: 20px 0;
+		}
+	}
+	.itinerary-event{
+		border-top: #DDD 1px solid;
+		margin: 0 0 30px;
+		padding-top: 10px;
+		position: relative;
+		.itinerary-event-time{
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			color: @gray;
+			@media( min-width: 600px ){
+				font-size: 13px;
+				width: 140px;
+				position: absolute;
+			}
+		}
+		.itinerary-event-content{
+			@media( min-width: 600px ){
+				padding-left: 150px;
+			}
+			.itinerary-event-title{
+				font-size: 18px;
+				font-weight: bold;
+				margin-bottom: 10px;
+				line-height: 1.2;
+			}
+			.itinerary-event-presenter{
+				margin-bottom: 10px;
+				.itinerary-event-presenter-name{
+					font-weight: bold;
+					display: inline-block;
+					padding-right: 6px;
+				}
+				.itinerary-event-presenter-occupation{
+					display: inline;
+				}
+			}
+		}
+		.itinerary-event-details{
+			position: relative;
+			margin-bottom: 10px;
+			color: #777;
+			.itinerary-event-details-img{
+				max-width: 70px;
+				position: absolute;
+				@media( min-width: 660px ){
+					max-width: 100px;
+				}
+			}
+			.itinerary-event-details-content{
+				min-height: 70px;
+				padding-left: 80px;
+				max-width: 700px;
+				line-height: 1.5;
+				@media( min-width: 660px ){
+						padding-left: 110px;
+						min-height: 110px;
+					}
+				p{
+					font-size: 12px;
+					margin-top: 0;
+					@media( min-width: 660px ){
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+} // itinerary
