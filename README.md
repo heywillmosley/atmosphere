@@ -1,6 +1,6 @@
 Super Amazing Atmosphere
 ==========
-## 1.0.3.0
+## 1.0.3.1
 - Fixed Itinerary font size without image
 - Added additional Itinerary docs
 
