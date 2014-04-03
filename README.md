@@ -1,5 +1,9 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.3.0
+- Added Itinerary Element
+- Fixed Atmosphere Jaunt Navigation
+
 ## 1.0.2.0
 - Updated Atmosphere Navigation
 - Added Jaunt Navigation Element

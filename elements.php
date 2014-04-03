@@ -609,5 +609,64 @@ function jaunt($type = 'default')
     <div class="jaunt-clearfix"></div>
 
 <?php } // end pretty_page()
+
+/**
+* Itinerary
+
+*/
+function itinerary($type = 'default')
+{ ?>
+
+<div class="itinerary">
+	<div class="itinerary-calendar">Arrival Day: Saturday, July 14</div>
+  <div class="itinerary-event">
+  	<div class="itinerary-event-time">9:00am-4:00pm</div><!-- end itinerary-event-time -->
+    <div class="itinerary-event-content">
+    	<div class="itinerary-event-title">Batman Convention</div>
+      <div class="itinerary-event-presenter">
+      	<div class="itinerary-event-presenter-name"><a href="#">Dick "Robin" Grayson</a></div> <div class="itinerary-event-presenter-occupation">Side Kick, Dynamic Duo</div>
+     	</div><!-- end itinerary-event-presenter -->
+      <div class="itinerary-event-details">
+      	<img class="itinerary-event-details-img" src="http://placehold.it/100x100"/>
+        <div class="itinerary-event-details-content">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod imperdiet purus, vel cursus erat imperdiet non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem. Cras et convallis urna, non molestie elit. Fusce lacinia tempor porta. Ut sed blandit ante. Phasellus cursus tristique euismod. Donec mauris est, rutrum ut bibendum sed, lobortis sit amet ligula. Morbi commodo erat non leo vehicula, vel ultricies ante semper. Suspendisse auctor ultricies urna, non aliquam purus aliquam sed. Sed dictum tellus tellus, ac interdum sem placerat eget.</p>
+      	</div><!-- end itinerary-event-details-content -->
+      </div><!-- end itinerary-event-details -->
+    </div><!-- end itinerary-event-content -->
+    <div class="itinerary-event">
+  	<div class="itinerary-event-time">5:00pm-10:00pm</div><!-- end itinerary-event-time -->
+    <div class="itinerary-event-content">
+    	<div class="itinerary-event-title">Combat Training</div>
+      <div class="itinerary-event-presenter">
+      	<div class="itinerary-event-presenter-name"><a href="#">Bruce Wayne</a></div> <div class="itinerary-event-presenter-occupation">Super Hero, Dynamic Duo</div>
+     	</div><!-- end itinerary-event-presenter -->
+      <div class="itinerary-event-details">
+      	<img class="itinerary-event-details-img" src="http://placehold.it/100x100"/>
+        <div class="itinerary-event-details-content">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod imperdiet purus, vel cursus erat imperdiet non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis</p>
+      	</div><!-- end itinerary-event-details-content -->
+      </div><!-- end itinerary-event-details -->
+    </div><!-- end itinerary-event-content -->
+  </div><!-- end itinerary-event -->
+  <div class="itinerary-calendar">Sunday, July 15</div>
+  <div class="itinerary-event">
+  	<div class="itinerary-event-time">8:00am-12:00am</div><!-- end itinerary-event-time -->
+    <div class="itinerary-event-content">
+    	<div class="itinerary-event-title">Spider Man Parade</div>
+      <div class="itinerary-event-presenter">
+      	<div class="itinerary-event-presenter-name"><a href="#">Peter Parker</a></div> <div class="itinerary-event-presenter-occupation">Super Hero</div>
+     	</div><!-- end itinerary-event-presenter -->
+      <div class="itinerary-event-details">
+      	<img class="itinerary-event-details-img" src="http://placehold.it/100x100"/>
+        <div class="itinerary-event-details-content">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod imperdiet purus, vel cursus erat imperdiet non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem. Cras et convallis urna, non molestie elit. Fusce lacinia tempor porta. Ut sed blandit ante. Phasellus cursus</p>
+          <p>tristique euismod. Donec mauris est, rutrum ut bibendum sed, lobortis sit amet ligula. Morbi commodo erat non leo vehicula, vel ultricies ante semper. Suspendisse auctor ultricies urna, non aliquam purus aliquam sed. Sed dictum tellus tellus, ac interdum sem placerat eget.</p>
+      	</div><!-- end itinerary-event-details-content -->
+      </div><!-- end itinerary-event-details -->
+    </div><!-- end itinerary-event-content -->
+  </div><!-- end itinerary-event -->
+</div><!--end itinerary -->
+
+<?php } // end itinerary()
 	
 	
