@@ -634,7 +634,8 @@ function itinerary($type = 'default')
           </div><!-- end itinerary-event-details-content -->
         </div><!-- end itinerary-event-details -->
       </div><!-- end itinerary-event-content -->
-      <div class="itinerary-event">
+   	</div><!-- end itinerary-event -->
+   	<div class="itinerary-event">
       <div class="itinerary-event-time">5:00pm-10:00pm</div><!-- end itinerary-event-time -->
       <div class="itinerary-event-content">
         <div class="itinerary-event-title">Combat Training</div>
@@ -678,7 +679,8 @@ function itinerary($type = 'default')
         <div class="itinerary-event-presenter-name"><a href="#">Dick "Robin" Grayson</a></div> <div class="itinerary-event-presenter-occupation">Side Kick, Dynamic Duo</div>
       </div><!-- end itinerary-event-presenter -->
     </div><!-- end itinerary-event-content -->
-    <div class="itinerary-event">
+ 	</div><!-- end itinerary-event -->
+ 	<div class="itinerary-event">
     <div class="itinerary-event-time">5:00pm-10:00pm</div><!-- end itinerary-event-time -->
     <div class="itinerary-event-content">
       <div class="itinerary-event-title">Combat Training</div>
