@@ -475,6 +475,24 @@
 <?php itinerary(); ?>
                 ]]></script>
             </div><!-- end highlight -->
+            <h2 class="docs-section-heading">Itinerary without event details.</h2>
+            <div class="example">
+							<?php itinerary('no-details'); ?>
+            </div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php itinerary('no-details'); ?>
+                ]]></script>
+            </div><!-- end highlight -->
+            <h2 class="docs-section-heading">Itinerary event without an image.</h2>
+            <div class="example">
+							<?php itinerary('no-img'); ?>
+            </div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php itinerary('no-img'); ?>
+                ]]></script>
+            </div><!-- end highlight -->
         </div><!-- end doc-section -->
     </div><!-- end panel -->
     
