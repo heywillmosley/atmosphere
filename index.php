@@ -9,7 +9,12 @@
 </div><!-- end mbl -->
 <div class="row">
 	<div class="col-xs-12 col-sm-4 prt-sm">
-  	<?php docs_toc(); ?>
+  	<div class="visible-xs">
+    	<?php docs_toc('xs'); ?>
+    </div><!-- end hidden-xs -->
+  	<div class="hidden-xs">
+    	<?php docs_toc(); ?>
+    </div><!-- end hidden-xs -->
   </div><!-- end col-xs-12 col-sm -->
   <div class="col-xs-12 col-sm-8 plt-sm">
   	<?php docs(); ?>
