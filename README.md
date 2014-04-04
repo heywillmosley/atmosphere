@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.5.0
+- Added sticky navigation
+
 ## 1.0.4.0
 - Added doc navigation
 - Added Foundation elements
