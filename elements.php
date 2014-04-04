@@ -3,10 +3,10 @@
 /**
  * Table of Contents
  */
-function docs_toc()
+function docs_toc($size = FALSE)
 { ?>
 	
-  <ul>
+  <ul id="docs-toc" class="<?php if( !$size ) echo 'sticky-toc'; ?>">
   	<li><a href="#getting-started"><strong>Getting Started</strong></a></li>
     <li><a href="#css"><strong>CSS</strong></a></li>
     <ul>
@@ -66,6 +66,7 @@ function docs_toc()
       <li><a target="_blank" href="http://foundation.zurb.com/docs/components/accordion.html">Foundation/Accordion</a></li>
       <li><a target="_blank" href="http://foundation.zurb.com/docs/components/equalizer.html">Foundation/Equalizer</a></li>
       <li><a target="_blank" href="http://alexgorbatchev.com/SyntaxHighlighter/">Alex Gorbatchev/Syntax Highlighter</a></li>
+      <li><a target="_blank" href="http://stickyjs.com/">Anthony Garand/Sticky</a></li>
     </ul>
   </ul>
 	

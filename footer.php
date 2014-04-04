@@ -31,5 +31,11 @@
 <script type="text/javascript">
      SyntaxHighlighter.all()
 </script>
+
+<script>
+  $(document).ready(function(){
+    $(".sticky-toc").sticky({topSpacing:60});
+  });
+</script>
 </body>
 </html>

@@ -4,6 +4,8 @@
 //@codekit-append ../vendor/syntaxhighlighter_3.0.83.custom/scripts/shBrushJScript.js
 //@codekit-append ../vendor/syntaxhighlighter_3.0.83.custom/scripts/shBrushXml.js
 //@codekit-append ../vendor/syntaxhighlighter_3.0.83.custom/scripts/shBrushCSS.js
+//@codekit-append ../vendor/garand-sticky-c199302/jquery.sticky.js
+
 
 /* Components */
 //@codekit-append journey.js
