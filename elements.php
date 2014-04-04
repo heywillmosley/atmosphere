@@ -6,7 +6,7 @@
 function docs_toc($size = FALSE)
 { ?>
 	
-  <ul id="docs-toc" class="<?php if( !$size ) echo 'sticky-toc'; ?>">
+  <ul id="docs-toc" class="<?php if( !$size ) echo ''; ?>">
   	<li><a href="#getting-started"><strong>Getting Started</strong></a></li>
     <li><a href="#css"><strong>CSS</strong></a></li>
     <ul>
@@ -66,7 +66,7 @@ function docs_toc($size = FALSE)
       <li><a target="_blank" href="http://foundation.zurb.com/docs/components/accordion.html">Foundation/Accordion</a></li>
       <li><a target="_blank" href="http://foundation.zurb.com/docs/components/equalizer.html">Foundation/Equalizer</a></li>
       <li><a target="_blank" href="http://alexgorbatchev.com/SyntaxHighlighter/">Alex Gorbatchev/Syntax Highlighter</a></li>
-      <li><a target="_blank" href="http://stickyjs.com/">Anthony Garand/Sticky</a></li>
+      <li><a target="_blank" href="http://viget.com/inspire/jquery-stick-em">Trevor Davis/jQuery-Stickem</a></li>
     </ul>
   </ul>
 	
@@ -776,7 +776,7 @@ function getting_started()
                   
                       &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">&lt;/script>
                       &lt;script src="dist/js/site-footer.min.js">&lt;/script>
-                      &lt;script language="javascript" type="text/javascript" src="vendor/foundation-5.2.1.custom/foundation.min.js">&lt;/script>
+                      &lt;script language="javascript" type="text/javascript" src="vendor/foundation-5.2.1.custom/js/foundation.min.js">&lt;/script>
                       &lt;script>
                         $(document).foundation();
                       &lt;/script>
