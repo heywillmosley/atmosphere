@@ -1,7 +1,8 @@
 Super Amazing Atmosphere
 ==========
-## 1.0.3.2
-- Fixed Itinerary-event close tag
+## 1.0.4.0
+- Added doc navigation
+- Added Foundation elements
 
 ## 1.0.3.1
 - Fixed Itinerary font size without image
