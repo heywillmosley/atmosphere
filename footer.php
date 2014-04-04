@@ -2,7 +2,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="<?php root_url(); ?>dist/js/site-footer.min.js"></script>
-<script language="javascript" type="text/javascript" src="<?php root_url(); ?><?php root_url(); ?>vendor/foundation-5.1.1.custom/foundation.min.js"></script>
+<script language="javascript" type="text/javascript" src="<?php root_url(); ?><?php root_url(); ?>vendor/foundation-5.2.1.custom/foundation.min.js"></script>
 
 
 <script>
