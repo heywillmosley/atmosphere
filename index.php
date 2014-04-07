@@ -1,4 +1,4 @@
-	<?php function root_uri(){ return''; } function root_url(){ echo ''; } require_once(root_uri().'elements.php'); // Define root path ?>
+<?php function root_uri(){ return''; } function root_url(){ echo ''; } require_once(root_uri().'elements.php'); // Define root path ?>
 <?php require_once (root_url() . 'header.php'); ?>
 <style>
 .stickem-container {
