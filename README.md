@@ -1,5 +1,10 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.6.2
+- Fixed Itinerary ul, ol styling
+- Removed duplicate specs function
+- Updated Syntax Highlighter font size on smaller devices
+
 ## 1.0.6.1
 - Added spec function
 

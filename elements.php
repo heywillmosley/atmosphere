@@ -1436,6 +1436,11 @@ function itinerary($type = 'default')
           <img class="itinerary-event-details-img" src="http://placehold.it/100x100"/>
           <div class="itinerary-event-details-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod imperdiet purus, vel cursus erat imperdiet non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis</p>
+            <ol>
+            	<li>est, rutrum ut bibendum sed, lo</li>
+              <li>est, rutrum ut bibendum sed, lo</li>
+              <li>est, rutrum ut bibendum sed, lo</li>
+            </ol>
           </div><!-- end itinerary-event-details-content -->
         </div><!-- end itinerary-event-details -->
       </div><!-- end itinerary-event-content -->
@@ -1453,6 +1458,11 @@ function itinerary($type = 'default')
           <div class="itinerary-event-details-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod imperdiet purus, vel cursus erat imperdiet non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem. Cras et convallis urna, non molestie elit. Fusce lacinia tempor porta. Ut sed blandit ante. Phasellus cursus</p>
             <p>tristique euismod. Donec mauris est, rutrum ut bibendum sed, lobortis sit amet ligula. Morbi commodo erat non leo vehicula, vel ultricies ante semper. Suspendisse auctor ultricies urna, non aliquam purus aliquam sed. Sed dictum tellus tellus, ac interdum sem placerat eget.</p>
+            <ul>
+            	<li>est, rutrum ut bibendum sed, lo</li>
+              <li>est, rutrum ut bibendum sed, lo</li>
+              <li>est, rutrum ut bibendum sed, lo</li>
+            </ul>
           </div><!-- end itinerary-event-details-content -->
         </div><!-- end itinerary-event-details -->
       </div><!-- end itinerary-event-content -->
@@ -1508,7 +1518,3 @@ function itinerary($type = 'default')
 <?php endif; ?>
 
 <?php } // end itinerary()
-	
-	
-function specs(){};
-	
