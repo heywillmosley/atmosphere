@@ -1510,3 +1510,5 @@ function itinerary($type = 'default')
 <?php } // end itinerary()
 	
 	
+function specs(){};
+	

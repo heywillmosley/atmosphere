@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.6.1
+- Added spec function
+
 ## 1.0.6.0
 - Removed sticky navigation
 - Added stickem navigation
