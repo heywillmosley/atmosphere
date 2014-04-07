@@ -1,7 +1,45 @@
-.author-thumbnail{
-    width: 40px;
-    height: 40px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    border-radius: 20px 20px 20px 20px;
-    overflow: hidden;
+.author-img{
+	width: @author-img-size;
+	height: @author-img-size;
+	overflow: hidden;
+	
+	img{
+		max-width: 100%;
+	}
+}
+
+// Sizes
+.author-img.author-img-xs{
+	width: @author-img-size-xs;
+	height: @author-img-size-xs;
+}
+.author-img.author-img-sm{
+	width: @author-img-size-sm;
+	height: @author-img-size-sm;
+}
+.author-img.author-img-lg{
+	width: @author-img-size-lg;
+	height: @author-img-size-lg;
+}
+.author-img.author-img-xl{
+	width: @author-img-size-xl;
+	height: @author-img-size-xl;
+}
+
+
+// Rounded
+.author-img.author-img-rounded{
+	border-radius: @author-img-size/2;
+}
+.author-img-xs.author-img-rounded{
+	border-radius: @author-img-size-xs/2;
+}
+.author-img-sm.author-img-rounded{
+	border-radius: @author-img-size-sm/2;
+}
+.author-img-lg.author-img-rounded{
+	border-radius: @author-img-size-lg/2;
+}
+.author-img-xl.author-img-rounded{
+	border-radius: @author-img-size-xl/2;
 }

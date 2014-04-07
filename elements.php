@@ -30,6 +30,7 @@ function docs_toc($size = FALSE)
       <li><a href="#feature">Feature</a></li>
       <li><a href="#cart">Cart</a></li>
       <li><a href="#itinerary">Itinerary</a></li>
+      <li><a href="#author-image">Author Image</a></li>
       <li><a target="_blank" href="http://getbootstrap.com/components/#dropdowns">Bootstrap/Dropdowns</a></li>
       <li><a target="_blank" href="http://getbootstrap.com/components/#btn-groups">Bootstrap/Button groups</a></li>
       <li><a target="_blank" href="http://getbootstrap.com/components/#btn-dropdowns">Bootstrap/Button dropdowns</a></li>
@@ -518,6 +519,62 @@ function docs_toc($size = FALSE)
                 ]]></script>
             </div><!-- end highlight -->
         </div><!-- end doc-section -->
+        <div id="author-image" class="docs-section">
+          <h1 id="helper" class="docs-section-heading">Author Image</h1>
+            <p>An element that helps style author images. Mulitple sizes, rounded or square.</p>
+            <div class="example">
+                <?php author_img(); ?>
+          	</div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<div class="author-img">
+	<img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+                ]]></script>
+            </div><!-- end highlight -->
+            <h2>Rounded</h2>
+            <div class="example">
+                <div class="author-img author-img author-img-rounded">
+                  <img src="http://placekitten.com/g/300/300" />
+                </div><!-- end author-img -->
+          	</div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<div class="author-img author-img author-img-rounded">
+	<img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+                ]]></script>
+            </div><!-- end highlight -->
+            <h2>Author image in a media element</h2>
+            <div class="example">
+<div class="media">
+  <div class="pull-left">
+    <div class="author-img author-img-rounded">
+  <img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+  </div><!-- end pull-left -->
+  <div class="media-body">
+    <h3 class="mvn">Tom Smith</h3>
+    <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+  </div><!-- end media-body -->
+</div><!-- end media -->
+          	</div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<div class="media">
+  <div class="pull-left">
+    <div class="author-img author-img-rounded">
+  <img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+  </div><!-- end pull-left -->
+  <div class="media-body">
+    <h3 class="mvn">Medium <code>author-img author-img-rounded</code></h3>
+    <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+  </div><!-- end media-body -->
+</div><!-- end media -->
+                ]]></script>
+            </div><!-- end highlight -->
+        </div><!-- end docs-section -->
     </div><!-- end panel -->
     
     <div id="javascript" class="section-heading">Javascript</div>
@@ -1518,3 +1575,67 @@ function itinerary($type = 'default')
 <?php endif; ?>
 
 <?php } // end itinerary()
+
+
+/**
+ * Author Image
+ */
+ function author_img()
+ { ?>
+ <div class="media">
+  <div class="pull-left">
+    <div class="author-img author-img-xs">
+  <img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+  </div><!-- end pull-left -->
+  <div class="media-body">
+    <h3 class="mvn">X-small <code>author-img author-img-xs</code></h3>
+    <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+  </div><!-- end media-body -->
+</div><!-- end media -->
+<div class="media">
+  <div class="pull-left">
+    <div class="author-img author-img-sm">
+  <img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+  </div><!-- end pull-left -->
+  <div class="media-body">
+    <h3 class="mvn">Small <code>author-img author-img-sm</code></h3>
+    <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+  </div><!-- end media-body -->
+</div><!-- end media -->
+<div class="media">
+  <div class="pull-left">
+    <div class="author-img author-img-rounded">
+  <img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+  </div><!-- end pull-left -->
+  <div class="media-body">
+    <h3 class="mvn">Medium <code>author-img author-img-rounded</code></h3>
+    <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+  </div><!-- end media-body -->
+</div><!-- end media -->
+<div class="media">
+  <div class="pull-left">
+    <div class="author-img author-img-lg">
+  <img src="http://placekitten.com/g/300/300" />
+</div><!-- end author-img -->
+  </div><!-- end pull-left -->
+  <div class="media-body">
+    <h3 class="mvn">Medium <code>author-img author-img-lg</code></h3>
+    <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+  </div><!-- end media-body -->
+</div><!-- end media -->
+<div class="media">
+  <div class="pull-left">
+    <div class="author-img author-img-xl author-img-rounded">
+      <img src="http://placekitten.com/g/300/300" />
+    </div><!-- end author-img -->
+  </div><!-- end pull-left -->
+  <div class="media-body">
+    <h3 class="mvn">Medium <code>author-img author-img-xl author-img-rounded</code></h3>
+    <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+  </div><!-- end media-body -->
+</div><!-- end media -->
+ 
+ <?php } // end author_img()

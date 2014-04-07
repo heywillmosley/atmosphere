@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.7.0
+- Added Author Image Element
+
 ## 1.0.6.2
 - Fixed Itinerary ul, ol styling
 - Removed duplicate specs function
