@@ -603,50 +603,11 @@ function docs_toc($size = FALSE)
           <h1 class="docs-section-heading">Journey</h1>
             <p>Journey is a completely customizable responsive navigation system.</p>
             <div class="example">
-                <div class="alert alert-info">Atmosphere is using the Journey component as its navigation</div>
+              <?php journey(); ?>
             </div><!-- end example -->
             <div class="highlight">
                 <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <div class="journey journey-expand-visible-sm">
-										<div id="expand-left" class="journey-expand journey-expand-left">
-											<ul class="journey-main-nav">
-												<li class="section-heading">Section</li>
-												<li><a>Link</a></li>
-												<li class="journey-expand-sub-nav">
-													<ul>
-														<li><a>Link</a></li>
-														<li><a>Link</a></li>
-														<li><a>Link</a></li>
-														<li><a>Link</a></li>
-													</ul>
-												</li>
-												<li><a>Link</a></li>
-												<li><a>Link</a></li>
-												<li><a>Link</a></li>
-											</ul>
-										</div><!-- end journey-expand -->
-										<ul class="journey-bar">
-											<li class="journey-action journey-menu-trigger">
-												<a class="journey-left-trigger-open" href="#"></a>
-															<a class="journey-left-trigger-close" href="#"></a>	
-											</li><!-- end journey-action -->
-											<li class="journey-app">
-												<a href="index.html">
-													<div class="journey-app-icon journey-app-icon-text">
-														J
-													</div>
-													<div class="journey-wordcrumb">
-														<div class="journey-app-wordmark">		
-															Journey
-														</div><!-- end journey-app-wordmark -->
-													</div><!-- end journey-breadcrumb -->
-												</a>
-											</li>
-										</ul><!-- end journey-bar -->
-										<div class="journey-content-container">
-											Content
-										</div><!-- journey-content-container -->
-									</div><!-- end journey -->
+<?php journey(); ?>
 															]]></script>
 													</div><!-- end highlight -->
 													<h2 id="journey" class="docs-section-heading">Add a Cart Dropdown</h2>
@@ -1336,19 +1297,11 @@ function feature()
  
  <?php } // end docs_section()
  
- 
-/**
- * Journey
- */
- function journey()
- { ?>
-    
- 
- <?php } // end journey()
+
  
  
 /**
- * Journey
+ * Exhibit
  */
  function exhibit()
  { ?>
@@ -1639,3 +1592,62 @@ function itinerary($type = 'default')
 </div><!-- end media -->
  
  <?php } // end author_img()
+ 
+ 
+ function journey()
+ { ?>
+ 
+ <div class="journey journey-expand-visible-sm">
+  <div id="expand-left" class="journey-expand journey-expand-left">
+    <ul class="journey-main-nav">
+      <li class="section-heading">Section</li>
+      <li><a>Link</a></li>
+      <li class="journey-expand-sub-nav">
+        <ul>
+          <li><a>Link</a></li>
+          <li><a>Link</a></li>
+          <li><a>Link</a></li>
+          <li><a>Link</a></li>
+        </ul>
+      </li>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+    </ul>
+  </div><!-- end journey-expand -->
+  <ul class="journey-bar">
+    <li class="journey-action journey-menu-trigger">
+      <a class="journey-left-trigger-open" href="#"></a>
+            <a class="journey-left-trigger-close" href="#"></a>	
+    </li><!-- end journey-action -->
+    <li class="journey-app">
+      <a href="index.html">
+        <div class="journey-app-icon journey-app-icon-text">
+          J
+        </div>
+        <div class="journey-wordcrumb">
+          <div class="journey-app-wordmark">		
+            Journey
+          </div><!-- end journey-app-wordmark -->
+        </div><!-- end journey-breadcrumb -->
+      </a>
+    </li>
+  </ul><!-- end journey-bar -->
+  <div class="journey-content-container">
+  	<p>non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
+    <ul>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+    </ul>
+    <ol>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+    </ol>
+  </div><!-- journey-content-container -->
+</div><!-- end journey -->
+ 
+ <?php }
