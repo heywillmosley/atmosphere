@@ -25,7 +25,7 @@ body{
 	font-style: normal;
 	position: relative;
 	cursor: default;
-	@media( min-width: 768px{
+	@media( min-width: 768px){
 		font-size:14px;
 	}
 }
@@ -150,18 +150,18 @@ hr{
  
 
 ul, ol{
-    margin-left: 15px;
+	margin-left: 15px;
+	padding-left: 0;
+	list-style-position: outside;
+	li{
+		margin-bottom: 0;
+	}
+	ul, ol{
+		margin-left: 15px;
 		padding-left: 0;
-    list-style-position: outside;
-    li{
-        margin-bottom: 0;
-    }
-		ul, ol{
-				margin-left: 15px;
-				padding-left: 0;
-				li{
-						padding: 0;
-						margin-bottom: 0; 
-				}
+		li{
+				padding: 0;
+				margin-bottom: 0; 
 		}
+	}
 }
