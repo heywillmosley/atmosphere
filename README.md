@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.7.2
+- Made Author Images responsive
+
 ## 1.0.7.1
 - Fixed ol, ul items in Journey element. Not showing numbers and dots
 - Added Journey example

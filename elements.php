@@ -1575,7 +1575,7 @@ function itinerary($type = 'default')
 </div><!-- end author-img -->
   </div><!-- end pull-left -->
   <div class="media-body">
-    <h3 class="mvn">Medium <code>author-img author-img-lg</code></h3>
+    <h3 class="mvn">Large <code>author-img author-img-lg</code></h3>
     <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
   </div><!-- end media-body -->
 </div><!-- end media -->
@@ -1586,7 +1586,7 @@ function itinerary($type = 'default')
     </div><!-- end author-img -->
   </div><!-- end pull-left -->
   <div class="media-body">
-    <h3 class="mvn">Medium <code>author-img author-img-xl author-img-rounded</code></h3>
+    <h3 class="mvn">X-large <code>author-img author-img-xl author-img-rounded</code></h3>
     <p class="mtn">non. Aliquam imperdiet, libero eget rhoncus placerat, nibh turpis aliquet sem, quis porttitor leo turpis quis arcu. Etiam sit amet mauris ut tellus tincidunt malesuada ut vitae sem.</p>
   </div><!-- end media-body -->
 </div><!-- end media -->
