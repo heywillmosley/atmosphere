@@ -2,10 +2,6 @@
 	top: 0;
 	position: relative;
 	height: 100%;
-	ul{
-		margin: 0;	
-		padding: 0;
-	}
 	i{
 		font-size: 22px;
 		span{
@@ -14,7 +10,6 @@
 		}
 	}
 	li{
-		display: inline-block;
 		color: #333;
 		/*&:hover{
 			background-color: @gray-lighter;
@@ -60,7 +55,8 @@
 		font-size: 11px;
 		li{
 			padding: 5px;
-			height: 15px	
+			height: 15px;
+			display: inline-block;
 		}
 	}
 	.journey-deal-bar{
@@ -71,6 +67,9 @@
 		z-index: 100003;
 		height: 40px;
 		overflow: hidden;
+		li{
+			display: inline-block;
+		}
 	}
 	.journey-bar{
 		display: block;
@@ -80,6 +79,9 @@
 		z-index: 499;
 		position: relative;
 		padding: 0;
+		li{
+			display: inline-block;
+		}
 		i{
 			@media( min-width: 768px ){
 				font-size: 14px;
@@ -102,6 +104,7 @@
 		padding: 0 10px;
 		li{
 			float: left;	
+			display: inline-block;
 		}
 	} // end journey-top-bar
 	.journey-top-bar.journey-link-nav{
@@ -114,6 +117,7 @@
 			font-weight: bold;
 			font-size: 12px;
 			margin: 4px 2px;
+			display: inline-block;
 			@media( min-width: 768px ){
 				font-size: 13px;	
 			}
@@ -140,6 +144,9 @@
 		background-color: #000;
 		z-index: 499;
 		padding: 0;
+		li{
+			display: inline-block;
+		}
 	} // end journey-bottom-bar
 	.journey-action{
 		.badge{
@@ -184,6 +191,7 @@
 		}
 		li{
 			height: 30px;	
+			display: inline-block;
 			@media (min-width: 420px) {
 				height: 50px;
 			}
@@ -261,7 +269,7 @@
 			font-size: 27px
 		}
 		@media (min-width: 768px) {
-			display: none;
+			display: none !important;
 		}
 	}
 	.journey-menu-trigger.journey-menu-trigger-stagger{
@@ -381,6 +389,7 @@ box-shadow: 0 0 1px 1px @gray-light;
 				background-color: transparent !important;	
 				box-shadow: 0 0 0px 0px transparent;
 				li{
+					display: inline-block;
 					&:hover{
 						background-color: transparent;		
 					}
@@ -566,6 +575,7 @@ box-shadow: 0 0 1px 1px @gray-light;
 		padding:10px;
 		li{
 			color: #333;
+			display: inline-block;
 			&:hover{
 				background-color: transparent;	
 			}

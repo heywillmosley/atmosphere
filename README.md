@@ -1,5 +1,9 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.7.1
+- Fixed ol, ul items in Journey element. Not showing numbers and dots
+- Added Journey example
+
 ## 1.0.7.0
 - Added Author Image Element
 
