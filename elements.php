@@ -6,7 +6,7 @@
 function docs_toc($size = FALSE)
 { ?>
 	
-  <ul id="docs-toc" class="<?php if( !$size ) echo ''; ?>">
+  <ul id="docs-toc" class="<?php if( !$size ) echo ''; ?> nav-vertical">
   	<li><a href="#getting-started"><strong>Getting Started</strong></a></li>
     <li><a href="#css"><strong>CSS</strong></a></li>
     <ul>
@@ -440,6 +440,30 @@ function docs_toc($size = FALSE)
                         &lt;/div&gt;&lt;!-- end feature-text --&gt;
                     &lt;/div&gt;&lt;!-- end feature --&gt;
                 &lt;/div&gt;&lt;!-- end feature-container --&gt;
+                ]]></script>
+            </div><!-- end highlight -->
+        </div><!-- end docs-section -->
+        <div class="docs-section">
+          <h1 id="cart" class="docs-section-heading">Navigation</h1>
+        	<p>Simple elements to make navigation a sinch.</p>
+          <h2>Vertical Nav</h2>
+          <p>An element that displays a list of vertically without bullets or numbers. Atmosphere uses this navigation schema to list out the elements implemented.
+            <div class="example">
+                <?php nav_vertical(); ?>
+            </div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php nav_vertical(); ?>
+                ]]></script>
+            </div><!-- end highlight -->
+            <h2>Horizontal Nav</h2>
+          <p>An element that displays an inline list.
+            <div class="example">
+                <?php nav_horizontal(); ?>
+            </div><!-- end example -->
+            <div class="highlight">
+                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php nav_horizontal(); ?>
                 ]]></script>
             </div><!-- end highlight -->
         </div><!-- end docs-section -->
@@ -1651,3 +1675,38 @@ function itinerary($type = 'default')
 </div><!-- end journey -->
  
  <?php }
+ 
+ 
+ function nav_vertical()
+ { ?>
+ <ul class="nav-vertical">
+ 	<li><a>Link</a></li>
+      <li><a>Link One</a></li>
+      <li><a>Link Two</a></li>
+      <ul>
+        <li><a>Sub Link One</a></li>
+        <li><a>Sub Link Two</a></li>
+        <ul>
+          <li><a>Super Sub Link One</a></li>
+          <li><a>Super Sub Link Two</a></li>
+        </ul>
+      </ul>
+      <li><a>Link Three</a></li>
+      <li><a>Link Four</a></li>
+      <li><a>Link Five</a></li>
+ </ul>
+ <?php } // end nav_vertical_nav
+ 
+  function nav_horizontal()
+ { ?>
+ <ul class="nav-horizontal">
+ 	<li><a>Link</a></li>
+  <li><a>Link One</a></li>
+  <li><a>Link Two</a></li>
+  <li><a>Link Three</a></li>
+  <li><a>Link Four</a></li>
+  <li><a>Link Five</a></li>
+ </ul>
+ <?php } // end nav_horizontal
+ 
+ 

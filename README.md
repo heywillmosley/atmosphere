@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.8.0
+- Added Navigation elements
+
 ## 1.0.7.2
 - Made Author Images responsive
 
