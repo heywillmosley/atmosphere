@@ -13,9 +13,9 @@ html, body{
 	font-size: 62.5%;
 	min-height: 100%;	
 }
-body {
-    background-color: @body-bg;
-    font-size:@font-size-base;
+body{
+  background-color: @body-bg;
+  font-size:13px;
 	line-height: @line-height-base;
 	color: @gray-dark;
 	padding: 0;
@@ -25,6 +25,9 @@ body {
 	font-style: normal;
 	position: relative;
 	cursor: default;
+	@media( min-width: 768px{
+		font-size:14px;
+	}
 }
 
 img{
@@ -147,20 +150,18 @@ hr{
  
 
 ul, ol{
-    margin: 0;
-    .font-size(14);
+    margin-left: 15px;
+		padding-left: 0;
     list-style-position: outside;
     li{
         margin-bottom: 0;
-        ul, ol{
-            margin-left: 20px;
-            padding: 0;
-            .font-size(14);
-            li{
-                padding: 0;
-                margin-bottom: 0; 
-            }
-        }
-        
     }
+		ul, ol{
+				margin-left: 15px;
+				padding-left: 0;
+				li{
+						padding: 0;
+						margin-bottom: 0; 
+				}
+		}
 }

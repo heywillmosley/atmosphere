@@ -1,0 +1,34 @@
+.nav-vertical {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+.nav-vertical li {
+  display: block;
+}
+.nav-vertical li a {
+  margin-bottom: 5px;
+}
+.nav-vertical ul,
+.nav-vertical ol {
+  margin-left: 15px;
+  font-size: 13px;
+}
+.nav-vertical ul ul,
+.nav-vertical ol ul,
+.nav-vertical ul ol,
+.nav-vertical ol ol {
+  font-size: 12px;
+}
+.nav-horizontal {
+  margin: 0 0 10px;
+}
+.nav-horizontal li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.nav-horizontal li:first-child {
+  padding-left: 0;
+}
+.nav-horizontal li:last-child {
+  padding-right: 0;
+}
