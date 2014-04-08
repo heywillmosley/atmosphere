@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.8.1
+- Fixed close brackets
+
 ## 1.0.8.0
 - Added Navigation elements
 
