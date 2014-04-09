@@ -25,7 +25,7 @@
 </head>        
 
 <body>
-	<div class="max-width-960">
+	<div class="max-width-960 pvn">
       <header>
       	<ul  class="jaunt jaunt-fixed">
         	<li class="jaunt-logo">
@@ -49,5 +49,5 @@
             </ul>
           </li><!-- end jaunt-links -->
         </ul><!-- end jaunt -->
-        <div class="jaunt-clearfix"></div>
       </header>
+ 	</div><!-- end max-width-960 -->
