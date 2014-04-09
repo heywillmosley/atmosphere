@@ -17,16 +17,15 @@
 }
 </style>
 
-<h1>Atmosphere makes designing responsive online stores and websites dead simple.</h1>
-<p class="lead">A fine mix of everything good to develop superior web applications.</p>
-<div class="mbl">
-    <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
-    <a href="#docs" class="btn btn-info"><i class="fa fa-book"></i> Docs</a>
-</div><!-- end mbl -->
-
+<?php front_stage(); ?>
+<div class="max-width-960">
 <div class="container">
     <div class="row stickem-container">
         <div class="col-xs-12 col-sm-4 prt-sm">
+        	<div class="visible-xs">
+          	<h2>Table of Contents</h2>
+          	<?php docs_toc('xs'); ?>
+        	</div><!-- end hidden-xs -->
          	<div class="hidden-xs">
           	<div class="stickem aside">
           		<?php docs_toc('xs'); ?>

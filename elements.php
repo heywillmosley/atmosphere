@@ -25,6 +25,7 @@ function docs_toc($size = FALSE)
     </ul>
     <li><a href="#components"><strong>Components</strong></a></li>
     <ul>
+    	<li><a href="#front-stage">Front Stage</a></li>
     	<li><a href="#item">Item</a></li>
       <li><a href="#specs">Specs</a></li>
       <li><a href="#feature">Feature</a></li>
@@ -209,6 +210,17 @@ function docs_toc($size = FALSE)
     </div><!-- end panel -->
     <div id="components" class="section-heading">Components</div>
     <div class="panel">
+    	<h1 id="front-stage">Front Stage</h1>
+      <p>Front Stage shows off your best content. Portfolio works, a new product, etc.</p>
+      <p>Replace the background image with your own.</p>
+      <div class="example">
+          <p>Atmosphere uses this element to show off with a large galaxy image and call to actions.</p>
+      </div><!-- end example -->
+      <div class="highlight">
+          <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php front_stage(); ?>
+          ]]></script>
+      </div><!-- end highlight -->
       <div class="docs-section">
           <h1 id="item" class="docs-section-heading">Item</h1>
             <p>Creates element that shows basic details about an item ( or product ) such as thumbnail, title, and price. Can be combined to make a product or book catalog.</p>
@@ -1708,5 +1720,29 @@ function itinerary($type = 'default')
   <li><a>Link Five</a></li>
  </ul>
  <?php } // end nav_horizontal
+ 
+ 
+function front_stage()
+{ ?>
+
+<div class="front-stage">
+	<div class="front-stage-bg" style="background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Antennae_galaxies_xl.jpg/1032px-Antennae_galaxies_xl.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;">
+  </div><!-- end front-stage-bg -->
+  <div class="front-stage-overlay"></div> 
+  <div  class="front-stage front-stage-content">
+  	<div class="front-stage-headline">Build superior web applications.</div>
+    <div class="front-stage-summary">A fine mix of everything good to develop remarkable experiences.</div>
+    <div class="front-stage-actions">
+    	<a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
+    	<a href="#docs" class="btn btn-info"><i class="fa fa-book"></i> Docs</a>
+		</div><!-- end front-stage-actions -->
+  </div><!-- end front-stage front-stage-content -->
+</div><!-- end front-stage --> 
+
+<?php }
  
  
