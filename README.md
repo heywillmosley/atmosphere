@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.9.0
+- Added Front Stage
+
 ## 1.0.8.1
 - Fixed close brackets
 
