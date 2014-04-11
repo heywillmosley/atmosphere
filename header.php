@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> in HTACCESS FILE to Avoid Validation Error -->
-    <title>Atmosphere</title>
+    <title>Super Amazing Atmosphere</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content=""/>  
     <meta name="author" content="William Mosley, III <will@superamazingstore.com>">

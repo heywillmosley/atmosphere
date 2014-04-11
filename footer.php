@@ -1,4 +1,7 @@
 </div><!-- end max-width-960 -->
+<footer class="global-footer phs">
+<p class="mbs">&copy; Super Amazing 2014</p>
+</footer><!-- end footer -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="<?php root_url(); ?>dist/js/site-footer.min.js"></script>
