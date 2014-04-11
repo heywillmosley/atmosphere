@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.10.0
+- Added Holder
+
 ## 1.0.9.0
 - Added Front Stage
 
