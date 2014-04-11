@@ -1,0 +1,132 @@
+.holder {
+  width: 100%;
+  height: 200px;
+  background-color: #DDD;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.holder .holder {
+  background-color: #c4c4c4;
+}
+.holder-page-info {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.holder-page-info .holder-page-info-title {
+  font-size: 20px;
+}
+.holder-name {
+  background-color: yellow;
+  color: #000;
+  font-weight: bold;
+  padding: 2px 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+  font-size: 13px;
+  display: inline;
+  z-index: 100;
+  opacity: .8;
+}
+.holder-desc {
+  font-size: 10px;
+  background-color: #F8F8F8;
+  padding: 2px 5px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  margin: 5px;
+  z-index: 100;
+  width: auto;
+  height: auto;
+  opacity: .8;
+}
+.holder-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.holder-note {
+  background-color: #ffcd35;
+  padding: 5px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.holder-note p {
+  font-size: 11px;
+}
+.holder-note:before {
+  content: "\f0e5";
+  top: 5px;
+  left: 5px;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.holder-note-developer {
+  background-color: #92e4c9;
+  padding: 5px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.holder-note-developer p {
+  font-size: 11px;
+}
+.holder-note-developer:before {
+  content: "\f121";
+  top: 5px;
+  left: 5px;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.holder.holder-flow {
+  overflow: visible;
+}
+.holder.holder-transparent {
+  background-color: transparent;
+}
+.holder.holder-relative {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+.holder.holder-relative .holder-content {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.holder-icon-lg {
+  font-size: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.holder.holder-h50 {
+  height: 50px;
+}
+.holder.holder-h100 {
+  height: 100px;
+}
+.holder.holder-h300 {
+  height: 300px;
+}
+.holder.holder-h400 {
+  height: 400px;
+}
+.holder.holder-h500 {
+  height: 500px;
+}
+.holder.holder-h600 {
+  height: 600px;
+}
