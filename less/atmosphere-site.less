@@ -11,9 +11,6 @@
 
 
 // Import Vendor Frameworks =============================================================
-// Normalize
-@import "@{vendor-url}normalize-3.0.0.custom/normalize-3.0.0.less";
-
 // Icon Fonts
 @import "@{vendor-url}font-awesome-4.0.3.custom/css/font-awesome.min.less";
 
@@ -24,7 +21,7 @@
 @import "@{vendor-url}foundation-5.2.1.custom/css/foundation.less";
 
 // Custom Bootstrap
-@import "@{vendor-url}bootstrap-3.0.3.custom/less/bootstrap.less";
+//@import "@{vendor-url}bootstrap-3.0.3.custom/less/bootstrap.less";
 
 // Syntax Highlighter
 @import "@{vendor-url}syntaxhighlighter_3.0.83.custom/styles/shCore.less";
@@ -78,7 +75,9 @@
 @import "@{atmosphere-less-url}helper.less";
 
 // Start Styling below ==================================================================
-
+body{
+	background-color: @body-bg;
+}
 .btn{
 	border-radius: 0;
 }

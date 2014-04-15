@@ -1,4 +1,5 @@
 // 2. TYPOGRAPHY			==============================
+
 p{
 	font-size: 13px;	
 	@media( min-width: 768px){
@@ -14,42 +15,12 @@ p{
 .tertiary {
   font-size: @font-size-base - 3px;
 }
-a{
-	color: @link-color;
-	text-decoration: none;
-	&:hover{
-		color: @link-hover-color;
-		text-decoration: none;
-		cursor: pointer; 
-	}
-}
+
 .caption{
 	font-size: @font-size-small;
 	color: @gray-light;	
 }
-sup,
-sub {
-	height: 0;
-	line-height: 1;
-	vertical-align: baseline;
-	_vertical-align: bottom;
-	position: relative;
-	
-}
-sup {
-	bottom: 2ex;
-}
-sub {
-	top: .5ex;
-}
+
 small{
 	font-size: 85%;	
-}
-strong, 
-.strong, 
-bold{
-	font-weight: bold;
-}
-em{
-	font-style:italic;
 }

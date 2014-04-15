@@ -1,0 +1,60 @@
+/*** Credit Twitter Bootstrap <http://getbootstrap.com> */
+// Grid system
+//
+// Generate semantic grid columns with these mixins.
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+  margin-left:  (@gutter / -2);
+  margin-right: (@gutter / -2);
+  &:extend(.clearfix all);
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage((@columns / @grid-columns));
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+}
+
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-sm-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-md-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-lg-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}

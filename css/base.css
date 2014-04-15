@@ -1,0 +1,400 @@
+/* RESET - credit Apple <apple.com> */
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+abbr,
+article,
+aside,
+command,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+meter,
+nav,
+output,
+progress,
+section,
+summary,
+time {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+em,
+strong,
+th,
+figcaption {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+}
+fieldset,
+iframe {
+  border: none;
+}
+caption,
+th {
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+figure,
+figcaption {
+  display: block;
+}
+/* LAYOUT */
+html,
+body {
+  background-color: #FFF;
+}
+.clear {
+  clear: both;
+  clearer: clear: both;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  line-height: 1px;
+  font-size: 1px;
+}
+img {
+  max-width: 100%;
+}
+i {
+  font-size: inherit;
+}
+hr {
+  border: 1px solid #DDD;
+  margin-bottom: 15px;
+}
+@-ms-viewport {
+  width: device-width;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  position: fixed;
+  opacity: .7;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F4F4F4;
+  position: fixed;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: gray;
+}
+.margin-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.relative {
+  position: relative !important;
+}
+.absolute {
+  position: absolute !important;
+}
+.fixed {
+  position: fixed !important;
+}
+/* Spacing ---------------------- */
+/* Credit: Derived from Nicole Sullivan's oocss project - http://oocss.org */
+/* Padding */
+.pan {
+  padding: 0 !important;
+}
+.ptn {
+  padding-top: 0 !important;
+}
+.pln {
+  padding-left: 0 !important;
+}
+.prn {
+  padding-right: 0 !important;
+}
+.pbn {
+  padding-bottom: 0 !important;
+}
+.phn {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.pvn {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.pat {
+  padding: 5px !important;
+}
+.ptt {
+  padding-top: 5px !important;
+}
+.prt {
+  padding-right: 5px !important;
+}
+.pbt {
+  padding-bottom: 5px !important;
+}
+.plt {
+  padding-left: 5px !important;
+}
+.pht {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.pvt {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.pas {
+  padding: 10px !important;
+}
+.pts {
+  padding-top: 10px !important;
+}
+.prs {
+  padding-right: 10px !important;
+}
+.pbs {
+  padding-bottom: 10px !important;
+}
+.pls {
+  padding-left: 10px !important;
+}
+.phs {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.pvs {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.pam {
+  padding: 18px !important;
+}
+.ptm {
+  padding-top: 18px !important;
+}
+.prm {
+  padding-right: 18px !important;
+}
+.pbm {
+  padding-bottom: 18px !important;
+}
+.plm {
+  padding-left: 18px !important;
+}
+.phm {
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+.pvm {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+.pal {
+  padding: 30px !important;
+}
+.ptl {
+  padding-top: 30px !important;
+}
+.prl {
+  padding-right: 30px !important;
+}
+.pbl {
+  padding-bottom: 30px !important;
+}
+.pll {
+  padding-left: 30px !important;
+}
+.phl {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.pvl {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+/* margin */
+.man {
+  margin: 0 !important;
+}
+.mtn {
+  margin-top: 0 !important;
+}
+.mln {
+  margin-left: 0 !important;
+}
+.mrn {
+  margin-right: 0 !important;
+}
+.mbn {
+  margin-bottom: 0 !important;
+}
+.mhn {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.mvn {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.mat {
+  margin: 5px !important;
+}
+.mtt {
+  margin-top: 5px !important;
+}
+.mrt {
+  margin-right: 5px !important;
+}
+.mbt {
+  margin-bottom: 5px !important;
+}
+.mlt {
+  margin-left: 5px !important;
+}
+.mht {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+.mvt {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+.mas {
+  margin: 10px !important;
+}
+.mts {
+  margin-top: 10px !important;
+}
+.mrs {
+  margin-right: 10px !important;
+}
+.mbs {
+  margin-bottom: 10px !important;
+}
+.mls {
+  margin-left: 10px !important;
+}
+.mhs {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+.mvs {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.mam {
+  margin: 18px !important;
+}
+.mtm {
+  margin-top: 18px !important;
+}
+.mrm {
+  margin-right: 18px !important;
+}
+.mbm {
+  margin-bottom: 18px !important;
+}
+.mlm {
+  margin-left: 18px !important;
+}
+.mhm {
+  margin-left: 18px !important;
+  margin-right: 18px !important;
+}
+.mvm {
+  margin-top: 18px !important;
+  margin-bottom: 18px !important;
+}
+.mal {
+  margin: 30px !important;
+}
+.mtl {
+  margin-top: 30px !important;
+}
+.mrl {
+  margin-right: 30px !important;
+}
+.mbl {
+  margin-bottom: 30px !important;
+}
+.mll {
+  margin-left: 30px !important;
+}
+.mhl {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+.mvl {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+ul,
+ol {
+  margin-left: 15px;
+  padding-left: 0;
+  list-style-position: outside;
+}
+ul li,
+ol li {
+  margin-bottom: 0;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-left: 15px;
+  padding-left: 0;
+}
+ul ul li,
+ol ul li,
+ul ol li,
+ol ol li {
+  padding: 0;
+  margin-bottom: 0;
+}
