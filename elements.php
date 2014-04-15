@@ -1,214 +1,262 @@
 <?php
-
 /**
- * Table of Contents
+ * Docs Getting Started
+ * @author William Mosley, III <will@superamazingstore.com>
+ * @revised 4/11/14 3:39PM
  */
-function docs_toc($size = FALSE)
+function docs_start()
 { ?>
-	
-  <ul id="docs-toc" class="<?php if( !$size ) echo ''; ?> nav-vertical">
-  	<li><a href="#getting-started"><strong>Getting Started</strong></a></li>
-    <li><a href="#css"><strong>CSS</strong></a></li>
-    <ul>
-    	<li><a target="_blank" href="http://necolas.github.io/normalize.css/">Nicolas Gallagher/Normalize.css</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/css/#grid">Bootstrap/Grid System</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/css/grid-media-queries">Bootstrap/Media queries</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/css/#code">Bootstrap/Code</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap/Tables</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/css/#forms">Bootstrap/Forms</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/css/#buttons">Bootstrap/Buttons</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/css/#helper-classes">Bootstrap/Helper classes</a></li>
-    </ul>
-    <li><a target="_blank" href="http://fontawesome.io/"><strong>Fonts</strong></a></li>
-    <ul>
-    	<li><a target="_blank" href="http://fontawesome.io/">Dave Gandy/Font Awesome</a></li>
-    </ul>
-    <li><a href="#components"><strong>Components</strong></a></li>
-    <ul>
-    	<li><a href="#front-stage">Front Stage</a></li>
-    	<li><a href="#item">Item</a></li>
-      <li><a href="#specs">Specs</a></li>
-      <li><a href="#feature">Feature</a></li>
-      <li><a href="#cart">Cart</a></li>
-      <li><a href="#itinerary">Itinerary</a></li>
-      <li><a href="#author-image">Author Image</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#dropdowns">Bootstrap/Dropdowns</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#btn-groups">Bootstrap/Button groups</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#btn-dropdowns">Bootstrap/Button dropdowns</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#input-groups">Bootstrap/Input groups</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#navs">Bootstrap/Navs</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#breadcrumbs">Bootstrap/Breadcrumbs</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#pagnation">Bootstrap/Pagination</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#labels">Bootstrap/Labels</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#badges">Bootstrap/Badges</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#page-header">Bootstrap/Page header</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#alerts">Bootstrap/Alerts</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#media">Bootstrap/Media object</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#list-group">Bootstrap/List group</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#panels">Bootstrap/Panels</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/components/#wells">Bootstrap/Wells</a></li>
-      <li><a href="#helper">Helper/Utilities</strong></a></li>
-      <ul>
-        <li><a href="#docs-section">Docs Section</a></li>
-        <li><a href="#pretty-page">Pretty Page</a></li>
-      </ul>
-    </ul>
-    <li><a href="#javascript"><strong>Javascript</strong></a></li>
-    <ul>
-    	<li><a target="_blank" href="http://jquery.com/">Jquery</a></li>
-    	<li><a target="_blank" href="http://wicky.nillia.ms/enquire.js/">Wicky Nillia/Enquire.js</a></li>
-      <li><a href="#jaunt">Jaunt</a></li>
-      <li><a href="#journey">Journey</a></li>
-      <li><a href="#exhibit">Exhibit</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/javascript/#transitions">Bootstrap/Transitions</a></li>
-      <li><a target="_blank" href="http://getbootstrap.com/javascript/#dropdown">Bootstrap/Dropdown</a></li>
-      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/interchange.html">Foundation/Interchange</a></li>
-      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/reveal.html">Foundation/Reveal</a></li>
-      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/orbit.html">Foundation/Orbit</a></li>
-      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/accordion.html">Foundation/Accordion</a></li>
-      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/equalizer.html">Foundation/Equalizer</a></li>
-      <li><a target="_blank" href="http://alexgorbatchev.com/SyntaxHighlighter/">Alex Gorbatchev/Syntax Highlighter</a></li>
-      <li><a target="_blank" href="http://viget.com/inspire/jquery-stick-em">Trevor Davis/jQuery-Stickem</a></li>
-    </ul>
-  </ul>
-	
+
+<div class="section-heading">Setup</div>
+  <div class="panel">
+    <div id="getting-started" class="docs-section">
+    	<div class="row mbs">
+        <h1 id="download" class="docs-section-heading">Download &amp; Get Started</h1>
+        <p>Get the Epic Odyssey. Everything Atmosphere has to offer. Compiled and minified.</p>
+        <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-info"><i class="fa fa-download"></i> Download Everything</a>
+     	</div><!-- end row -->
+			<div class="row hide">
+      	<div class="col-xs-12 col-sm-6 prt-sm">
+        	<h2>Complete</h2>
+          <p>Get the Epic Odyssey. Everything Atmosphere has to offer. Compiled and minified.</p>
+          <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-info"><i class="fa fa-download"></i> Download Everything</a>
+          <p class="tertiary">Or get the source code directly from Github. Including CSS, Javascript, and font files, along with my docs. <a href="https://github.com/superamazing/atmosphere/archive/master.zip">Download Source</a>.</p>
+        </div><!-- end col-xs-12 col-sm-4 -->
+        <div class="col-xs-12 col-sm-6 plt-sm">
+        	<h2>Essentials</h2>
+          <p>Get a streamlined version of Atmosphere. Including Bootstrap/Grid, Bootstrap/Button, Author Image, Jaunt, Alerts, Helper/Utilies, Foundation/Reveal,Foundation/Orbit, & Foundation/Interchange</p>
+          <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-default"><i class="fa fa-download"></i> Download Essentials</a>
+        </div><!-- end col-xs-12 col-sm-4 -->
+     	</div><!-- end row -->
+      <div class="row hide">
+        <div class="col-xs-12 col-sm-6 prt-sm">
+        	<h2>Custom</h2>
+          <p>Change every aspect and element. Keep what you want, get rid of the rest with super ease.</p>
+          <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-default"><i class="fa fa-download"></i> Download Custom</a>
+        </div><!-- end col-xs-12 col-sm-4 -->
+        <div class="col-xs-12 col-sm-6 plt-sm">
+        	<h2>eCommerce Essentials</h2>
+          <p>Change every aspect and element. Keep what you want, get rid of the rest with super ease.</p>
+          <a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-default"><i class="fa fa-download"></i> Download Commerce Essentials</a>
+        </div><!-- end col-xs-12 col-sm-4 -->
+      </div><!-- end row -->
+      <h1 class="docs-section-heading">What's included</h1>
+      <div class="highlight">
+					<script type="syntaxhighlighter" class="brush: html"><![CDATA[
+atmosphere/
+|&mdash;&mdash; .git
+|&mdash;&mdash; dist
+|   |&mdash;&mdash; css/
+|   |&mdash;&mdash; fonts/
+|   |&mdash;&mdash; js/
+|
+|&mdash;&mdash; docs/
+|&mdash;&mdash; flow/
+|&mdash;&mdash; img/
+|&mdash;&mdash; js/
+|&mdash;&mdash; less/
+|&mdash;&mdash; vendor/
+|&mdash;&mdash; .htaccess
+|&mdash;&mdash; README.html
+|&mdash;&mdash; README.md
+|&mdash;&mdash; elements.php
+|&mdash;&mdash; footer.php
+|&mdash;&mdash; header.php
+|&mdash;&mdash; index.php
+
+          ]]></script>
+      </div><!-- end highlight -->
+      <h2>HTML Markup</h2>
+      <div class="highlight">
+        <pre class="brush: xml">
+            &lt;!doctype html>
+              &lt;!--[if lt IE 7]> &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> &lt;![endif]-->
+              &lt;!--[if IE 7]>    &lt;html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> &lt;![endif]-->
+              &lt;!--[if IE 8]>    &lt;html class="no-js lt-ie9 ie8" lang="en"> &lt;![endif]-->
+              &lt;!--[if IE 9]>    &lt;html class="no-js lt-ie10 ie9" lang="en"> &lt;![endif]-->
+              &lt;!--[if gt IE 9]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+              
+              &lt;head>
+                  &lt;meta charset="utf-8">
+                  &lt;!-- &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> in HTACCESS FILE to Avoid Validation Error -->
+                  &lt;title>Atmosphere&lt;/title>
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1" />
+                  &lt;meta name="keywords" content=""/>  
+                  &lt;meta name="author" content="William Mosley, III &lt;will@livesuperamazing.com>">
+              
+                  &lt;!-- Favicons -->
+                  &lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/favicon-114.png">
+                  &lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/favicon-72.png">
+                  &lt;link rel="shortcut icon" href="img/favicons/favicon-16.png">
+                  &lt;!--[if IE]>&lt;link rel="shortcut icon" href="img/favicons/favicon-16.icon">&lt;![endif]-->
+                  &lt;!-- or, set /favicon-16.ico for IE10 win -->
+                  
+                  &lt;link rel="stylesheet" type="text/css" href="dist/css/atmosphere-site.min.css">
+                  &lt;script language="javascript" type="text/javascript" src="dist/js/site-header.min.js">&lt;/script>
+              &lt;/head>        
+              
+              &lt;body>
+              
+                  &lt;!-- body content here -->
+              
+                  &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">&lt;/script>
+                  &lt;script src="dist/js/site-footer.min.js">&lt;/script>
+                  &lt;script language="javascript" type="text/javascript" src="vendor/foundation-5.2.1.custom/js/foundation.min.js">&lt;/script>
+                  &lt;script>
+                    $(document).foundation();
+                  &lt;/script>
+              &lt;/body>
+              &lt;/html>
+          </pre>
+      </div><!-- end highlight -->
+  </div><!-- end docs-section -->
+</div><!-- end panel -->
 
 <?php }
 
 /**
- * Docs
+ * Docs Getting Started
+ * @author William Mosley, III <will@superamazingstore.com>
+ * @revised 4/11/14 3:39PM
  */
- function docs()
- { ?>
+function docs_css()
+{ ?>
+
+<div id="css" class="section-heading">CSS</div>
+  <div class="panel">
+      <div id="typography" class="docs-section">
+          <h1 class="docs-section-heading">Typography</h1>
+          <h2 id="typography-headings">Headings</h2>
+          <p>Styles for <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</p>
+          <div class="example">
+              <h1>h1. Super Amazing Heading</h1>
+              <h2>h2. Super Amazing Heading</h2>
+              <h3>h3. Super Amazing Heading</h3>
+              <h4>h4. Super Amazing Heading</h4>
+              <h5>h5. Super Amazing Heading</h5>
+              <h6>h6. Super Amazing Heading</h6>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                  <h1>h1. Super Amazing Heading</h1>
+                  <h2>h2. Super Amazing Heading</h2>
+                  <h3>h3. Super Amazing Heading</h3>
+                  <h4>h4. Super Amazing Heading</h4>
+                  <h5>h5. Super Amazing Heading</h5>
+                  <h6>h6. Super Amazing Heading</h6>
+
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2 id="typography-body-copy">Body Copy/Paragraphs</h2>
+          <p>All body and paragraph copy is set to a base font size of <code>14px</code>s.
+          <div class="example">
+              <p>'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
+              <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                  <p>...</p>
+
+              ]]></script>
+          </div><!-- end highlight -->
+          <h3>Do even more with paragraphs</h3>
+          <p>Atmosphere gives writers better control over their copy. Show a lead or deemphasize a paragraph.</p>
+          <div class="example">
+              <p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
+              <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
+              <p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
+              <p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                  <p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
+                  <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
+                  <p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
+                  <p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
+
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2 id="typography-links">Links</h2>
+          <p>Make links with the <code>&lt;a&gt;</code> tag.</p>
+          <div class="example">
+              <div>Read more about <a href="#">Alice &amp; Wonderland</a>. The default color is Atmosphere's primary color. This is easily changeable by overriding the <code>a</code> tag</div>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                 <a href="#">...</a>
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2 id="typography-captions">Captions</h2>
+          <p>This is the description of what this element is and does.</p>
+          <div class="example">
+              <div class="caption">This is a caption</div>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                 <div class="caption">This is a caption</div>
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2 id="typography-sup-sub">Sup &amp; Sub</h2>
+          <p><code>Sup</code> and <code>Sub</code> tags are used for superscripted and subscripted text like exponents and footnotes.</p>
+          <div class="example">
+              <p>Sample copy<sup>Superscript</sup></p>
+              <p>H<sub>2</sub>0</p>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                 <sup>Superscript</sup>
+                 <sub>Subscript</sub>
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2 id="typography-emphasis">Emphasis</h2>
+          <h3>Small Text</h3>
+          <p>De-emphasize text.</p>
+          <div class="example">
+              <small>'They all can,' said the Duchess; 'and most of 'em do.'</small>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                 <small>...</small>
+              ]]></script>
+          </div><!-- end highlight -->
+          <h3>Bold Text</h3>
+          <p>Make text bold.</p>
+          <div class="example">
+              <strong>'I don't know of any that do,' Alice said very politely, feeling quite pleased to have got into a conversation.</strong>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                 <strong>...</strong>
+              ]]></script>
+          </div><!-- end highlight -->
+          <h3>Italic Text</h3>
+          <p>Make text italic.</p>
+          <div class="example">
+              <em>'You don't know much,' said the Duchess; 'and that's a fact.'</em>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                 <em>...</em>
+              ]]></script>
+          </div><!-- end highlight -->
+          <div id="grid" class="docs-section">
+              <h1 class="docs-section-heading" id="grid">Grid</h1>
+              <p>Atmosphere uses Bootstrap's popular grid system. Get the documentation for it <a href="http://getbootstrap.com/css/#grid">here</a>.</p>
+              
+          </div><!-- end doc-section -->
+      </div><!-- end docs-section -->
+  </div><!-- end panel -->
 	
- <div id="docs" class="docs-section">
-    <h1 class="docs-section-heading">Docs</h1>
-    <?php getting_started() ?>
-    <div id="css" class="section-heading">CSS</div>
-    <div class="panel">
-        <div id="typography" class="docs-section">
-            <h1 class="docs-section-heading">Typography</h1>
-            <h2 id="typography-headings">Headings</h2>
-            <p>Styles for <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</p>
-            <div class="example">
-                <h1>h1. Super Amazing Heading</h1>
-                <h2>h2. Super Amazing Heading</h2>
-                <h3>h3. Super Amazing Heading</h3>
-                <h4>h4. Super Amazing Heading</h4>
-                <h5>h5. Super Amazing Heading</h5>
-                <h6>h6. Super Amazing Heading</h6>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                    <h1>h1. Super Amazing Heading</h1>
-                    <h2>h2. Super Amazing Heading</h2>
-                    <h3>h3. Super Amazing Heading</h3>
-                    <h4>h4. Super Amazing Heading</h4>
-                    <h5>h5. Super Amazing Heading</h5>
-                    <h6>h6. Super Amazing Heading</h6>
+<?php } 
 
-                ]]></script>
-            </div><!-- end highlight -->
-            <h2 id="typography-body-copy">Body Copy/Paragraphs</h2>
-            <p>All body and paragraph copy is set to a base font size of <code>14px</code>s.
-            <div class="example">
-                <p>'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
-                <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                    <p>...</p>
-
-                ]]></script>
-            </div><!-- end highlight -->
-            <h3>Do even more with paragraphs</h3>
-            <p>Atmosphere gives writers better control over their copy. Show a lead or deemphasize a paragraph.</p>
-            <div class="example">
-                <p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
-                <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
-                <p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
-                <p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                    <p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
-                    <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
-                    <p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
-                    <p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
-
-                ]]></script>
-            </div><!-- end highlight -->
-            <h2 id="typography-links">Links</h2>
-            <p>Make links with the <code>&lt;a&gt;</code> tag.</p>
-            <div class="example">
-                <div>Read more about <a href="#">Alice &amp; Wonderland</a>. The default color is Atmosphere's primary color. This is easily changeable by overriding the <code>a</code> tag</div>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <a href="#">...</a>
-                ]]></script>
-            </div><!-- end highlight -->
-            <h2 id="typography-captions">Captions</h2>
-            <p>This is the description of what this element is and does.</p>
-            <div class="example">
-                <div class="caption">This is a caption</div>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <div class="caption">This is a caption</div>
-                ]]></script>
-            </div><!-- end highlight -->
-            <h2 id="typography-sup-sub">Sup &amp; Sub</h2>
-            <p><code>Sup</code> and <code>Sub</code> tags are used for superscripted and subscripted text like exponents and footnotes.</p>
-            <div class="example">
-                <p>Sample copy<sup>Superscript</sup></p>
-                <p>H<sub>2</sub>0</p>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <sup>Superscript</sup>
-                   <sub>Subscript</sub>
-                ]]></script>
-            </div><!-- end highlight -->
-            <h2 id="typography-emphasis">Emphasis</h2>
-            <h3>Small Text</h3>
-            <p>De-emphasize text.</p>
-            <div class="example">
-                <small>'They all can,' said the Duchess; 'and most of 'em do.'</small>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <small>...</small>
-                ]]></script>
-            </div><!-- end highlight -->
-            <h3>Bold Text</h3>
-            <p>Make text bold.</p>
-            <div class="example">
-                <strong>'I don't know of any that do,' Alice said very politely, feeling quite pleased to have got into a conversation.</strong>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <strong>...</strong>
-                ]]></script>
-            </div><!-- end highlight -->
-            <h3>Italic Text</h3>
-            <p>Make text italic.</p>
-            <div class="example">
-                <em>'You don't know much,' said the Duchess; 'and that's a fact.'</em>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <em>...</em>
-                ]]></script>
-            </div><!-- end highlight -->
-            <div id="grid" class="docs-section">
-                <h1 class="docs-section-heading" id="grid">Grid</h1>
-                <p>Atmosphere uses Bootstrap's popular grid system. Get the documentation for it <a href="http://getbootstrap.com/css/#grid">here</a>.</p>
-                
-            </div><!-- end doc-section -->
-        </div><!-- end docs-section -->
-    </div><!-- end panel -->
-    <div id="components" class="section-heading">Components</div>
+/**
+ * Docs Components
+ * @author William Mosley, III <will@superamazingstore.com>
+ * @revised 4/11/14 3:39PM
+ */
+function docs_components()
+{ ?>
+	<div id="components" class="section-heading">Components</div>
     <div class="panel">
     	<h1 id="front-stage">Front Stage</h1>
       <p>Front Stage shows off your best content. Portfolio works, a new product, etc.</p>
@@ -612,237 +660,277 @@ function docs_toc($size = FALSE)
             </div><!-- end highlight -->
         </div><!-- end docs-section -->
     </div><!-- end panel -->
-    
-    <div id="javascript" class="section-heading">Javascript</div>
-    <div class="panel">
-        <div id="jaunt" class="docs-section">
-            <h1 class="docs-section-heading">Jaunt</h1>
-            <p>Jaunt is a simple responsive global navigation element that's easy to customize and implement.</p>
-            <div class="example">
-                <h3>Atmosphere's navigation is using <code>Jaunt</code>.</h3>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php }  
+
+
+/**
+ * Docs Javascript
+ * @author William Mosley, III <will@superamazingstore.com>
+ * @revised 4/11/14 3:44PM
+ */
+function docs_javascript()
+{ ?>
+
+<div id="javascript" class="section-heading">Javascript</div>
+  <div class="panel">
+      <div id="jaunt" class="docs-section">
+          <h1 class="docs-section-heading">Jaunt</h1>
+          <p>Jaunt is a simple responsive global navigation element that's easy to customize and implement.</p>
+          <div class="example">
+              <h3>Atmosphere's navigation is using <code>Jaunt</code>.</h3>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
 <?php jaunt(); ?>
-                ]]></script>
-            </div><!-- end highlight -->
-            <h2>Keep Jaunt visible as you scroll</h2>
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2>Keep Jaunt visible as you scroll</h2>
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
 <ul class="jaunt jaunt-fixed">
-	...
+...
 </ul>
-                ]]></script>
-            </div><!-- end highlight -->
-        </div><!-- end doc-section -->
-        <div id="journey" class="docs-section">
-          <h1 class="docs-section-heading">Journey</h1>
-            <p>Journey is a completely customizable responsive navigation system.</p>
-            <div class="example">
-              <?php journey(); ?>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+              ]]></script>
+          </div><!-- end highlight -->
+      </div><!-- end doc-section -->
+      <div id="journey" class="docs-section">
+        <h1 class="docs-section-heading">Journey</h1>
+          <p>Journey is a completely customizable responsive navigation system.</p>
+          <div class="example">
+            <?php journey(); ?>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
 <?php journey(); ?>
-															]]></script>
-													</div><!-- end highlight -->
-													<h2 id="journey" class="docs-section-heading">Add a Cart Dropdown</h2>
-													<div class="example">
-															<div class="alert alert-info">Add demo</div>
-													</div><!-- end example -->
-													<div class="highlight">
-															<script type="syntaxhighlighter" class="brush: html"><![CDATA[
-																 <div id="expand-cart" class="journey-expand journey-expand-cart">
-										<ul>
-											<li>
-												<h5>Your Shopping Cart is empty.</h5>
-												<p class="secondary">Fill it up with CDs, movies, name brand clothing, electronics, and more.</p>
-												<p class="secondary">If you already have an account, <a href="#">sign in</a>.</p>
-												<a href="#" class="btn btn-default btn-block btn-sm ">View Cart</a>
-											</li>
-										</ul>
-									</div><!-- end journey-expand -->
-															]]></script>
-													</div><!-- end highlight -->
-													<h2 id="journey" class="docs-section-heading">Add a Wishlist Dropdown</h2>
-													<div class="example">
-															<div class="alert alert-info">Add demo</div>
-													</div><!-- end example -->
-													<div class="highlight">
-															<script type="syntaxhighlighter" class="brush: html"><![CDATA[
-																 <div id="expand-wishlist" class="journey-expand journey-expand-wishlist">
-										<ul>
-											<li>
-												<h5>Your Wishlist is empty.</h5>
-												<p class="secondary">Fill it up with CDs, movies, name brand clothing, electronics, and more.</p>
-												<p class="secondary">If you already have an account, <a href="#">sign in</a>.</p>
-												<a href="#" class="btn btn-default btn-block btn-sm ">View Wishlist</a>
-											</li>
-										</ul>
-									</div><!-- end journey-expand -->
-															]]></script>
-													</div><!-- end highlight -->
-													<h2 id="journey" class="docs-section-heading">Add a Compare Dropdown</h2>
-													<div class="example">
-															<div class="alert alert-info">Add demo</div>
-													</div><!-- end example -->
-													<div class="highlight">
-															<script type="syntaxhighlighter" class="brush: html"><![CDATA[
-																 <div id="expand-compare" class="journey-expand journey-expand-compare">
-										<ul>
-											<li>
-												<h5>You have no items to compare.</h5>
-											</li>
-										</ul>
-									</div><!-- end journey-expand -->
-															]]></script>
-													</div><!-- end highlight -->
-													<h2 id="journey" class="docs-section-heading">Add an Overflow Dropdown</h2>
-													<div class="example">
-															<div class="alert alert-info">Add demo</div>
-													</div><!-- end example -->
-													<div class="highlight">
-															<script type="syntaxhighlighter" class="brush: html"><![CDATA[
-																 <div id="expand-overflow" class="journey-expand journey-expand-overflow">
-										<ul>
-											<li class="journey-action pull-right-sm visible-xs">
-												<a href="#" onclick="toggleVisibilityOne('expand-wishlist', 'journey-expand');">Wishlist<span class="badge">24</span></a>
-											</li><!-- end journey-action -->
-											<li class="journey-action pull-right-sm visible-xs">
-												<a href="#" onclick="toggleVisibilityOne('expand-compare', 'journey-expand');">Compare Products</span><span class="badge">3</span></a>
-											</li><!-- end journey-action -->  
-										</ul>
-									</div><!-- end journey-expand -->
-															]]></script>
-													</div><!-- end highlight -->
-													<h2 id="journey" class="docs-section-heading">Add a Global Nav Element</h2>
-													<div class="example">
-															<div class="alert alert-info">Add demo</div>
-													</div><!-- end example -->
-													<div class="highlight">
-															<script type="syntaxhighlighter" class="brush: html"><![CDATA[
-																 <div id="expand-global" class="journey-expand journey-expand-global">
-										<ul>
-											<li><a href="#">Store</a></li>
-										</ul>
-									</div><!-- end journey-expand -->
-															]]></script>
-													</div><!-- end highlight -->
-													<h2 id="journey" class="docs-section-heading">Add Top Dropdown Element</h2>
-													<div class="example">
-															<div class="alert alert-info">Add demo</div>
-													</div><!-- end example -->
-													<div class="highlight">
-															<script type="syntaxhighlighter" class="brush: html"><![CDATA[
-																 <div id="expand-top" class="journey-expand journey-expand-top">
-										<ul class="journey-search-bar">
-											<li class="has-form">
-												<form role="form">
-													<div class="row postfix">
-													<div class="col-xs-10 pan">
-														<input type="text" class="form-control has-btn" placeholder="Search...">
-													</div><!-- end col-xs-10 -->
-													<div class="col-xs-2 pan">
-														<button type="submit" class="btn btn-default btn-block postfix"><i class="fa fa-search fa-lg"></i></button>
-													</div><!-- end col-xs-2 -->
-													</div><!-- end row --> 
-												</form>
-											</li>
-										</ul>
-									</div><!-- end journey-expand -->
-                ]]></script>
-            </div><!-- end highlight -->
-            <h2 id="journey" class="docs-section-heading">Add padding to your <code>Journey Content Container</code></h2>
-            <div class="example">
-                <div class="alert alert-info">Add demo</div>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                   <div class="journey-content-container">
-      <div class="journey-content-fluffy">
-        Content
-      </div><!-- end journey-content-fluffy -->
-    </div><!-- end journey-content-container -->
-                ]]></script>
-            </div><!-- end highlight -->
-        </div><!-- end doc-section -->
-        <div id="exhibit" class="docs-section">
-            <h1 class="docs-section-heading">Exhibit</h1>
-            <p>Exhibit is a responsive slider that showcases featured content.</p>
-            <div class="example">
-                <?php exhibit(); ?>
-            </div><!-- end example -->
-            <div class="highlight">
-                <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                            ]]></script>
+                        </div><!-- end highlight -->
+                        <h2 id="journey" class="docs-section-heading">Add a Cart Dropdown</h2>
+                        <div class="example">
+                            <div class="alert alert-info">Add demo</div>
+                        </div><!-- end example -->
+                        <div class="highlight">
+                            <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                               <div id="expand-cart" class="journey-expand journey-expand-cart">
+                  <ul>
+                    <li>
+                      <h5>Your Shopping Cart is empty.</h5>
+                      <p class="secondary">Fill it up with CDs, movies, name brand clothing, electronics, and more.</p>
+                      <p class="secondary">If you already have an account, <a href="#">sign in</a>.</p>
+                      <a href="#" class="btn btn-default btn-block btn-sm ">View Cart</a>
+                    </li>
+                  </ul>
+                </div><!-- end journey-expand -->
+                            ]]></script>
+                        </div><!-- end highlight -->
+                        <h2 id="journey" class="docs-section-heading">Add a Wishlist Dropdown</h2>
+                        <div class="example">
+                            <div class="alert alert-info">Add demo</div>
+                        </div><!-- end example -->
+                        <div class="highlight">
+                            <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                               <div id="expand-wishlist" class="journey-expand journey-expand-wishlist">
+                  <ul>
+                    <li>
+                      <h5>Your Wishlist is empty.</h5>
+                      <p class="secondary">Fill it up with CDs, movies, name brand clothing, electronics, and more.</p>
+                      <p class="secondary">If you already have an account, <a href="#">sign in</a>.</p>
+                      <a href="#" class="btn btn-default btn-block btn-sm ">View Wishlist</a>
+                    </li>
+                  </ul>
+                </div><!-- end journey-expand -->
+                            ]]></script>
+                        </div><!-- end highlight -->
+                        <h2 id="journey" class="docs-section-heading">Add a Compare Dropdown</h2>
+                        <div class="example">
+                            <div class="alert alert-info">Add demo</div>
+                        </div><!-- end example -->
+                        <div class="highlight">
+                            <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                               <div id="expand-compare" class="journey-expand journey-expand-compare">
+                  <ul>
+                    <li>
+                      <h5>You have no items to compare.</h5>
+                    </li>
+                  </ul>
+                </div><!-- end journey-expand -->
+                            ]]></script>
+                        </div><!-- end highlight -->
+                        <h2 id="journey" class="docs-section-heading">Add an Overflow Dropdown</h2>
+                        <div class="example">
+                            <div class="alert alert-info">Add demo</div>
+                        </div><!-- end example -->
+                        <div class="highlight">
+                            <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                               <div id="expand-overflow" class="journey-expand journey-expand-overflow">
+                  <ul>
+                    <li class="journey-action pull-right-sm visible-xs">
+                      <a href="#" onclick="toggleVisibilityOne('expand-wishlist', 'journey-expand');">Wishlist<span class="badge">24</span></a>
+                    </li><!-- end journey-action -->
+                    <li class="journey-action pull-right-sm visible-xs">
+                      <a href="#" onclick="toggleVisibilityOne('expand-compare', 'journey-expand');">Compare Products</span><span class="badge">3</span></a>
+                    </li><!-- end journey-action -->  
+                  </ul>
+                </div><!-- end journey-expand -->
+                            ]]></script>
+                        </div><!-- end highlight -->
+                        <h2 id="journey" class="docs-section-heading">Add a Global Nav Element</h2>
+                        <div class="example">
+                            <div class="alert alert-info">Add demo</div>
+                        </div><!-- end example -->
+                        <div class="highlight">
+                            <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                               <div id="expand-global" class="journey-expand journey-expand-global">
+                  <ul>
+                    <li><a href="#">Store</a></li>
+                  </ul>
+                </div><!-- end journey-expand -->
+                            ]]></script>
+                        </div><!-- end highlight -->
+                        <h2 id="journey" class="docs-section-heading">Add Top Dropdown Element</h2>
+                        <div class="example">
+                            <div class="alert alert-info">Add demo</div>
+                        </div><!-- end example -->
+                        <div class="highlight">
+                            <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                               <div id="expand-top" class="journey-expand journey-expand-top">
+                  <ul class="journey-search-bar">
+                    <li class="has-form">
+                      <form role="form">
+                        <div class="row postfix">
+                        <div class="col-xs-10 pan">
+                          <input type="text" class="form-control has-btn" placeholder="Search...">
+                        </div><!-- end col-xs-10 -->
+                        <div class="col-xs-2 pan">
+                          <button type="submit" class="btn btn-default btn-block postfix"><i class="fa fa-search fa-lg"></i></button>
+                        </div><!-- end col-xs-2 -->
+                        </div><!-- end row --> 
+                      </form>
+                    </li>
+                  </ul>
+                </div><!-- end journey-expand -->
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2 id="journey" class="docs-section-heading">Add padding to your <code>Journey Content Container</code></h2>
+          <div class="example">
+              <div class="alert alert-info">Add demo</div>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                 <div class="journey-content-container">
+    <div class="journey-content-fluffy">
+      Content
+    </div><!-- end journey-content-fluffy -->
+  </div><!-- end journey-content-container -->
+              ]]></script>
+          </div><!-- end highlight -->
+      </div><!-- end doc-section -->
+      <div id="exhibit" class="docs-section">
+          <h1 class="docs-section-heading">Exhibit</h1>
+          <p>Exhibit is a responsive slider that showcases featured content.</p>
+          <div class="example">
+              <?php exhibit(); ?>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
 <?php exhibit(); ?>
-                ]]></script>
-            </div><!-- end highlight -->
-        </div><!-- end doc-section -->
-    </div><!-- end panel -->
+              ]]></script>
+          </div><!-- end highlight -->
+      </div><!-- end doc-section -->
+  </div><!-- end panel -->
+	
+<?php } 
+
+/**
+ * Table of Contents
+ */
+function docs_toc($size = FALSE)
+{ ?>
+	
+  <ul id="docs-toc" class="<?php if( !$size ) echo ''; ?> nav-vertical">
+  	<li><a href="<?php echo root_url().'#getting-started'; ?>"><strong>Getting Started</strong></a></li>
+    <li><a href="<?php echo root_url().'docs/css'; ?>"><strong>CSS</strong></a></li>
+    <ul>
+    	<li><a target="_blank" href="http://necolas.github.io/normalize.css/">Nicolas Gallagher/Normalize.css</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/css/#grid">Bootstrap/Grid System</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/css/grid-media-queries">Bootstrap/Media queries</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/css/#code">Bootstrap/Code</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap/Tables</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/css/#forms">Bootstrap/Forms</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/css/#buttons">Bootstrap/Buttons</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/css/#helper-classes">Bootstrap/Helper classes</a></li>
+    </ul>
+    <li><a target="_blank" href="http://fontawesome.io/"><strong>Fonts</strong></a></li>
+    <ul>
+    	<li><a target="_blank" href="http://fontawesome.io/">Dave Gandy/Font Awesome</a></li>
+    </ul>
+    <li><a href="<?php echo root_url().'docs/components'; ?>"><strong>Components</strong></a></li>
+    <ul>
+    	<li><a href="<?php echo root_url().'docs/components#front-stage'; ?>">Front Stage</a></li>
+    	<li><a href="<?php echo root_url().'docs/components#item'; ?>">Item</a></li>
+      <li><a href="<?php echo root_url().'docs/specs'; ?>">Specs</a></li>
+      <li><a href="<?php echo root_url().'docs/feature'; ?>">Feature</a></li>
+      <li><a href="<?php echo root_url().'docs/cart'; ?>">Cart</a></li>
+      <li><a href="<?php echo root_url().'docs/itinerary'; ?>">Itinerary</a></li>
+      <li><a href="<?php echo root_url().'docs/author-image'; ?>">Author Image</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#dropdowns">Bootstrap/Dropdowns</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#btn-groups">Bootstrap/Button groups</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#btn-dropdowns">Bootstrap/Button dropdowns</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#input-groups">Bootstrap/Input groups</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#navs">Bootstrap/Navs</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#breadcrumbs">Bootstrap/Breadcrumbs</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#pagnation">Bootstrap/Pagination</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#labels">Bootstrap/Labels</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#badges">Bootstrap/Badges</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#page-header">Bootstrap/Page header</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#alerts">Bootstrap/Alerts</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#media">Bootstrap/Media object</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#list-group">Bootstrap/List group</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#panels">Bootstrap/Panels</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/components/#wells">Bootstrap/Wells</a></li>
+      <li><a href="<?php echo root_url().'docs/components#helper'; ?>">Helper/Utilities</strong></a></li>
+      <ul>
+        <li><a href="<?php echo root_url().'docs/components#docs-section'; ?>">Docs Section</a></li>
+        <li><a href="<?php echo root_url().'docs/components#pretty-page'; ?>">Pretty Page</a></li>
+      </ul>
+    </ul>
+    <li><a href="<?php echo root_url().'docs/javascript'; ?>"><strong>Javascript</strong></a></li>
+    <ul>
+    	<li><a target="_blank" href="http://jquery.com/">Jquery</a></li>
+    	<li><a target="_blank" href="http://wicky.nillia.ms/enquire.js/">Wicky Nillia/Enquire.js</a></li>
+      <li><a href="<?php echo root_url().'docs/javascript#jaunt'; ?>">Jaunt</a></li>
+      <li><a href="<?php echo root_url().'docs/javascript#journey'; ?>">Journey</a></li>
+      <li><a href="<?php echo root_url().'docs/javascript#exhibit'; ?>">Exhibit</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/javascript/#transitions">Bootstrap/Transitions</a></li>
+      <li><a target="_blank" href="http://getbootstrap.com/javascript/#dropdown">Bootstrap/Dropdown</a></li>
+      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/interchange.html">Foundation/Interchange</a></li>
+      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/reveal.html">Foundation/Reveal</a></li>
+      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/orbit.html">Foundation/Orbit</a></li>
+      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/accordion.html">Foundation/Accordion</a></li>
+      <li><a target="_blank" href="http://foundation.zurb.com/docs/components/equalizer.html">Foundation/Equalizer</a></li>
+      <li><a target="_blank" href="http://alexgorbatchev.com/SyntaxHighlighter/">Alex Gorbatchev/Syntax Highlighter</a></li>
+      <li><a target="_blank" href="http://viget.com/inspire/jquery-stick-em">Trevor Davis/jQuery-Stickem</a></li>
+    </ul>
+  </ul>
+	
+
+<?php }
+
+/**
+ * Docs
+ */
+ function docs()
+ { ?>
+	
+ <div id="docs" class="docs-section">
+    <h1 class="docs-section-heading">Docs</h1>
+    <?php docs_start() ?>
+    <?php docs_css() ?>
+    <?php docs_components() ?>
+    <?php docs_javascript() ?>
 </div><!-- end docs -->
 	 
  <?php } // end docs
- 
- 
- /**
-  * Getting Started
-	*/
-function getting_started()
-{ ?>
 
-<div class="section-heading">Setup</div>
-  <div class="panel">
-    <div id="getting-started" class="docs-section">
-          <h1 class="docs-section-heading">Getting Started with Atmosphere</h1>
-          <p>Simply download Atmosphere.</p>
-          <h2>HTML Markup</h2>
-          <div class="highlight">
-            <pre class="brush: xml">
-                &lt;!doctype html>
-                  &lt;!--[if lt IE 7]> &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> &lt;![endif]-->
-                  &lt;!--[if IE 7]>    &lt;html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> &lt;![endif]-->
-                  &lt;!--[if IE 8]>    &lt;html class="no-js lt-ie9 ie8" lang="en"> &lt;![endif]-->
-                  &lt;!--[if IE 9]>    &lt;html class="no-js lt-ie10 ie9" lang="en"> &lt;![endif]-->
-                  &lt;!--[if gt IE 9]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
-                  
-                  &lt;head>
-                      &lt;meta charset="utf-8">
-                      &lt;!-- &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> in HTACCESS FILE to Avoid Validation Error -->
-                      &lt;title>Atmosphere&lt;/title>
-                      &lt;meta name="viewport" content="width=device-width, initial-scale=1" />
-                      &lt;meta name="keywords" content=""/>  
-                      &lt;meta name="author" content="William Mosley, III &lt;will@livesuperamazing.com>">
-                  
-                      &lt;!-- Favicons -->
-                      &lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/favicon-114.png">
-                      &lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/favicon-72.png">
-                      &lt;link rel="shortcut icon" href="img/favicons/favicon-16.png">
-                      &lt;!--[if IE]>&lt;link rel="shortcut icon" href="img/favicons/favicon-16.icon">&lt;![endif]-->
-                      &lt;!-- or, set /favicon-16.ico for IE10 win -->
-                      
-                      &lt;link rel="stylesheet" type="text/css" href="dist/css/atmosphere-site.min.css">
-                      &lt;script language="javascript" type="text/javascript" src="dist/js/site-header.min.js">&lt;/script>
-                  &lt;/head>        
-                  
-                  &lt;body>
-                  
-                      &lt;!-- body content here -->
-                  
-                      &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">&lt;/script>
-                      &lt;script src="dist/js/site-footer.min.js">&lt;/script>
-                      &lt;script language="javascript" type="text/javascript" src="vendor/foundation-5.2.1.custom/js/foundation.min.js">&lt;/script>
-                      &lt;script>
-                        $(document).foundation();
-                      &lt;/script>
-                  &lt;/body>
-                  &lt;/html>
-              </pre>
-          </div><!-- end highlight -->
-      </div><!-- end docs-section -->
-  </div><!-- end panel -->
-
-<?php }
- 
 
 /**
  * Item
@@ -1737,8 +1825,8 @@ function front_stage()
   	<div class="front-stage-headline">Build superior web applications.</div>
     <div class="front-stage-summary">A fine mix of everything good to develop remarkable experiences.</div>
     <div class="front-stage-actions">
-    	<a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
-    	<a href="#docs" class="btn btn-info"><i class="fa fa-book"></i> Docs</a>
+    	<a href="https://github.com/superamazing/atmosphere/archive/master.zip" class="btn btn-info"><i class="fa fa-download"></i> Download</a>
+    	<a href="<?php echo root_url().'docs/css'; ?>" class="btn btn-default"><i class="fa fa-book"></i> Docs</a>
 		</div><!-- end front-stage-actions -->
   </div><!-- end front-stage front-stage-content -->
 </div><!-- end front-stage --> 

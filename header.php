@@ -29,8 +29,8 @@
       <header>
       	<ul  class="jaunt jaunt-fixed">
         	<li class="jaunt-logo">
-          	<a href="/">
-            	<img src="img/superamazing-logo.jpg" /> 
+          	<a href="<?php echo root_url(); ?>">
+            	<img src="<?php echo root_url().'img/superamazing-logo.jpg'; ?>" /> 
               <span class="wordmark">Super Amazing</span> 
               <span class="sub-logo">Atmosphere</span>
             </a>
@@ -41,9 +41,10 @@
           </li><!-- end jaunt-cta -->
           <li class="jaunt-links">
           	<ul>
-              <li><a href="#getting-started">Getting Started</a></li>
-              <li><a href="#css">CSS</a></li>
-              <li><a href="#javascript">Javascript</a></li>
+              <li><a href="<?php echo root_url().'#getting-started'; ?>">Getting Started</a></li>
+              <li><a href="<?php echo root_url().'docs/css'; ?>">CSS</a></li>
+              <li><a href="<?php echo root_url().'docs/components'; ?>">Components</a></li>
+              <li><a href="<?php echo root_url().'docs/javascript'; ?>">Javascript</a></li>
               <li><a href="https://github.com/superamazing/atmosphere" class="small"><i class="fa fa-github"></i> View on Github</a></li>
               <li><a href="https://github.com/superamazing/atmosphere/issues" class="small"><i class="fa fa-bug"></i> Report Issues</a></li>
             </ul>

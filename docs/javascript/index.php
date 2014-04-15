@@ -1,7 +1,6 @@
-<?php function root_uri(){ return''; } function root_url(){ echo ''; } require_once(root_uri().'elements.php'); // Define root path ?>
+<?php function root_uri(){ return'../../'; } function root_url(){ echo '../../'; } require_once(root_uri().'elements.php'); // Define root path ?>
 <?php require_once (root_uri() . 'header.php'); ?>
-
-<?php front_stage(); ?>
+<div class="jaunt-clearfix"></div>
 <div class="max-width-960">
 <div class="container">
     <div class="row stickem-container">
@@ -17,7 +16,7 @@
         	</div><!-- end hidden-xs -->
         </div>
         <div class="content col-xs-12 col-sm-8 plt-sm">
-        	<?php docs_start(); ?>
+        	<?php docs_javascript(); ?>
       	</div>
     </div>
 </div>
