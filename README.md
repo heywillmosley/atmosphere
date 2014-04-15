@@ -1,5 +1,8 @@
 Super Amazing Atmosphere
 ==========
+## 1.0.11.0
+- added what's included, and moved docs around
+
 ## 1.0.10.0
 - Added Holder
 
