@@ -1,5 +1,5 @@
 </div><!-- end max-width-960 -->
-<footer class="global-footer phs">
+<footer class="global-footer phs hidden-print">
 <p class="mbs">&copy; Super Amazing 2014</p>
 </footer><!-- end footer -->
 

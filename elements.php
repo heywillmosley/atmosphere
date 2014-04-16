@@ -126,6 +126,53 @@ function docs_css()
   <div class="panel">
       <div id="typography" class="docs-section">
           <h1 class="docs-section-heading">Typography</h1>
+          <p>All typography on a mobile/tablet is set on a base of <code>12.8px</code>. All typography <strong>768px and up</strong> has a base scale of <code>16px</code>.</p>
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: css"><![CDATA[
+/* TYPE */
+body {
+  font: 80%/1.5 @font-family-sans-serif;
+	color: @gray-dark;
+	position: relative;
+	text-rendering: optimizeLegibility; // Whenever possible, Strive to render the additional font features to improve readability
+	text-rendering: optimizeSpeed;
+	@media( min-width: 768px ){
+		font: 100%/1.5 @font-family-sans-serif;
+	}
+}
+body, 
+input, 
+button {
+	-webkit-font-smoothing: antialiased;
+}
+h1 { 
+	font-size: 2em; // 2*16 = 32         
+}
+h2 { 
+	font-size: 1.5em; // 1.5*16 = 24
+}
+h3 { 
+	font-size: 1.17em; // 1.17*16 = 18.72   
+}
+h4 { 
+	font-size: 1.125em; // 1.125*16 = 18         
+}
+h5 { 
+	font-size: 1.0625em; // 1.0625*16 = 13.28  
+	text-transform: uppercase; 
+}
+h6 { 
+	font-size: .9em;    // 0.9*16 = 14
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+p {   
+	line-height: 1.5;
+  margin: 0 0 1em;    
+}
+
+              ]]></script>
+          </div><!-- end highlight -->
           <h2 id="typography-headings">Headings</h2>
           <p>Styles for <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</p>
           <div class="example">
@@ -148,7 +195,7 @@ function docs_css()
               ]]></script>
           </div><!-- end highlight -->
           <h2 id="typography-body-copy">Body Copy/Paragraphs</h2>
-          <p>All body and paragraph copy is set to a base font size of <code>14px</code>s.
+          <p>All body and paragraph copy is set to a base font size of <code>16px</code>s.
           <div class="example">
               <p>'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
               <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
@@ -162,18 +209,30 @@ function docs_css()
           <h3>Do even more with paragraphs</h3>
           <p>Atmosphere gives writers better control over their copy. Show a lead or deemphasize a paragraph.</p>
           <div class="example">
-              <p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
-              <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
-              <p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
-              <p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
+              <?php do_even_more_paragraphs(); ?>
           </div><!-- end example -->
           <div class="highlight">
               <script type="syntaxhighlighter" class="brush: html"><![CDATA[
-                  <p class="lead">'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
-                  <p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
-                  <p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
-                  <p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
-
+<?php do_even_more_paragraphs(); ?>
+							]]></script>
+          </div><!-- end highlight -->
+          <h3>Indented paragraphs</h3>
+          <div class="example">
+              <?php indented_paragraphs(); ?>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php indented_paragraphs(); ?>
+							]]></script>
+          </div><!-- end highlight -->
+          <h3 id="typography-headings">Euphoria Headings</h3>
+          <p>Just add <code>euphoria</code> to any <code>h1 - h6</code> or <code>lead</code> to make it bigger and better. Best suited for calling out important features.</p>
+          <div class="example">
+						<?php euphoria(); ?>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php euphoria(); ?>
               ]]></script>
           </div><!-- end highlight -->
           <h2 id="typography-links">Links</h2>
@@ -237,6 +296,25 @@ function docs_css()
           <div class="highlight">
               <script type="syntaxhighlighter" class="brush: html"><![CDATA[
                  <em>...</em>
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2>Code</h2>
+          <p><code>Code</code> and <code>pre</code></p>
+          <div class="example">
+              <?php code(); ?>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php code(); ?>
+              ]]></script>
+          </div><!-- end highlight -->
+          <h2>Blockquotes</h2>
+          <div class="example">
+              <?php blockquotes(); ?>
+          </div><!-- end example -->
+          <div class="highlight">
+              <script type="syntaxhighlighter" class="brush: html"><![CDATA[
+<?php blockquotes(); ?>
               ]]></script>
           </div><!-- end highlight -->
           <div id="grid" class="docs-section">
@@ -846,7 +924,7 @@ function docs_javascript()
 function docs_toc($size = FALSE)
 { ?>
 	
-  <ul id="docs-toc" class="<?php if( !$size ) echo ''; ?> nav-vertical">
+  <ul id="docs-toc" class="<?php if( !$size ) echo ''; ?> nav-vertical hidden-print">
   	<li><a href="<?php echo root_url().'#getting-started'; ?>"><strong>Getting Started</strong></a></li>
     <li><a href="<?php echo root_url().'docs/css'; ?>"><strong>CSS</strong></a></li>
     <ul>
@@ -1833,4 +1911,43 @@ function front_stage()
 
 <?php }
  
+ 
+ function do_even_more_paragraphs()
+ { ?>
+<p class="intro">Escape is not his plan. I must face him, alone. I call it luck. Oh God, my uncle. How am I ever gonna explain this? Remember, a Jedi can feel the Force flowing through him. Partially, but it also obeys your commands. Escape is not his plan. I must face him, alone.</p>
+
+<p>'It's a Cheshire cat,' said the Duchess, 'and that's why. Pig!</p>
+<p class="secondary">'She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:—</p>
+<p class="tertiary">'I didn't know that Cheshire cats always grinned; in fact, I didn't know that cats COULD grin.'</p>
+ <?php }
+ 
+ 
+function indented_paragraphs()
+ { ?>
+<div class="indent">
+  <p>Leave that to me. Send a distress signal, and inform the Senate that all on board were killed. No! Alderaan is peaceful. We have no weapons. You can't possibly&hellip; As you wish. The plans you refer to will soon be back in our hands. You're all clear, kid. Let's blow this thing and go home! Remember, a Jedi can feel the Force flowing through him.</p>
+  <p>I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. I don't know what you're talking about. I am a member of the Imperial Senate on a diplomatic mission to Alderaan-- Hey, Luke! May the Force be with you. Your eyes can deceive you. Don't trust them.</p>
+  <p>Hokey religions and ancient weapons are no match for a good blaster at your side, kid. Partially, but it also obeys your commands. Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money.</p>
+</div><!-- end indent -->
+ <?php }
+ 
+ function code()
+ { ?>
+<code>strong { font-weight: bold; }</code>
+<pre>a, a:visited { text-decoration: underline; }</pre>
+ <?php }
+ 
+function blockquotes()
+{ ?>
+<blockquote>Hokey religions and ancient weapons are no match for a good blaster at your side, kid. He is here. Ye-ha! The Force is strong with this one. I have you now.</blockquote>
+<?php }
+
+function euphoria()
+{ ?>
+
+<h1 class="euphoria">Your online business.</h1>
+<h2 class="euphoria">Open 2am. In the air. Mid-atlantic.</h2>
+<p class="euphoria lead">Every feature we add to iPhone must answer yes to one question: Will it make the experience better? So the colors of iPhone 5c received the same intense consideration we apply to everything we make. We even designed the Home screen and wallpaper colors to complement the exterior. As a result, using iPhone is that much more engaging and delightful.</p>
+
+<?php }
  
